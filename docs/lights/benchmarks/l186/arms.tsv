@@ -1,0 +1,51 @@
+#invocation	AppKit arm: cargo run -p lights-mac --release --offline --bin lights-mac-probe -- <dir>, five runs (the runs of present.tsv); winit arm: cargo run --offline --manifest-path docs/lights/benchmarks/l186/winit_arm/Cargo.toml, five runs (arm winit); the same with L186_INJECT=between, three runs (arm winit-between)
+#date	2026-09-29
+#hardware	Apple M5 Max, macOS 26.5, built-in Retina panel at backingScaleFactor 2
+#input	both arms: a left press at (40, 50) pt, a drag to (120, 90) and a release there, measured from the top left, dispatched through NSApp.sendEvent; then key a (code 0) and Escape (code 53) posted through NSApp's queue; then a resize; then performClose. The winit arm dispatches the clicks and the close from inside about_to_wait, because winit 0.30 drops any window event raised outside its callback (with L186_INJECT=between it dispatches them between pumps, as the AppKit arm does)
+#expected_at_2x	press (80, 100) px, motion and release (240, 180) px, both measured against the 260 pt content height they were made for
+#columns	arm, run, phase, what the arm delivered (Debug form)
+arm	run	phase	delivered
+appkit	1	input_events	PointerPressed { x: 80.0, y: 100.0 } | PointerMoved { x: 240.0, y: 180.0 } | PointerReleased { x: 240.0, y: 180.0 } | KeyPressed { code: 0, characters: "a" } | KeyPressed { code: 53, characters: "\u{1b}" }
+appkit	1	resize_events	Resized { width: 800, height: 520, scale: 2.0 }
+appkit	1	close_events	CloseRequested
+appkit	1	visible_after_close_request	true
+appkit	2	input_events	PointerPressed { x: 80.0, y: 100.0 } | PointerMoved { x: 240.0, y: 180.0 } | PointerReleased { x: 240.0, y: 180.0 } | KeyPressed { code: 0, characters: "a" } | KeyPressed { code: 53, characters: "\u{1b}" }
+appkit	2	resize_events	Resized { width: 800, height: 520, scale: 2.0 }
+appkit	2	close_events	CloseRequested
+appkit	2	visible_after_close_request	true
+appkit	3	input_events	PointerPressed { x: 80.0, y: 100.0 } | PointerMoved { x: 240.0, y: 180.0 } | PointerReleased { x: 240.0, y: 180.0 } | KeyPressed { code: 0, characters: "a" } | KeyPressed { code: 53, characters: "\u{1b}" }
+appkit	3	resize_events	Resized { width: 800, height: 520, scale: 2.0 }
+appkit	3	close_events	CloseRequested
+appkit	3	visible_after_close_request	true
+appkit	4	input_events	PointerPressed { x: 80.0, y: 100.0 } | PointerMoved { x: 240.0, y: 180.0 } | PointerReleased { x: 240.0, y: 180.0 } | KeyPressed { code: 0, characters: "a" } | KeyPressed { code: 53, characters: "\u{1b}" }
+appkit	4	resize_events	Resized { width: 800, height: 520, scale: 2.0 }
+appkit	4	close_events	CloseRequested
+appkit	4	visible_after_close_request	true
+appkit	5	input_events	PointerPressed { x: 80.0, y: 100.0 } | PointerMoved { x: 240.0, y: 180.0 } | PointerReleased { x: 240.0, y: 180.0 } | KeyPressed { code: 0, characters: "a" } | KeyPressed { code: 53, characters: "\u{1b}" }
+appkit	5	resize_events	Resized { width: 800, height: 520, scale: 2.0 }
+appkit	5	close_events	CloseRequested
+appkit	5	visible_after_close_request	true
+winit	1	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit	1	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }, Moved { x: 80.0, y: 180.0 }, Pressed { x: 80.0, y: 180.0 }, Moved { x: 240.0, y: 260.0 }, Moved { x: 240.0, y: 260.0 }, Released { x: 240.0, y: 260.0 }]
+winit	1	close_events	[Close]
+winit	2	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit	2	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }, Moved { x: 80.0, y: 180.0 }, Pressed { x: 80.0, y: 180.0 }, Moved { x: 240.0, y: 260.0 }, Moved { x: 240.0, y: 260.0 }, Released { x: 240.0, y: 260.0 }]
+winit	2	close_events	[Close]
+winit	3	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit	3	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }, Moved { x: 80.0, y: 180.0 }, Pressed { x: 80.0, y: 180.0 }, Moved { x: 240.0, y: 260.0 }, Moved { x: 240.0, y: 260.0 }, Released { x: 240.0, y: 260.0 }]
+winit	3	close_events	[Close]
+winit	4	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }, Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 800, height: 520 }, Moved { x: 80.0, y: 100.0 }, Pressed { x: 80.0, y: 100.0 }, Moved { x: 240.0, y: 180.0 }, Moved { x: 240.0, y: 180.0 }, Released { x: 240.0, y: 180.0 }]
+winit	4	resize_events	[]
+winit	4	close_events	[Close]
+winit	5	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit	5	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }, Moved { x: 80.0, y: 180.0 }, Pressed { x: 80.0, y: 180.0 }, Moved { x: 240.0, y: 260.0 }, Moved { x: 240.0, y: 260.0 }, Released { x: 240.0, y: 260.0 }]
+winit	5	close_events	[Close]
+winit-between	1	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit-between	1	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }]
+winit-between	1	close_events	[]
+winit-between	2	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit-between	2	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }]
+winit-between	2	close_events	[]
+winit-between	3	input_events	[Key { physical: "Code(KeyA)", logical: "Character(\"a\")" }, Key { physical: "Code(Escape)", logical: "Named(Escape)" }]
+winit-between	3	resize_events	[Resized { width: 800, height: 520 }, Scale(2.0), Resized { width: 960, height: 600 }]
+winit-between	3	close_events	[]

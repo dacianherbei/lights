@@ -1,0 +1,81 @@
+#invocation	probe rows: five times: cargo run -p lights-mac --release --bin lights-mac-probe -- /tmp/l190_probe/run$i, keeping each report.tsv. headless rows: three times: cargo test -p lights --release --all-features --test handoff_pack -- --nocapture --test-threads 1
+#date	2026-09-29
+#build	release; the probe links lights with default features (splat contract method, f32, 18 rayon threads as SharedSettings::contract gives); the handoff itself is serial in both arms
+#hardware	Apple M5 Max, 18 cores (6 P + 12 E), 128 GB, macOS 26.5; built-in Liquid Retina XDR 3456x2234 px at backingScaleFactor 2; CARGO_TARGET_DIR the on-disk target/ that crates/lights/scripts/target_dir.py chose
+#tree	25f4bdaf plus the uncommitted L-190 change
+#probe_frame	lights::spheres through lights::sphere_camera at 1920x1080 px (the window at 960x540 pt), background (0.04, 0.05, 0.07), both arms writing the host shared MTLBuffer
+#probe_handoff	20 reps, the two arms interleaved and their order alternated per rep. three_pass = resolve_float + to_clamped_u8 + expand, where expand is lights_mac::write_bgra, the expansion Host::present performs; fused = Framebuffer::resolve_bgra8. Fills are timed inside the present closure, so no present is in a term. The probe reads both arms back from the drawable and refuses to write a time unless they are byte-identical
+#probe_frames	per arm two runs of 20 frames back to back, in the order three, fused, fused, three; each frame is render + handoff + present_filled. cpu = render start to the end of the fill; interval = one present return to the next, so it is the frame time on screen and includes any wait for a free drawable
+#probe_presents	L-186 step 6 of the same runs: 20 Host::present calls back to back, and 20 each after a 40 ms pump; kept because L-186 read the back-to-back figure as not paced by the display and these runs read it as paced
+#headless	the l150 instrument: to_clamped_u8_ramp times FloatImage::to_clamped_u8 alone on the synthetic ramp (l150 published 7.444 ms median with this command on 2026-09-16); three_pass and fused time the same two arms on a synthetic 1920x1080 f32 over-blend framebuffer into reused buffers, 5 reps each, bytes asserted equal first
+#columns	source, run, term, then median, min and max in ms, and the sample count
+source	run	term	median_ms	min_ms	max_ms	n
+probe	1	timed_present_back_to_back	8.130	2.977	9.257	20
+probe	1	timed_present_spaced	2.216	1.585	2.554	20
+probe	1	handoff_render	2.092	1.929	8.621	20
+probe	1	handoff_resolve_float	1.833	1.548	3.611	20
+probe	1	handoff_to_clamped_u8	4.936	4.373	8.708	20
+probe	1	handoff_expand	0.287	0.258	0.457	20
+probe	1	handoff_fused	2.649	2.368	4.095	20
+probe	1	handoff_three_pass	7.092	6.231	12.776	20
+probe	1	frame_fused_cpu	4.517	4.047	5.123	40
+probe	1	frame_fused_interval	8.222	7.033	9.436	40
+probe	1	frame_three_pass_cpu	8.525	8.072	8.993	40
+probe	1	frame_three_pass_interval	9.395	8.895	10.022	40
+probe	2	timed_present_back_to_back	8.238	3.151	9.262	20
+probe	2	timed_present_spaced	2.233	1.726	2.454	20
+probe	2	handoff_render	2.122	1.849	7.189	20
+probe	2	handoff_resolve_float	1.821	1.637	4.144	20
+probe	2	handoff_to_clamped_u8	4.958	4.694	9.512	20
+probe	2	handoff_expand	0.287	0.279	0.500	20
+probe	2	handoff_fused	2.647	2.546	4.307	20
+probe	2	handoff_three_pass	7.062	6.619	14.156	20
+probe	2	frame_fused_cpu	4.655	4.105	5.028	40
+probe	2	frame_fused_interval	8.184	7.583	9.541	40
+probe	2	frame_three_pass_cpu	8.566	8.074	20.877	40
+probe	2	frame_three_pass_interval	9.524	8.879	21.722	40
+probe	3	timed_present_back_to_back	7.931	4.293	9.186	20
+probe	3	timed_present_spaced	2.264	2.143	2.451	20
+probe	3	handoff_render	2.071	1.568	6.502	20
+probe	3	handoff_resolve_float	1.804	1.573	3.661	20
+probe	3	handoff_to_clamped_u8	4.766	4.423	9.457	20
+probe	3	handoff_expand	0.279	0.259	0.503	20
+probe	3	handoff_fused	2.574	2.356	4.075	20
+probe	3	handoff_three_pass	6.843	6.254	13.621	20
+probe	3	frame_fused_cpu	4.664	3.831	4.999	40
+probe	3	frame_fused_interval	8.235	7.441	9.489	40
+probe	3	frame_three_pass_cpu	8.156	7.889	8.870	40
+probe	3	frame_three_pass_interval	9.056	8.618	9.817	40
+probe	4	timed_present_back_to_back	7.964	4.424	9.375	20
+probe	4	timed_present_spaced	2.242	1.560	2.450	20
+probe	4	handoff_render	2.081	1.488	7.580	20
+probe	4	handoff_resolve_float	1.800	1.570	3.378	20
+probe	4	handoff_to_clamped_u8	4.814	4.352	7.872	20
+probe	4	handoff_expand	0.280	0.259	0.421	20
+probe	4	handoff_fused	2.596	2.330	3.675	20
+probe	4	handoff_three_pass	6.969	6.288	11.670	20
+probe	4	frame_fused_cpu	4.625	4.024	5.031	40
+probe	4	frame_fused_interval	8.144	7.504	9.515	40
+probe	4	frame_three_pass_cpu	8.451	8.139	8.879	40
+probe	4	frame_three_pass_interval	9.437	9.021	9.777	40
+probe	5	timed_present_back_to_back	8.057	2.862	9.172	20
+probe	5	timed_present_spaced	2.215	1.701	2.354	20
+probe	5	handoff_render	2.072	1.648	5.679	20
+probe	5	handoff_resolve_float	1.832	1.626	3.214	20
+probe	5	handoff_to_clamped_u8	4.954	4.581	7.927	20
+probe	5	handoff_expand	0.282	0.258	0.444	20
+probe	5	handoff_fused	2.621	2.367	4.070	20
+probe	5	handoff_three_pass	7.026	6.469	11.586	20
+probe	5	frame_fused_cpu	4.663	4.134	5.063	40
+probe	5	frame_fused_interval	8.169	7.462	9.512	40
+probe	5	frame_three_pass_cpu	8.510	8.092	8.905	40
+probe	5	frame_three_pass_interval	9.414	8.877	9.947	40
+headless	1	to_clamped_u8_ramp	4.643	4.558	4.703	5
+headless	1	three_pass	6.177	6.090	6.572	5
+headless	1	fused	2.271	2.247	2.604	5
+headless	2	to_clamped_u8_ramp	4.647	4.611	4.687	5
+headless	2	three_pass	6.110	6.057	6.496	5
+headless	2	fused	2.275	2.246	2.610	5
+headless	3	to_clamped_u8_ramp	4.658	4.645	4.726	5
+headless	3	three_pass	6.130	6.088	6.543	5
+headless	3	fused	2.274	2.270	2.667	5

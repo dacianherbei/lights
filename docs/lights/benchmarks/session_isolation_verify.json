@@ -1,0 +1,212 @@
+{
+  "isolated": {
+    "results": [
+      {
+        "task_id": "read-standing",
+        "mode": "isolated",
+        "ok": true,
+        "elapsed_seconds": 10.487,
+        "usage": {
+          "input_tokens": 4,
+          "output_tokens": 286,
+          "cache_creation_input_tokens": 40792,
+          "cache_read_input_tokens": 86241,
+          "total_reported_tokens": 127323,
+          "total_cost_usd": 0.18328419999999998,
+          "duration_ms": 7378,
+          "num_turns": 2,
+          "session_id": "0a256cd6-562c-4d9c-a665-480d5e61bbbd"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-clusters",
+        "mode": "isolated",
+        "ok": true,
+        "elapsed_seconds": 8.442,
+        "usage": {
+          "input_tokens": 4,
+          "output_tokens": 398,
+          "cache_creation_input_tokens": 41326,
+          "cache_read_input_tokens": 86226,
+          "total_reported_tokens": 127954,
+          "total_cost_usd": 0.1865372,
+          "duration_ms": 5348,
+          "num_turns": 2,
+          "session_id": "2fcc7182-b015-4a55-9461-5c65b1a9441a"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-research-standing",
+        "mode": "isolated",
+        "ok": true,
+        "elapsed_seconds": 58.761,
+        "usage": {
+          "input_tokens": 22,
+          "output_tokens": 4958,
+          "cache_creation_input_tokens": 49317,
+          "cache_read_input_tokens": 699695,
+          "total_reported_tokens": 753992,
+          "total_cost_usd": 0.386831,
+          "duration_ms": 55828,
+          "num_turns": 11,
+          "session_id": "deadeacb-4200-4180-891e-087f07f8d5e1"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-mutation-record",
+        "mode": "isolated",
+        "ok": true,
+        "elapsed_seconds": 20.608,
+        "usage": {
+          "input_tokens": 8,
+          "output_tokens": 955,
+          "cache_creation_input_tokens": 43884,
+          "cache_read_input_tokens": 216687,
+          "total_reported_tokens": 261534,
+          "total_cost_usd": 0.2284394,
+          "duration_ms": 17684,
+          "num_turns": 4,
+          "session_id": "bc71f991-ff7b-412f-8c80-5792b1923503"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-entry-in-hand",
+        "mode": "isolated",
+        "ok": true,
+        "elapsed_seconds": 18.509,
+        "usage": {
+          "input_tokens": 8,
+          "output_tokens": 1207,
+          "cache_creation_input_tokens": 42186,
+          "cache_read_input_tokens": 216306,
+          "total_reported_tokens": 259707,
+          "total_cost_usd": 0.2240912,
+          "duration_ms": 15509,
+          "num_turns": 4,
+          "session_id": "ebc0111c-c725-40de-8ddd-f91632da9ba1"
+        },
+        "stderr": ""
+      }
+    ],
+    "aggregate": {
+      "tasks": 5,
+      "successful": 5,
+      "input_tokens": 46,
+      "output_tokens": 7804,
+      "cache_creation_input_tokens": 217505,
+      "cache_read_input_tokens": 1305155,
+      "total_reported_tokens": 1530510,
+      "total_cost_usd": 1.209183,
+      "elapsed_seconds": 116.80688104000001
+    }
+  },
+  "persistent": {
+    "results": [
+      {
+        "task_id": "read-standing",
+        "mode": "persistent",
+        "ok": true,
+        "elapsed_seconds": 7.512,
+        "usage": {
+          "input_tokens": 4,
+          "output_tokens": 247,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 127033,
+          "total_reported_tokens": 127284,
+          "total_cost_usd": 0.027884600000000002,
+          "duration_ms": 4305,
+          "num_turns": 2,
+          "session_id": "392d8495-0e9e-40d6-a7d0-33ee2563bb59"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-clusters",
+        "mode": "persistent",
+        "ok": true,
+        "elapsed_seconds": 6.657,
+        "usage": {
+          "input_tokens": 4,
+          "output_tokens": 195,
+          "cache_creation_input_tokens": 1976,
+          "cache_read_input_tokens": 129596,
+          "total_reported_tokens": 131771,
+          "total_cost_usd": 0.035781200000000006,
+          "duration_ms": 3553,
+          "num_turns": 2,
+          "session_id": "392d8495-0e9e-40d6-a7d0-33ee2563bb59"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-research-standing",
+        "mode": "persistent",
+        "ok": true,
+        "elapsed_seconds": 32.065,
+        "usage": {
+          "input_tokens": 22,
+          "output_tokens": 2197,
+          "cache_creation_input_tokens": 7937,
+          "cache_read_input_tokens": 770840,
+          "total_reported_tokens": 780996,
+          "total_cost_usd": 0.20793,
+          "duration_ms": 28940,
+          "num_turns": 11,
+          "session_id": "392d8495-0e9e-40d6-a7d0-33ee2563bb59"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-mutation-record",
+        "mode": "persistent",
+        "ok": true,
+        "elapsed_seconds": 16.281,
+        "usage": {
+          "input_tokens": 10,
+          "output_tokens": 973,
+          "cache_creation_input_tokens": 2947,
+          "cache_read_input_tokens": 378648,
+          "total_reported_tokens": 382578,
+          "total_cost_usd": 0.09726760000000001,
+          "duration_ms": 13240,
+          "num_turns": 5,
+          "session_id": "392d8495-0e9e-40d6-a7d0-33ee2563bb59"
+        },
+        "stderr": ""
+      },
+      {
+        "task_id": "read-entry-in-hand",
+        "mode": "persistent",
+        "ok": true,
+        "elapsed_seconds": 18.337,
+        "usage": {
+          "input_tokens": 8,
+          "output_tokens": 1324,
+          "cache_creation_input_tokens": 3306,
+          "cache_read_input_tokens": 315402,
+          "total_reported_tokens": 320040,
+          "total_cost_usd": 0.0895604,
+          "duration_ms": 14856,
+          "num_turns": 4,
+          "session_id": "392d8495-0e9e-40d6-a7d0-33ee2563bb59"
+        },
+        "stderr": ""
+      }
+    ],
+    "aggregate": {
+      "tasks": 5,
+      "successful": 5,
+      "input_tokens": 48,
+      "output_tokens": 4936,
+      "cache_creation_input_tokens": 16166,
+      "cache_read_input_tokens": 1721519,
+      "total_reported_tokens": 1742669,
+      "total_cost_usd": 0.4584238,
+      "elapsed_seconds": 80.85255329100002
+    }
+  }
+}

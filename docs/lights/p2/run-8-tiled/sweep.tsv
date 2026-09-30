@@ -1,0 +1,215 @@
+#invocation	/Volumes/RamBuild/cargo-target/debug/lights-p2 --out-dir docs/lights/p2/run-8-tiled --max-atoms 8 --tiled-field
+#hardware	macos 18 cores aarch64
+#build	DEBUG - every wall-clock number below is meaningless as an absolute
+#precision	f64
+#method	splat-raster
+#sort	global-sort
+#tile	16
+#threads	18
+#PIXEL_BOX_VARIANCE	0.08333333333333333
+#alpha_cutoff	0.00392156862745098
+#Z0	64
+#DZ	0.015625
+#quadrature_depth	10
+#undecided_area	0.5075197219848633
+#field	512x512 holding 40 copies
+#criterion.max_transition_px	1
+#criterion.min_contrast_frac	0.9
+#criterion.min_peak_frac	0.9
+#criterion.target_fwhm_px	1
+#criterion.max_fwhm_error_px	0.5
+#criterion.max_interior_ripple	0.00392156862745098
+#control_arm_valid	yes
+#viewport.t1-flat-fill	64x64
+#viewport.t2-straight-edge	64x64
+#viewport.t3-right-angle-corner	64x64
+#viewport.t4-curve	32x32
+#viewport.t5-thin-stroke	64x64
+#viewport.t6-glyph-like	32x32
+target	blend	profile	atoms	transition_10_90_px	contrast_frac	peak_frac	fwhm_px	residual_energy	thin_bins	meets_criterion
+t1-flat-fill	gaussian	prefiltered	1	nan	nan	nan	nan	4.306066	0	no
+t1-flat-fill	gaussian	prefiltered	2	nan	nan	nan	nan	0.002916	0	yes
+t1-flat-fill	gaussian	prefiltered	3	nan	nan	nan	nan	0.000004	0	yes
+t1-flat-fill	gaussian	prefiltered	4	nan	nan	nan	nan	0.000002	0	yes
+t1-flat-fill	gaussian	prefiltered	5	nan	nan	nan	nan	0.000001	0	yes
+t1-flat-fill	gaussian	prefiltered	6	nan	nan	nan	nan	0.000001	0	yes
+t1-flat-fill	gaussian	prefiltered	7	nan	nan	nan	nan	0.000001	0	yes
+t1-flat-fill	gaussian	prefiltered	8	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian	contract	1	nan	nan	nan	nan	4.304857	0	no
+t1-flat-fill	gaussian	contract	2	nan	nan	nan	nan	0.002923	0	yes
+t1-flat-fill	gaussian	contract	3	nan	nan	nan	nan	0.000004	0	yes
+t1-flat-fill	gaussian	contract	4	nan	nan	nan	nan	0.000002	0	yes
+t1-flat-fill	gaussian	contract	5	nan	nan	nan	nan	0.000001	0	yes
+t1-flat-fill	gaussian	contract	6	nan	nan	nan	nan	0.000001	0	yes
+t1-flat-fill	gaussian	contract	7	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian	contract	8	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	prefiltered	1	nan	nan	nan	nan	4.025741	0	no
+t1-flat-fill	gaussian-normalised	prefiltered	2	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	1	nan	nan	nan	nan	4.024377	0	no
+t1-flat-fill	gaussian-normalised	contract	2	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	3	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	4	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	5	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	6	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	7	nan	nan	nan	nan	0.000000	0	yes
+t1-flat-fill	gaussian-normalised	contract	8	nan	nan	nan	nan	0.000000	0	yes
+t2-straight-edge	gaussian	prefiltered	1	3.485148	0.073047	nan	nan	1747.490731	376	no
+t2-straight-edge	gaussian	prefiltered	2	3.338916	0.463358	nan	nan	512.072595	376	no
+t2-straight-edge	gaussian	prefiltered	3	nan	0.763636	nan	nan	402.939108	376	no
+t2-straight-edge	gaussian	prefiltered	4	2.261200	0.710764	nan	nan	115.268840	376	no
+t2-straight-edge	gaussian	prefiltered	5	2.009205	0.905030	nan	nan	66.186362	376	no
+t2-straight-edge	gaussian	prefiltered	6	1.169759	0.907809	nan	nan	34.911537	376	no
+t2-straight-edge	gaussian	prefiltered	7	1.347827	0.948481	nan	nan	29.065111	376	no
+t2-straight-edge	gaussian	prefiltered	8	1.031975	0.948925	nan	nan	21.830493	376	no
+t2-straight-edge	gaussian	contract	1	3.949182	0.182144	nan	nan	811.343750	376	no
+t2-straight-edge	gaussian	contract	2	3.604311	0.209267	nan	nan	415.340613	376	no
+t2-straight-edge	gaussian	contract	3	3.133319	0.343481	nan	nan	386.652384	376	no
+t2-straight-edge	gaussian	contract	4	3.230844	0.743281	nan	nan	97.028352	376	no
+t2-straight-edge	gaussian	contract	5	1.754067	0.787516	nan	nan	89.526983	376	no
+t2-straight-edge	gaussian	contract	6	0.894125	0.835365	nan	nan	34.601307	376	no
+t2-straight-edge	gaussian	contract	7	0.947658	0.839383	nan	nan	24.561738	376	no
+t2-straight-edge	gaussian	contract	8	0.947658	0.839383	nan	nan	21.097476	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	1	3.572001	0.083675	nan	nan	1543.186651	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	2	3.116577	0.402527	nan	nan	403.366422	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	3	4.209995	0.683900	nan	nan	223.652598	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	4	4.235176	0.697483	nan	nan	57.977811	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	5	1.325440	0.865045	nan	nan	26.796172	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	6	1.325440	0.865045	nan	nan	26.796172	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	7	1.325440	0.865045	nan	nan	26.796172	376	no
+t2-straight-edge	gaussian-normalised	prefiltered	8	1.325440	0.865045	nan	nan	26.796172	376	no
+t2-straight-edge	gaussian-normalised	contract	1	3.560218	0.119511	nan	nan	1087.330703	376	no
+t2-straight-edge	gaussian-normalised	contract	2	3.521301	0.120907	nan	nan	957.973229	376	no
+t2-straight-edge	gaussian-normalised	contract	3	2.991133	0.487582	nan	nan	249.584808	376	no
+t2-straight-edge	gaussian-normalised	contract	4	nan	0.698337	nan	nan	114.722068	376	no
+t2-straight-edge	gaussian-normalised	contract	5	1.236729	0.814095	nan	nan	42.266389	376	no
+t2-straight-edge	gaussian-normalised	contract	6	1.218570	0.815456	nan	nan	39.377164	376	no
+t2-straight-edge	gaussian-normalised	contract	7	0.900702	0.824594	nan	nan	30.026105	376	no
+t2-straight-edge	gaussian-normalised	contract	8	0.913142	0.852425	nan	nan	22.777586	376	no
+t3-right-angle-corner	gaussian	prefiltered	1	2.091409	0.040877	nan	nan	905.110649	237	no
+t3-right-angle-corner	gaussian	prefiltered	2	2.601961	0.186312	nan	nan	453.974734	237	no
+t3-right-angle-corner	gaussian	prefiltered	3	4.142351	0.312479	nan	nan	370.022200	237	no
+t3-right-angle-corner	gaussian	prefiltered	4	3.614072	0.307180	nan	nan	295.476489	237	no
+t3-right-angle-corner	gaussian	prefiltered	5	nan	0.483894	nan	nan	292.040054	237	no
+t3-right-angle-corner	gaussian	prefiltered	6	nan	0.489176	nan	nan	191.776577	237	no
+t3-right-angle-corner	gaussian	prefiltered	7	3.160785	0.863567	nan	nan	126.320473	237	no
+t3-right-angle-corner	gaussian	prefiltered	8	3.142350	0.862320	nan	nan	96.654105	237	no
+t3-right-angle-corner	gaussian	contract	1	2.091345	0.041368	nan	nan	905.176880	237	no
+t3-right-angle-corner	gaussian	contract	2	2.601593	0.183245	nan	nan	455.440892	237	no
+t3-right-angle-corner	gaussian	contract	3	4.135768	0.301739	nan	nan	368.665318	237	no
+t3-right-angle-corner	gaussian	contract	4	3.613827	0.297572	nan	nan	297.067375	237	no
+t3-right-angle-corner	gaussian	contract	5	nan	0.493827	nan	nan	288.448523	237	no
+t3-right-angle-corner	gaussian	contract	6	nan	0.501926	nan	nan	188.411679	237	no
+t3-right-angle-corner	gaussian	contract	7	3.152057	0.877655	nan	nan	126.203269	237	no
+t3-right-angle-corner	gaussian	contract	8	3.148740	0.877514	nan	nan	96.130579	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	1	2.091876	0.043689	nan	nan	944.205873	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	2	2.365848	0.174976	nan	nan	388.340851	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	3	4.128703	0.411760	nan	nan	282.573532	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	4	3.835802	0.421353	nan	nan	187.407274	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	5	6.518337	0.723013	nan	nan	149.770412	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	6	2.965042	0.728117	nan	nan	136.350200	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	7	2.642888	0.821196	nan	nan	110.688318	237	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	8	2.587865	0.814981	nan	nan	108.159707	237	no
+t3-right-angle-corner	gaussian-normalised	contract	1	2.381875	0.043161	nan	nan	947.536552	237	no
+t3-right-angle-corner	gaussian-normalised	contract	2	2.365965	0.178348	nan	nan	387.891208	237	no
+t3-right-angle-corner	gaussian-normalised	contract	3	4.134706	0.424367	nan	nan	285.346174	237	no
+t3-right-angle-corner	gaussian-normalised	contract	4	3.329784	0.432542	nan	nan	190.127730	237	no
+t3-right-angle-corner	gaussian-normalised	contract	5	3.298310	0.667492	nan	nan	165.750360	237	no
+t3-right-angle-corner	gaussian-normalised	contract	6	3.528820	0.687360	nan	nan	151.769724	237	no
+t3-right-angle-corner	gaussian-normalised	contract	7	3.528820	0.687360	nan	nan	142.411836	237	no
+t3-right-angle-corner	gaussian-normalised	contract	8	2.536181	0.759706	nan	nan	110.547255	237	no
+t4-curve	gaussian	prefiltered	1	2.286620	0.777183	nan	nan	18.737048	132	no
+t4-curve	gaussian	prefiltered	2	2.232573	0.920489	nan	nan	9.348288	132	no
+t4-curve	gaussian	prefiltered	3	2.151420	0.959872	nan	nan	5.791598	132	no
+t4-curve	gaussian	prefiltered	4	1.955898	0.971319	nan	nan	4.204934	132	no
+t4-curve	gaussian	prefiltered	5	1.918609	0.980795	nan	nan	3.246434	132	no
+t4-curve	gaussian	prefiltered	6	1.774007	0.982176	nan	nan	2.492973	132	no
+t4-curve	gaussian	prefiltered	7	1.752499	0.984272	nan	nan	2.188689	132	no
+t4-curve	gaussian	prefiltered	8	1.752284	0.987233	nan	nan	2.024257	132	no
+t4-curve	gaussian	contract	1	2.299822	0.800506	nan	nan	17.779991	132	no
+t4-curve	gaussian	contract	2	2.223875	0.904074	nan	nan	10.235482	132	no
+t4-curve	gaussian	contract	3	2.465224	0.930452	nan	nan	6.028926	132	no
+t4-curve	gaussian	contract	4	2.483119	0.941477	nan	nan	3.873309	132	no
+t4-curve	gaussian	contract	5	1.996508	0.956850	nan	nan	2.571274	132	no
+t4-curve	gaussian	contract	6	1.878024	0.959084	nan	nan	2.070310	132	no
+t4-curve	gaussian	contract	7	1.351593	0.959598	nan	nan	1.524467	132	no
+t4-curve	gaussian	contract	8	1.218652	0.976962	nan	nan	1.312484	132	no
+t4-curve	gaussian-normalised	prefiltered	1	2.252835	0.775776	nan	nan	18.420970	132	no
+t4-curve	gaussian-normalised	prefiltered	2	1.832012	0.991952	nan	nan	6.547239	132	no
+t4-curve	gaussian-normalised	prefiltered	3	1.718240	0.991588	nan	nan	2.556233	132	no
+t4-curve	gaussian-normalised	prefiltered	4	1.764111	0.991588	nan	nan	1.418627	132	no
+t4-curve	gaussian-normalised	prefiltered	5	1.554234	0.991588	nan	nan	1.111261	132	no
+t4-curve	gaussian-normalised	prefiltered	6	1.554234	0.991588	nan	nan	1.111261	132	no
+t4-curve	gaussian-normalised	prefiltered	7	1.554234	0.991588	nan	nan	1.111261	132	no
+t4-curve	gaussian-normalised	prefiltered	8	1.554234	0.991588	nan	nan	1.111261	132	no
+t4-curve	gaussian-normalised	contract	1	2.464127	0.804846	nan	nan	17.034429	132	no
+t4-curve	gaussian-normalised	contract	2	2.085550	0.991468	nan	nan	6.106185	132	no
+t4-curve	gaussian-normalised	contract	3	1.657424	0.991468	nan	nan	3.539231	132	no
+t4-curve	gaussian-normalised	contract	4	1.637472	0.991468	nan	nan	1.936993	132	no
+t4-curve	gaussian-normalised	contract	5	1.308657	0.991468	nan	nan	1.109435	132	no
+t4-curve	gaussian-normalised	contract	6	1.308067	0.991245	nan	nan	0.890548	132	no
+t4-curve	gaussian-normalised	contract	7	1.308067	0.991245	nan	nan	0.854371	132	no
+t4-curve	gaussian-normalised	contract	8	1.137567	0.991513	nan	nan	0.743263	132	no
+t5-thin-stroke	gaussian	prefiltered	1	nan	nan	0.523207	1.143895	27.560967	122	no
+t5-thin-stroke	gaussian	prefiltered	2	nan	nan	0.784579	0.956819	20.198472	122	no
+t5-thin-stroke	gaussian	prefiltered	3	nan	nan	0.716492	1.099365	7.708883	122	no
+t5-thin-stroke	gaussian	prefiltered	4	nan	nan	0.716492	1.099365	4.540731	122	no
+t5-thin-stroke	gaussian	prefiltered	5	nan	nan	0.778903	0.943096	4.374676	122	no
+t5-thin-stroke	gaussian	prefiltered	6	nan	nan	0.778903	0.943096	3.000724	122	no
+t5-thin-stroke	gaussian	prefiltered	7	nan	nan	0.819746	0.969674	2.099135	122	no
+t5-thin-stroke	gaussian	prefiltered	8	nan	nan	0.819746	0.969674	1.873416	122	no
+t5-thin-stroke	gaussian	contract	1	nan	nan	0.617798	1.114997	30.663650	122	no
+t5-thin-stroke	gaussian	contract	2	nan	nan	0.930980	0.729292	25.169774	122	yes
+t5-thin-stroke	gaussian	contract	3	nan	nan	0.865668	0.761341	7.611483	122	no
+t5-thin-stroke	gaussian	contract	4	nan	nan	0.857889	0.767028	3.564241	122	no
+t5-thin-stroke	gaussian	contract	5	nan	nan	0.849141	0.773424	2.643618	122	no
+t5-thin-stroke	gaussian	contract	6	nan	nan	0.849751	0.772978	1.760015	122	no
+t5-thin-stroke	gaussian	contract	7	nan	nan	0.849751	0.772978	1.568503	122	no
+t5-thin-stroke	gaussian	contract	8	nan	nan	0.849751	0.772978	1.419530	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	1	nan	nan	0.389281	0.899188	26.783930	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	2	nan	nan	0.743560	0.886866	12.321368	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	3	nan	nan	0.743560	0.886866	10.166496	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	4	nan	nan	0.743560	0.886866	9.106571	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	5	nan	nan	0.743560	0.886866	7.138689	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	6	nan	nan	0.743560	0.886866	6.019909	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	7	nan	nan	0.743560	0.886866	4.970276	122	no
+t5-thin-stroke	gaussian-normalised	prefiltered	8	nan	nan	0.743560	0.886866	4.514605	122	no
+t5-thin-stroke	gaussian-normalised	contract	1	nan	nan	0.346035	0.832186	28.256734	122	no
+t5-thin-stroke	gaussian-normalised	contract	2	nan	nan	0.716955	0.852686	13.142721	122	no
+t5-thin-stroke	gaussian-normalised	contract	3	nan	nan	0.716955	0.852686	11.956856	122	no
+t5-thin-stroke	gaussian-normalised	contract	4	nan	nan	0.716955	0.852686	10.883330	122	no
+t5-thin-stroke	gaussian-normalised	contract	5	nan	nan	0.716955	0.852686	9.355817	122	no
+t5-thin-stroke	gaussian-normalised	contract	6	nan	nan	0.716955	0.852686	7.751802	122	no
+t5-thin-stroke	gaussian-normalised	contract	7	nan	nan	0.716955	0.852686	6.612397	122	no
+t5-thin-stroke	gaussian-normalised	contract	8	nan	nan	0.716955	0.852686	5.675715	122	no
+t6-glyph-like	gaussian	prefiltered	1	nan	nan	0.000000	1.075033	41.774262	72	no
+t6-glyph-like	gaussian	prefiltered	2	nan	nan	0.598731	1.075033	23.495938	72	no
+t6-glyph-like	gaussian	prefiltered	3	nan	nan	0.597944	1.282558	15.720959	72	no
+t6-glyph-like	gaussian	prefiltered	4	nan	nan	0.597944	1.296927	12.299207	72	no
+t6-glyph-like	gaussian	prefiltered	5	nan	nan	0.597944	1.296927	7.339636	72	no
+t6-glyph-like	gaussian	prefiltered	6	nan	nan	0.597944	1.297493	5.746314	72	no
+t6-glyph-like	gaussian	prefiltered	7	nan	nan	0.776419	1.344388	4.631192	72	no
+t6-glyph-like	gaussian	prefiltered	8	nan	nan	0.776419	1.335292	4.171985	72	no
+t6-glyph-like	gaussian	contract	1	nan	nan	0.000000	0.960312	41.472364	72	no
+t6-glyph-like	gaussian	contract	2	nan	nan	0.559233	0.960312	20.663801	72	no
+t6-glyph-like	gaussian	contract	3	nan	nan	0.813956	1.279556	12.225297	72	no
+t6-glyph-like	gaussian	contract	4	nan	nan	0.814753	1.279351	8.434925	72	no
+t6-glyph-like	gaussian	contract	5	nan	nan	0.814753	1.279351	6.902959	72	no
+t6-glyph-like	gaussian	contract	6	nan	nan	0.814753	1.279351	5.532587	72	no
+t6-glyph-like	gaussian	contract	7	nan	nan	0.814753	1.279351	3.500740	72	no
+t6-glyph-like	gaussian	contract	8	nan	nan	0.814753	1.167570	2.532244	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	1	nan	nan	0.000000	1.030808	41.668734	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	2	nan	nan	0.616595	1.082536	23.057908	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	3	nan	nan	0.615713	1.287977	15.026996	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	4	nan	nan	0.615713	1.298097	11.753300	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	5	nan	nan	0.615713	1.298097	6.983106	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	6	nan	nan	0.615713	1.298573	5.417975	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	7	nan	nan	0.634457	1.296201	5.126311	72	no
+t6-glyph-like	gaussian-normalised	prefiltered	8	nan	nan	0.634457	1.284834	4.841559	72	no
+t6-glyph-like	gaussian-normalised	contract	1	nan	nan	0.000000	0.989765	41.364321	72	no
+t6-glyph-like	gaussian-normalised	contract	2	nan	nan	0.531270	0.989765	20.555759	72	no
+t6-glyph-like	gaussian-normalised	contract	3	nan	nan	0.781310	1.297026	12.016625	72	no
+t6-glyph-like	gaussian-normalised	contract	4	nan	nan	0.781310	1.297026	8.684798	72	no
+t6-glyph-like	gaussian-normalised	contract	5	nan	nan	0.781310	1.297026	6.844530	72	no
+t6-glyph-like	gaussian-normalised	contract	6	nan	nan	0.781310	1.297026	6.235132	72	no
+t6-glyph-like	gaussian-normalised	contract	7	nan	nan	0.781310	1.297026	4.135829	72	no
+t6-glyph-like	gaussian-normalised	contract	8	nan	nan	0.782136	1.232151	3.649368	72	no

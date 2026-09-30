@@ -1,0 +1,173 @@
+#invocation	/Volumes/RamBuild/cargo-target/debug/lights-p2 --out-dir docs/lights/p2/run-48 --max-atoms 48
+#hardware	macos 18 cores aarch64
+#build	DEBUG - every wall-clock number below is meaningless as an absolute
+#precision	f64
+#method	splat-raster
+#sort	global-sort
+#tile	16
+#threads	18
+#PIXEL_BOX_VARIANCE	0.08333333333333333
+#alpha_cutoff	0.00392156862745098
+#Z0	64
+#DZ	0.015625
+#quadrature_depth	10
+#undecided_area	0.5075197219848633
+#field	512x512 holding 40 copies
+#criterion.max_transition_px	1
+#criterion.min_contrast_frac	0.9
+#criterion.min_peak_frac	0.9
+#criterion.target_fwhm_px	1
+#criterion.max_fwhm_error_px	0.5
+#criterion.max_interior_ripple	0.00392156862745098
+#control_arm_valid	yes
+#viewport.t1-flat-fill	64x64
+#viewport.t2-straight-edge	64x64
+#viewport.t3-right-angle-corner	64x64
+#viewport.t4-curve	32x32
+#viewport.t5-thin-stroke	64x64
+#viewport.t6-glyph-like	32x32
+target	blend	profile	knob	value	transition_10_90_px	contrast_frac	peak_frac	fwhm_px
+t1-flat-fill	gaussian	prefiltered	screen_dilation	0.083333	nan	nan	nan	nan
+t1-flat-fill	gaussian	prefiltered	screen_dilation	0.100000	nan	nan	nan	nan
+t1-flat-fill	gaussian	prefiltered	screen_dilation	0.250000	nan	nan	nan	nan
+t1-flat-fill	gaussian	prefiltered	alpha_cutoff	0.003922	nan	nan	nan	nan
+t1-flat-fill	gaussian	prefiltered	alpha_cutoff	0.000977	nan	nan	nan	nan
+t1-flat-fill	gaussian	prefiltered	alpha_cutoff	0.000015	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	screen_dilation	0.083333	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	screen_dilation	0.100000	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	screen_dilation	0.250000	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	alpha_cutoff	0.003922	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	alpha_cutoff	0.000977	nan	nan	nan	nan
+t1-flat-fill	gaussian	contract	alpha_cutoff	0.000015	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	screen_dilation	0.083333	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	screen_dilation	0.100000	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	screen_dilation	0.250000	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	screen_dilation	0.083333	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	screen_dilation	0.100000	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	screen_dilation	0.250000	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	alpha_cutoff	0.003922	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	alpha_cutoff	0.000977	nan	nan	nan	nan
+t1-flat-fill	gaussian-normalised	contract	alpha_cutoff	0.000015	nan	nan	nan	nan
+t2-straight-edge	gaussian	prefiltered	screen_dilation	0.083333	0.965371	0.945936	nan	nan
+t2-straight-edge	gaussian	prefiltered	screen_dilation	0.100000	1.006446	0.944938	nan	nan
+t2-straight-edge	gaussian	prefiltered	screen_dilation	0.250000	1.359398	0.936028	nan	nan
+t2-straight-edge	gaussian	prefiltered	alpha_cutoff	0.003922	0.965371	0.945936	nan	nan
+t2-straight-edge	gaussian	prefiltered	alpha_cutoff	0.000977	0.965211	0.945275	nan	nan
+t2-straight-edge	gaussian	prefiltered	alpha_cutoff	0.000015	0.965021	0.945177	nan	nan
+t2-straight-edge	gaussian	contract	screen_dilation	0.083333	0.979197	0.915181	nan	nan
+t2-straight-edge	gaussian	contract	screen_dilation	0.100000	1.014797	0.914784	nan	nan
+t2-straight-edge	gaussian	contract	screen_dilation	0.250000	1.342835	0.910202	nan	nan
+t2-straight-edge	gaussian	contract	alpha_cutoff	0.003922	0.759558	0.917082	nan	nan
+t2-straight-edge	gaussian	contract	alpha_cutoff	0.000977	0.758716	0.916210	nan	nan
+t2-straight-edge	gaussian	contract	alpha_cutoff	0.000015	0.758816	0.915633	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	screen_dilation	0.083333	1.325440	0.865045	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	screen_dilation	0.100000	1.339258	0.866414	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	screen_dilation	0.250000	1.479093	0.869387	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	1.325440	0.865045	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	1.306631	0.861294	nan	nan
+t2-straight-edge	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	1.305930	0.861154	nan	nan
+t2-straight-edge	gaussian-normalised	contract	screen_dilation	0.083333	1.205556	0.918688	nan	nan
+t2-straight-edge	gaussian-normalised	contract	screen_dilation	0.100000	1.229063	0.920800	nan	nan
+t2-straight-edge	gaussian-normalised	contract	screen_dilation	0.250000	1.502960	0.923775	nan	nan
+t2-straight-edge	gaussian-normalised	contract	alpha_cutoff	0.003922	1.056262	0.903853	nan	nan
+t2-straight-edge	gaussian-normalised	contract	alpha_cutoff	0.000977	1.055823	0.902616	nan	nan
+t2-straight-edge	gaussian-normalised	contract	alpha_cutoff	0.000015	1.056087	0.902426	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	screen_dilation	0.083333	0.930642	0.906889	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	screen_dilation	0.100000	0.952401	0.906554	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	screen_dilation	0.250000	1.340946	0.901403	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	alpha_cutoff	0.003922	0.930642	0.906889	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	alpha_cutoff	0.000977	0.933904	0.903104	nan	nan
+t3-right-angle-corner	gaussian	prefiltered	alpha_cutoff	0.000015	0.933338	0.902778	nan	nan
+t3-right-angle-corner	gaussian	contract	screen_dilation	0.083333	1.203889	0.900700	nan	nan
+t3-right-angle-corner	gaussian	contract	screen_dilation	0.100000	1.235615	0.900181	nan	nan
+t3-right-angle-corner	gaussian	contract	screen_dilation	0.250000	1.522523	0.893855	nan	nan
+t3-right-angle-corner	gaussian	contract	alpha_cutoff	0.003922	0.937277	0.902982	nan	nan
+t3-right-angle-corner	gaussian	contract	alpha_cutoff	0.000977	0.936569	0.902693	nan	nan
+t3-right-angle-corner	gaussian	contract	alpha_cutoff	0.000015	0.936422	0.902526	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	screen_dilation	0.083333	1.267476	0.900208	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	screen_dilation	0.100000	1.300312	0.900127	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	screen_dilation	0.250000	1.619447	0.897973	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	1.267476	0.900208	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	1.256263	0.899478	nan	nan
+t3-right-angle-corner	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	1.254979	0.898926	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	screen_dilation	0.083333	1.467552	0.930865	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	screen_dilation	0.100000	1.498269	0.930659	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	screen_dilation	0.250000	1.715698	0.928199	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	alpha_cutoff	0.003922	1.116252	0.931981	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	alpha_cutoff	0.000977	1.089987	0.928868	nan	nan
+t3-right-angle-corner	gaussian-normalised	contract	alpha_cutoff	0.000015	1.088917	0.927229	nan	nan
+t4-curve	gaussian	prefiltered	screen_dilation	0.083333	1.260027	0.988579	nan	nan
+t4-curve	gaussian	prefiltered	screen_dilation	0.100000	1.278834	0.988184	nan	nan
+t4-curve	gaussian	prefiltered	screen_dilation	0.250000	1.717023	0.983416	nan	nan
+t4-curve	gaussian	prefiltered	alpha_cutoff	0.003922	1.260027	0.988579	nan	nan
+t4-curve	gaussian	prefiltered	alpha_cutoff	0.000977	1.262135	0.987012	nan	nan
+t4-curve	gaussian	prefiltered	alpha_cutoff	0.000015	1.262022	0.986444	nan	nan
+t4-curve	gaussian	contract	screen_dilation	0.083333	1.114645	0.985133	nan	nan
+t4-curve	gaussian	contract	screen_dilation	0.100000	1.192913	0.984669	nan	nan
+t4-curve	gaussian	contract	screen_dilation	0.250000	1.630699	0.980098	nan	nan
+t4-curve	gaussian	contract	alpha_cutoff	0.003922	0.974040	0.987380	nan	nan
+t4-curve	gaussian	contract	alpha_cutoff	0.000977	0.975981	0.986053	nan	nan
+t4-curve	gaussian	contract	alpha_cutoff	0.000015	0.975587	0.985547	nan	nan
+t4-curve	gaussian-normalised	prefiltered	screen_dilation	0.083333	1.554234	0.991588	nan	nan
+t4-curve	gaussian-normalised	prefiltered	screen_dilation	0.100000	1.561955	0.991309	nan	nan
+t4-curve	gaussian-normalised	prefiltered	screen_dilation	0.250000	1.596042	0.989153	nan	nan
+t4-curve	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	1.554234	0.991588	nan	nan
+t4-curve	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	1.549571	0.990112	nan	nan
+t4-curve	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	1.547373	0.989553	nan	nan
+t4-curve	gaussian-normalised	contract	screen_dilation	0.083333	1.076836	0.988968	nan	nan
+t4-curve	gaussian-normalised	contract	screen_dilation	0.100000	1.078890	0.988727	nan	nan
+t4-curve	gaussian-normalised	contract	screen_dilation	0.250000	1.399188	0.986036	nan	nan
+t4-curve	gaussian-normalised	contract	alpha_cutoff	0.003922	1.037861	0.991765	nan	nan
+t4-curve	gaussian-normalised	contract	alpha_cutoff	0.000977	1.037785	0.990711	nan	nan
+t4-curve	gaussian-normalised	contract	alpha_cutoff	0.000015	1.037453	0.990326	nan	nan
+t5-thin-stroke	gaussian	prefiltered	screen_dilation	0.083333	nan	nan	0.855848	1.035567
+t5-thin-stroke	gaussian	prefiltered	screen_dilation	0.100000	nan	nan	0.832067	1.065277
+t5-thin-stroke	gaussian	prefiltered	screen_dilation	0.250000	nan	nan	0.694702	1.336285
+t5-thin-stroke	gaussian	prefiltered	alpha_cutoff	0.003922	nan	nan	0.855848	1.035567
+t5-thin-stroke	gaussian	prefiltered	alpha_cutoff	0.000977	nan	nan	0.852060	1.037500
+t5-thin-stroke	gaussian	prefiltered	alpha_cutoff	0.000015	nan	nan	0.851879	1.037230
+t5-thin-stroke	gaussian	contract	screen_dilation	0.083333	nan	nan	0.814642	1.006598
+t5-thin-stroke	gaussian	contract	screen_dilation	0.100000	nan	nan	0.796352	1.017734
+t5-thin-stroke	gaussian	contract	screen_dilation	0.250000	nan	nan	0.672947	1.264739
+t5-thin-stroke	gaussian	contract	alpha_cutoff	0.003922	nan	nan	0.930980	0.729292
+t5-thin-stroke	gaussian	contract	alpha_cutoff	0.000977	nan	nan	0.931082	0.729227
+t5-thin-stroke	gaussian	contract	alpha_cutoff	0.000015	nan	nan	0.931054	0.729209
+t5-thin-stroke	gaussian-normalised	prefiltered	screen_dilation	0.083333	nan	nan	0.743560	0.886866
+t5-thin-stroke	gaussian-normalised	prefiltered	screen_dilation	0.100000	nan	nan	0.717058	0.918411
+t5-thin-stroke	gaussian-normalised	prefiltered	screen_dilation	0.250000	nan	nan	0.566937	1.070604
+t5-thin-stroke	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	nan	nan	0.743560	0.886866
+t5-thin-stroke	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	nan	nan	0.743560	0.886866
+t5-thin-stroke	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	nan	nan	0.743556	0.886862
+t5-thin-stroke	gaussian-normalised	contract	screen_dilation	0.083333	nan	nan	0.603192	1.092361
+t5-thin-stroke	gaussian-normalised	contract	screen_dilation	0.100000	nan	nan	0.586306	1.116832
+t5-thin-stroke	gaussian-normalised	contract	screen_dilation	0.250000	nan	nan	0.485003	1.257176
+t5-thin-stroke	gaussian-normalised	contract	alpha_cutoff	0.003922	nan	nan	0.716955	0.852686
+t5-thin-stroke	gaussian-normalised	contract	alpha_cutoff	0.000977	nan	nan	0.716955	0.852686
+t5-thin-stroke	gaussian-normalised	contract	alpha_cutoff	0.000015	nan	nan	0.716954	0.852685
+t6-glyph-like	gaussian	prefiltered	screen_dilation	0.083333	nan	nan	0.852624	1.123721
+t6-glyph-like	gaussian	prefiltered	screen_dilation	0.100000	nan	nan	0.831143	1.165071
+t6-glyph-like	gaussian	prefiltered	screen_dilation	0.250000	nan	nan	0.678061	1.647591
+t6-glyph-like	gaussian	prefiltered	alpha_cutoff	0.003922	nan	nan	0.852624	1.123721
+t6-glyph-like	gaussian	prefiltered	alpha_cutoff	0.000977	nan	nan	0.850783	1.123579
+t6-glyph-like	gaussian	prefiltered	alpha_cutoff	0.000015	nan	nan	0.850485	1.123630
+t6-glyph-like	gaussian	contract	screen_dilation	0.083333	nan	nan	0.683121	1.212967
+t6-glyph-like	gaussian	contract	screen_dilation	0.100000	nan	nan	0.663206	1.245040
+t6-glyph-like	gaussian	contract	screen_dilation	0.250000	nan	nan	0.548986	1.549159
+t6-glyph-like	gaussian	contract	alpha_cutoff	0.003922	nan	nan	0.832051	0.763131
+t6-glyph-like	gaussian	contract	alpha_cutoff	0.000977	nan	nan	0.831319	0.761399
+t6-glyph-like	gaussian	contract	alpha_cutoff	0.000015	nan	nan	0.831369	0.761415
+t6-glyph-like	gaussian-normalised	prefiltered	screen_dilation	0.083333	nan	nan	0.780760	1.138803
+t6-glyph-like	gaussian-normalised	prefiltered	screen_dilation	0.100000	nan	nan	0.756452	1.185153
+t6-glyph-like	gaussian-normalised	prefiltered	screen_dilation	0.250000	nan	nan	0.606295	1.663351
+t6-glyph-like	gaussian-normalised	prefiltered	alpha_cutoff	0.003922	nan	nan	0.780760	1.138803
+t6-glyph-like	gaussian-normalised	prefiltered	alpha_cutoff	0.000977	nan	nan	0.780760	1.138803
+t6-glyph-like	gaussian-normalised	prefiltered	alpha_cutoff	0.000015	nan	nan	0.780959	1.138512
+t6-glyph-like	gaussian-normalised	contract	screen_dilation	0.083333	nan	nan	0.645645	1.393874
+t6-glyph-like	gaussian-normalised	contract	screen_dilation	0.100000	nan	nan	0.627226	1.649740
+t6-glyph-like	gaussian-normalised	contract	screen_dilation	0.250000	nan	nan	0.548271	1.507801
+t6-glyph-like	gaussian-normalised	contract	alpha_cutoff	0.003922	nan	nan	0.783873	1.204882
+t6-glyph-like	gaussian-normalised	contract	alpha_cutoff	0.000977	nan	nan	0.783379	1.204554
+t6-glyph-like	gaussian-normalised	contract	alpha_cutoff	0.000015	nan	nan	0.783505	1.204539

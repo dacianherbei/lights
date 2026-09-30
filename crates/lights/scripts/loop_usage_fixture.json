@@ -1,0 +1,43 @@
+{
+ "session_id": "FIXTURE-not-a-real-session",
+ "total_cost_usd": 0.1586572,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 38443,
+  "cache_read_input_tokens": 23906,
+  "output_tokens": 10,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 38443,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 10,
+    "cache_read_input_tokens": 23906,
+    "cache_creation_input_tokens": 38443,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 38443
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "is_error": false,
+ "num_turns": 1,
+ "subtype": "success",
+ "result": "REGISTER DRY",
+ "type": "result",
+ "duration_ms": 1565
+}

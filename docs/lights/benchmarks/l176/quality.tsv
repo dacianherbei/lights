@@ -1,0 +1,36 @@
+#invocation	/Volumes/RamBuild/cargo-target/release/examples/renderer_arms --ops docs/lights/benchmarks/l175/ops --out docs/lights/benchmarks/l176
+#build	release
+#criterion	Criterion::registered: max_transition 1, min_contrast_frac 0.9, min_peak_frac 0.9, target_fwhm 1, max_fwhm_error 0.5, max_interior_ripple 0.003922
+#arms	lights-drawlist = DrawList::render_through over the paper at f32; tiny-skia = the same DrawList converted by the arm's own converter and drawn serially into a pixmap; exact-area = fit::exact_coverage (max depth 10, cells of diagonal 1.4142135623730951), the box-filtered area, at 1x only. Each target is drawn as DrawOps: a half plane as the polygon it cuts from the viewport grown by 64 px, cut again by any half-plane hole; an arc as a 97-point polyline; a disc hole as a paper disc drawn last
+#measure	measure_target_mapped on each arm's own fresh render with Mapping::at_scale(ppp); nothing is read from a renderer's bookkeeping
+arm	target	ppp	width_px	height_px	judged	meets	transition_10_90	contrast_frac	peak_frac	fwhm	fwhm_error	apex_displacement	interior_ripple
+lights-drawlist	t1-flat-fill	1	64	64	1	yes	nan	nan	nan	nan	nan	nan	0.0000
+tiny-skia	t1-flat-fill	1	64	64	1	yes	nan	nan	nan	nan	nan	nan	0.0000
+lights-drawlist	t1-flat-fill	2	128	128	1	yes	nan	nan	nan	nan	nan	nan	0.0000
+tiny-skia	t1-flat-fill	2	128	128	1	yes	nan	nan	nan	nan	nan	nan	0.0000
+exact-area	t1-flat-fill	1	64	64	1	yes	nan	nan	nan	nan	nan	nan	0.0000
+lights-drawlist	t2-straight-edge	1	64	64	1	yes	0.8000	1.0000	nan	nan	nan	nan	nan
+tiny-skia	t2-straight-edge	1	64	64	1	yes	0.7524	1.0000	nan	nan	nan	nan	nan
+lights-drawlist	t2-straight-edge	2	128	128	1	yes	0.4000	1.0000	nan	nan	nan	nan	nan
+tiny-skia	t2-straight-edge	2	128	128	1	yes	0.3867	1.0000	nan	nan	nan	nan	nan
+exact-area	t2-straight-edge	1	64	64	1	yes	0.7806	1.0000	nan	nan	nan	nan	nan
+lights-drawlist	t3-right-angle-corner	1	64	64	2	yes	0.8000	1.0000	nan	nan	nan	0.0000	nan
+tiny-skia	t3-right-angle-corner	1	64	64	2	yes	0.7915	1.0000	nan	nan	nan	0.0000	nan
+lights-drawlist	t3-right-angle-corner	2	128	128	2	yes	0.4000	1.0000	nan	nan	nan	0.0000	nan
+tiny-skia	t3-right-angle-corner	2	128	128	2	yes	0.3976	1.0000	nan	nan	nan	0.0000	nan
+exact-area	t3-right-angle-corner	1	64	64	2	yes	0.7834	1.0000	nan	nan	nan	0.0000	nan
+lights-drawlist	t4-curve	1	32	32	1	yes	0.8605	1.0000	nan	nan	nan	nan	nan
+tiny-skia	t4-curve	1	32	32	1	yes	0.8084	1.0000	nan	nan	nan	nan	nan
+lights-drawlist	t4-curve	2	64	64	1	yes	0.4000	1.0000	nan	nan	nan	nan	nan
+tiny-skia	t4-curve	2	64	64	1	yes	0.3894	1.0000	nan	nan	nan	nan	nan
+exact-area	t4-curve	1	32	32	1	yes	0.8365	1.0000	nan	nan	nan	nan	nan
+lights-drawlist	t5-thin-stroke	1	64	64	1	yes	nan	nan	0.9510	0.9510	0.0490	nan	nan
+tiny-skia	t5-thin-stroke	1	64	64	1	yes	nan	nan	0.9451	0.8140	0.1860	nan	nan
+lights-drawlist	t5-thin-stroke	2	128	128	1	yes	nan	nan	1.0000	0.9575	0.0425	nan	nan
+tiny-skia	t5-thin-stroke	2	128	128	1	yes	nan	nan	1.0000	0.9543	0.0457	nan	nan
+exact-area	t5-thin-stroke	1	64	64	1	yes	nan	nan	0.9171	0.9737	0.0263	nan	nan
+lights-drawlist	t6-glyph-like	1	32	32	2	yes	nan	nan	0.9369	0.9362	0.0638	0.0000	nan
+tiny-skia	t6-glyph-like	1	32	32	2	no	nan	nan	0.6157	0.7570	0.2430	0.0000	nan
+lights-drawlist	t6-glyph-like	2	64	64	2	yes	nan	nan	1.0000	0.9653	0.0347	0.0000	nan
+tiny-skia	t6-glyph-like	2	64	64	2	yes	nan	nan	1.0000	0.9620	0.0380	0.0000	nan
+exact-area	t6-glyph-like	1	32	32	2	yes	nan	nan	0.9226	0.8690	0.1310	0.0000	nan

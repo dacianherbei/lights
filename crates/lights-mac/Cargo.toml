@@ -1,0 +1,35 @@
+[package]
+name = "lights-mac"
+version = "0.1.0"
+edition = "2024"
+description = "The macOS host for lights: an AppKit window, its pointer and key events, and a CAMetalLayer that presents a frame lights rendered"
+license = "MIT OR Apache-2.0"
+authors = ["Dacian Herbei"]
+repository = "https://github.com/dacianherbei/lights"
+keywords = ["macos", "appkit", "metal", "renderer", "window"]
+categories = ["graphics", "os::macos-apis"]
+
+[lib]
+name = "lights_mac"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lights-view"
+path = "src/bin/lights_view.rs"
+
+[[bin]]
+name = "lights-mac-probe"
+path = "src/bin/lights_mac_probe.rs"
+
+[[bin]]
+name = "lights-gallery"
+path = "src/bin/lights_gallery.rs"
+
+[dependencies]
+lights = { path = "../lights" }
+thiserror = "2.0"
+objc2 = "0.5.2"
+objc2-foundation = { version = "0.2.2", features = ["NSArray", "NSDate", "NSGeometry", "NSNotification", "NSObject", "NSRunLoop", "NSString", "NSThread"] }
+objc2-app-kit = { version = "0.2.2", features = ["NSApplication", "NSControl", "NSEvent", "NSFont", "NSGraphics", "NSGraphicsContext", "NSResponder", "NSRunningApplication", "NSScreen", "NSSegmentedControl", "NSTextField", "NSView", "NSWindow", "objc2-quartz-core"] }
+objc2-metal = { version = "0.2.2", features = ["MTLBlitCommandEncoder", "MTLBuffer", "MTLCommandBuffer", "MTLCommandEncoder", "MTLCommandQueue", "MTLDevice", "MTLDrawable", "MTLPixelFormat", "MTLResource", "MTLTexture", "MTLTypes"] }
+objc2-quartz-core = { version = "0.2.2", features = ["CALayer", "CAMetalLayer", "objc2-metal"] }

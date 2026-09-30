@@ -1,0 +1,126 @@
+#invocation	/Volumes/RamBuild/cargo-target/release/lights-p5 --out-dir <repo>/docs/lights/p5 --classes 't2,t3,n1,t6' --direction both --profile both
+#direction	magnify
+#primary_criterion_convention	scene-units
+#primary_convention_legend	the criterion is expressed in SCENE units, so the same question is asked at every scale and a change along the ladder is attributable to the description
+#secondary_convention_legend	the criterion is expressed in DEVICE pixels and therefore gets STRICTER with zoom: at 4x one pixel is a quarter of the scene distance it was at 1x, so a fixed pixel threshold is four times tighter
+#fitter_search_convention	scene-invariant
+#kernel	gaussian
+#max_atoms	8
+#wavelet_terms	64
+#criterion.max_transition	1
+#criterion.target_fwhm	1
+#criterion.max_fwhm_error	0.5
+#byte_convention	symmetric-f32-provisional-see-C2
+class	direction	profile	arm	independence	scale	base_scale	viewport	at_base	absent	terms	description_bytes	relative_l2	max_abs_error	decay_from_own_base	decay_if_error_is_boundary_localised	quality_measured	transition_10_90_scene	transition_10_90_device_px	meets_transition_scene	meets_transition_device_px	fwhm_scene	fwhm_device_px	meets_fwhm_scene	meets_fwhm_device_px	exhausted	fit_renders	render_ns	resample
+t2-straight-edge	magnify	contract	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.058775	0.232916	1.000000	1.000000	yes	0.947658	0.947658	yes	yes	nan	nan	-	-	no	9520	689375	none
+t2-straight-edge	magnify	contract	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.068656	0.402806	1.168115	0.707107	yes	0.910824	1.821649	yes	no	nan	nan	-	-	no	9520	290417	none
+t2-straight-edge	magnify	contract	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.075817	0.485605	1.289960	0.500000	yes	0.910945	3.643780	yes	no	nan	nan	-	-	no	9520	712042	none
+t2-straight-edge	magnify	contract	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.079853	0.556232	1.358637	0.353553	yes	0.913252	7.306013	yes	no	nan	nan	-	-	no	9520	1685083	none
+t2-straight-edge	magnify	contract	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.058775	0.232916	1.000000	1.000000	yes	0.947658	0.947658	yes	yes	nan	nan	-	-	no	9520	446101834	none
+t2-straight-edge	magnify	contract	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.073293	0.374418	1.247021	0.707107	yes	0.780834	1.561669	yes	no	nan	nan	-	-	no	9520	1518215292	none
+t2-straight-edge	magnify	contract	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.072155	0.429504	1.227661	0.500000	yes	0.971568	3.886274	yes	no	nan	nan	-	-	no	9520	5985486125	none
+t2-straight-edge	magnify	contract	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.096025	0.419885	1.633789	0.353553	yes	0.390889	3.127113	yes	no	nan	nan	-	-	no	9520	25575420084	none
+t2-straight-edge	magnify	profile-free	analytic-sdf	by-construction	1x	1x	64x64	yes	no	1	51.000000	0.004652	0.033467	1.000000	1.000000	yes	0.800000	0.800000	yes	yes	nan	nan	-	-	-	0	8750	none
+t2-straight-edge	magnify	profile-free	analytic-sdf	by-construction	2x	1x	128x128	no	no	1	51.000000	0.003361	0.037201	0.722591	0.707107	yes	0.400000	0.800000	yes	yes	nan	nan	-	-	-	0	45291	none
+t2-straight-edge	magnify	profile-free	analytic-sdf	by-construction	4x	1x	256x256	no	no	1	51.000000	0.002347	0.037201	0.504623	0.500000	yes	0.206917	0.827668	yes	yes	nan	nan	-	-	-	0	251458	none
+t2-straight-edge	magnify	profile-free	analytic-sdf	by-construction	8x	1x	512x512	no	no	1	51.000000	0.001670	0.038277	0.359022	0.353553	yes	0.119561	0.956485	yes	yes	nan	nan	-	-	-	0	484500	none
+t2-straight-edge	magnify	profile-free	wavelet-haar	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.193281	1.040708	1.000000	1.000000	yes	3.446961	3.446961	no	no	nan	nan	-	-	-	0	10625	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-haar	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.189723	1.040708	0.981596	0.707107	yes	3.757550	7.515100	no	no	nan	nan	-	-	-	0	37583	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-haar	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.194050	1.040708	1.003981	0.500000	yes	3.733649	14.934594	no	no	nan	nan	-	-	-	0	155917	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-haar	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.196035	1.040708	1.014252	0.353553	yes	3.699758	29.598060	no	no	nan	nan	-	-	-	0	626583	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-cdf97	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.179800	0.750100	1.000000	1.000000	yes	3.921779	3.921779	no	no	nan	nan	-	-	-	0	10375	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-cdf97	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.186769	0.765409	1.038756	0.707107	yes	3.564843	7.129686	no	no	nan	nan	-	-	-	0	58208	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-cdf97	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.190433	0.774820	1.059136	0.500000	yes	3.452907	13.811627	no	no	nan	nan	-	-	-	0	180750	bilinear
+t2-straight-edge	magnify	profile-free	wavelet-cdf97	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.192276	0.779525	1.069387	0.353553	yes	3.524497	28.195974	no	no	nan	nan	-	-	-	0	613917	bilinear
+t2-straight-edge	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.059787	0.264747	1.000000	1.000000	yes	1.031975	1.031975	no	no	nan	nan	-	-	no	9520	275542	none
+t2-straight-edge	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.066745	0.380953	1.116380	0.707107	yes	0.927474	1.854949	yes	no	nan	nan	-	-	no	9520	219000	none
+t2-straight-edge	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.073677	0.544773	1.232324	0.500000	yes	0.913071	3.652283	yes	no	nan	nan	-	-	no	9520	578541	none
+t2-straight-edge	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.077794	0.642168	1.301179	0.353553	yes	0.910754	7.286036	yes	no	nan	nan	-	-	no	9520	1457666	none
+t2-straight-edge	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.059787	0.264747	1.000000	1.000000	yes	1.031975	1.031975	no	no	nan	nan	-	-	no	9520	419806458	none
+t2-straight-edge	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.068588	0.338548	1.147213	0.707107	yes	0.584812	1.169623	yes	no	nan	nan	-	-	no	9520	1560601916	none
+t2-straight-edge	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.069036	0.451671	1.154700	0.500000	yes	1.062049	4.248197	no	no	nan	nan	-	-	no	9520	5828466042	none
+t2-straight-edge	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.067605	0.447030	1.130771	0.353553	yes	0.628935	5.031477	yes	no	nan	nan	-	-	no	9520	22877897834	none
+t3-right-angle-corner	magnify	contract	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.177963	0.420345	1.000000	1.000000	yes	3.148740	3.148740	no	no	nan	nan	-	-	no	9520	235875	none
+t3-right-angle-corner	magnify	contract	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.189680	0.543624	1.065840	0.707107	yes	2.913029	5.826058	no	no	nan	nan	-	-	no	9520	197083	none
+t3-right-angle-corner	magnify	contract	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.196190	0.637478	1.102422	0.500000	yes	2.784993	11.139973	no	no	nan	nan	-	-	no	9520	407458	none
+t3-right-angle-corner	magnify	contract	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.199590	0.683918	1.121529	0.353553	yes	2.733083	21.864664	no	no	nan	nan	-	-	no	9520	1079083	none
+t3-right-angle-corner	magnify	contract	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.177963	0.420345	1.000000	1.000000	yes	3.148740	3.148740	no	no	nan	nan	-	-	no	9520	353222958	none
+t3-right-angle-corner	magnify	contract	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.231270	0.523478	1.299544	0.707107	yes	2.871911	5.743823	no	no	nan	nan	-	-	no	9520	1211999167	none
+t3-right-angle-corner	magnify	contract	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.263144	0.665559	1.478645	0.500000	yes	6.710688	26.842751	no	no	nan	nan	-	-	no	9520	4621032333	none
+t3-right-angle-corner	magnify	contract	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.279127	0.661879	1.568455	0.353553	yes	2.772417	22.179336	no	no	nan	nan	-	-	no	9520	18037903792	none
+t3-right-angle-corner	magnify	profile-free	analytic-sdf	by-construction	1x	1x	64x64	yes	no	2	70.000000	0.006599	0.033467	1.000000	1.000000	yes	0.800000	0.800000	yes	yes	nan	nan	-	-	-	0	10667	none
+t3-right-angle-corner	magnify	profile-free	analytic-sdf	by-construction	2x	1x	128x128	no	no	2	70.000000	0.004761	0.037201	0.721500	0.707107	yes	0.400000	0.800000	yes	yes	nan	nan	-	-	-	0	38292	none
+t3-right-angle-corner	magnify	profile-free	analytic-sdf	by-construction	4x	1x	256x256	no	no	2	70.000000	0.003322	0.037201	0.503483	0.500000	yes	0.206089	0.824357	yes	yes	nan	nan	-	-	-	0	150500	none
+t3-right-angle-corner	magnify	profile-free	analytic-sdf	by-construction	8x	1x	512x512	no	no	2	70.000000	0.002363	0.038277	0.358076	0.353553	yes	0.119573	0.956583	yes	yes	nan	nan	-	-	-	0	625958	none
+t3-right-angle-corner	magnify	profile-free	wavelet-haar	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.243416	1.000000	1.000000	1.000000	yes	3.475644	3.475644	no	no	nan	nan	-	-	-	0	11083	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-haar	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.236534	1.000000	0.971728	0.707107	yes	3.904721	7.809442	no	no	nan	nan	-	-	-	0	39959	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-haar	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.243375	1.000000	0.999831	0.500000	yes	3.629456	14.517825	no	no	nan	nan	-	-	-	0	159708	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-haar	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.246482	1.000000	1.012595	0.353553	yes	3.370371	26.962965	no	no	nan	nan	-	-	-	0	627458	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-cdf97	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.212912	0.640964	1.000000	1.000000	yes	3.596398	3.596398	no	no	nan	nan	-	-	-	0	12917	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-cdf97	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.224035	0.732885	1.052245	0.707107	yes	3.809120	7.618241	no	no	nan	nan	-	-	-	0	38291	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-cdf97	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.229905	0.800427	1.079814	0.500000	yes	3.621948	14.487794	no	no	nan	nan	-	-	-	0	148875	bilinear
+t3-right-angle-corner	magnify	profile-free	wavelet-cdf97	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.232871	0.857438	1.093743	0.353553	yes	3.485039	27.880310	no	no	nan	nan	-	-	-	0	618334	bilinear
+t3-right-angle-corner	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.178447	0.429238	1.000000	1.000000	yes	3.142350	3.142350	no	no	nan	nan	-	-	no	9520	252958	none
+t3-right-angle-corner	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.189713	0.552755	1.063134	0.707107	yes	2.917153	5.834306	no	no	nan	nan	-	-	no	9520	262125	none
+t3-right-angle-corner	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.196130	0.641239	1.099094	0.500000	yes	2.814665	11.258660	no	no	nan	nan	-	-	no	9520	537791	none
+t3-right-angle-corner	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.199504	0.685391	1.118005	0.353553	yes	2.754608	22.036867	no	no	nan	nan	-	-	no	9520	1475041	none
+t3-right-angle-corner	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.178447	0.429238	1.000000	1.000000	yes	3.142350	3.142350	no	no	nan	nan	-	-	no	9520	354880333	none
+t3-right-angle-corner	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.230643	0.528308	1.292503	0.707107	yes	2.868107	5.736214	no	no	nan	nan	-	-	no	9520	1208347417	none
+t3-right-angle-corner	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.292385	0.663615	1.638500	0.500000	yes	2.639340	10.557359	no	no	nan	nan	-	-	no	9520	4390771542	none
+t3-right-angle-corner	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.279542	0.650806	1.566529	0.353553	yes	2.751555	22.012439	no	no	nan	nan	-	-	no	9520	17994453417	none
+n1-colour-field	magnify	contract	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.037862	0.119878	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	no	9520	326750	none
+n1-colour-field	magnify	contract	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.037918	0.125935	1.001481	0.707107	no	nan	nan	-	-	nan	nan	-	-	no	9520	227833	none
+n1-colour-field	magnify	contract	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.037931	0.128971	1.001845	0.500000	no	nan	nan	-	-	nan	nan	-	-	no	9520	493958	none
+n1-colour-field	magnify	contract	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.037933	0.130490	1.001896	0.353553	no	nan	nan	-	-	nan	nan	-	-	no	9520	1096500	none
+n1-colour-field	magnify	contract	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.037862	0.119878	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	no	9520	506547666	none
+n1-colour-field	magnify	contract	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.037111	0.122360	0.980184	0.707107	no	nan	nan	-	-	nan	nan	-	-	no	9520	1914587875	none
+n1-colour-field	magnify	contract	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.037431	0.128516	0.988634	0.500000	no	nan	nan	-	-	nan	nan	-	-	no	9520	7460047083	none
+n1-colour-field	magnify	contract	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.036908	0.126831	0.974825	0.353553	no	nan	nan	-	-	nan	nan	-	-	no	9520	29496337375	none
+n1-colour-field	magnify	profile-free	analytic-sdf	by-construction	1x	1x	64x64	yes	yes	0	0.000000	nan	nan	nan	1.000000	no	nan	nan	-	-	nan	nan	-	-	-	0	83	none
+n1-colour-field	magnify	profile-free	analytic-sdf	by-construction	2x	1x	128x128	no	yes	0	0.000000	nan	nan	nan	0.707107	no	nan	nan	-	-	nan	nan	-	-	-	0	0	none
+n1-colour-field	magnify	profile-free	analytic-sdf	by-construction	4x	1x	256x256	no	yes	0	0.000000	nan	nan	nan	0.500000	no	nan	nan	-	-	nan	nan	-	-	-	0	0	none
+n1-colour-field	magnify	profile-free	analytic-sdf	by-construction	8x	1x	512x512	no	yes	0	0.000000	nan	nan	nan	0.353553	no	nan	nan	-	-	nan	nan	-	-	-	0	42	none
+n1-colour-field	magnify	profile-free	wavelet-haar	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.097466	0.242987	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	-	0	17667	bilinear
+n1-colour-field	magnify	profile-free	wavelet-haar	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.091377	0.228680	0.937530	0.707107	no	nan	nan	-	-	nan	nan	-	-	-	0	39916	bilinear
+n1-colour-field	magnify	profile-free	wavelet-haar	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.091920	0.236058	0.943093	0.500000	no	nan	nan	-	-	nan	nan	-	-	-	0	228458	bilinear
+n1-colour-field	magnify	profile-free	wavelet-haar	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.092051	0.239674	0.944444	0.353553	no	nan	nan	-	-	nan	nan	-	-	-	0	621292	bilinear
+n1-colour-field	magnify	profile-free	wavelet-cdf97	lattice-bound	1x	1x	64x64	yes	no	64	368.000000	0.030272	0.112996	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	-	0	11750	bilinear
+n1-colour-field	magnify	profile-free	wavelet-cdf97	lattice-bound	2x	1x	128x128	no	no	64	368.000000	0.030239	0.116074	0.998899	0.707107	no	nan	nan	-	-	nan	nan	-	-	-	0	39667	bilinear
+n1-colour-field	magnify	profile-free	wavelet-cdf97	lattice-bound	4x	1x	256x256	no	no	64	368.000000	0.030259	0.117826	0.999546	0.500000	no	nan	nan	-	-	nan	nan	-	-	-	0	159458	bilinear
+n1-colour-field	magnify	profile-free	wavelet-cdf97	lattice-bound	8x	1x	512x512	no	no	64	368.000000	0.030262	0.118711	0.999671	0.353553	no	nan	nan	-	-	nan	nan	-	-	-	0	629708	bilinear
+n1-colour-field	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	1x	1x	64x64	yes	no	8	288.000000	0.037325	0.108265	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	no	9520	217792	none
+n1-colour-field	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	2x	1x	128x128	no	no	8	288.000000	0.037390	0.114253	1.001738	0.707107	no	nan	nan	-	-	nan	nan	-	-	no	9520	311084	none
+n1-colour-field	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	4x	1x	256x256	no	no	8	288.000000	0.037406	0.117265	1.002171	0.500000	no	nan	nan	-	-	nan	nan	-	-	no	9520	455792	none
+n1-colour-field	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	8x	1x	512x512	no	no	8	288.000000	0.037408	0.118775	1.002234	0.353553	no	nan	nan	-	-	nan	nan	-	-	no	9520	1622250	none
+n1-colour-field	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	1x	1x	64x64	yes	no	8	288.000000	0.037325	0.108265	1.000000	1.000000	no	nan	nan	-	-	nan	nan	-	-	no	9520	510216750	none
+n1-colour-field	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	2x	1x	128x128	no	no	8	288.000000	0.037218	0.120769	0.997129	0.707107	no	nan	nan	-	-	nan	nan	-	-	no	9520	1923562208	none
+n1-colour-field	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	4x	1x	256x256	no	no	8	288.000000	0.037379	0.127774	1.001446	0.500000	no	nan	nan	-	-	nan	nan	-	-	no	9520	7395826584	none
+n1-colour-field	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	8x	1x	512x512	no	no	8	288.000000	0.037005	0.127219	0.991433	0.353553	no	nan	nan	-	-	nan	nan	-	-	no	9520	29313226166	none
+t6-glyph-like	magnify	contract	frozen-atoms-gaussian	continuous-frozen	1x	1x	32x32	yes	no	8	288.000000	0.223390	0.263033	1.000000	1.000000	yes	nan	nan	-	-	1.167570	1.167570	yes	yes	no	9520	47292	none
+t6-glyph-like	magnify	contract	frozen-atoms-gaussian	continuous-frozen	2x	1x	64x64	no	no	8	288.000000	0.361138	0.541363	1.616627	0.707107	yes	nan	nan	-	-	0.656560	1.313120	yes	yes	no	9520	209667	none
+t6-glyph-like	magnify	contract	frozen-atoms-gaussian	continuous-frozen	4x	1x	128x128	no	no	8	288.000000	0.422548	0.676511	1.891528	0.500000	yes	nan	nan	-	-	0.742007	2.968027	yes	no	no	9520	195083	none
+t6-glyph-like	magnify	contract	frozen-atoms-gaussian	continuous-frozen	8x	1x	256x256	no	no	8	288.000000	0.458113	0.788878	2.050734	0.353553	yes	nan	nan	-	-	1.146946	9.175571	yes	no	no	9520	362000	none
+t6-glyph-like	magnify	contract	refitted-atoms-gaussian	continuous-refit	1x	1x	32x32	yes	no	8	288.000000	0.223390	0.263033	1.000000	1.000000	yes	nan	nan	-	-	1.167570	1.167570	yes	yes	no	9520	56226250	none
+t6-glyph-like	magnify	contract	refitted-atoms-gaussian	continuous-refit	2x	1x	64x64	no	no	8	288.000000	0.393710	0.549275	1.762435	0.707107	yes	nan	nan	-	-	0.711247	1.422495	yes	yes	no	9520	226425291	none
+t6-glyph-like	magnify	contract	refitted-atoms-gaussian	continuous-refit	4x	1x	128x128	no	no	8	288.000000	0.417617	0.806227	1.869454	0.500000	yes	nan	nan	-	-	0.844776	3.379105	yes	no	no	9520	657305292	none
+t6-glyph-like	magnify	contract	refitted-atoms-gaussian	continuous-refit	8x	1x	256x256	no	no	8	288.000000	0.447104	0.822206	2.001455	0.353553	yes	nan	nan	-	-	1.160254	9.282029	yes	no	no	9520	2291916542	none
+t6-glyph-like	magnify	profile-free	analytic-sdf	by-construction	1x	1x	32x32	yes	no	6	150.000000	0.086736	0.177534	1.000000	1.000000	yes	nan	nan	-	-	0.936762	0.936762	yes	yes	-	0	26542	none
+t6-glyph-like	magnify	profile-free	analytic-sdf	by-construction	2x	1x	64x64	no	no	6	150.000000	0.054862	0.269335	0.632520	0.707107	yes	nan	nan	-	-	0.946982	1.893964	yes	no	-	0	67875	none
+t6-glyph-like	magnify	profile-free	analytic-sdf	by-construction	4x	1x	128x128	no	no	6	150.000000	0.025547	0.291653	0.294538	0.500000	yes	nan	nan	-	-	0.933170	3.732679	yes	no	-	0	263541	none
+t6-glyph-like	magnify	profile-free	analytic-sdf	by-construction	8x	1x	256x256	no	no	6	150.000000	0.013520	0.175604	0.155876	0.353553	yes	nan	nan	-	-	0.950060	7.600478	yes	no	-	0	1054708	none
+t6-glyph-like	magnify	profile-free	wavelet-haar	lattice-bound	1x	1x	32x32	yes	no	64	352.000000	0.542252	0.736784	1.000000	1.000000	yes	nan	nan	-	-	0.318638	0.318638	no	no	-	0	6333	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-haar	lattice-bound	2x	1x	64x64	no	no	64	352.000000	0.629522	0.898541	1.160939	0.707107	yes	nan	nan	-	-	0.547176	1.094351	yes	yes	-	0	10333	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-haar	lattice-bound	4x	1x	128x128	no	no	64	352.000000	0.659396	0.963549	1.216031	0.500000	yes	nan	nan	-	-	0.901738	3.606953	yes	no	-	0	39625	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-haar	lattice-bound	8x	1x	256x256	no	no	64	352.000000	0.676461	0.976777	1.247501	0.353553	yes	nan	nan	-	-	1.205902	9.647214	yes	no	-	0	155625	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-cdf97	lattice-bound	1x	1x	32x32	yes	no	64	352.000000	0.557434	0.691270	1.000000	1.000000	yes	nan	nan	-	-	0.249676	0.249676	no	no	-	0	2833	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-cdf97	lattice-bound	2x	1x	64x64	no	no	64	352.000000	0.654079	0.903613	1.173374	0.707107	yes	nan	nan	-	-	0.654713	1.309427	yes	yes	-	0	10208	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-cdf97	lattice-bound	4x	1x	128x128	no	no	64	352.000000	0.682921	0.923340	1.225116	0.500000	yes	nan	nan	-	-	1.283796	5.135185	yes	no	-	0	39834	bilinear
+t6-glyph-like	magnify	profile-free	wavelet-cdf97	lattice-bound	8x	1x	256x256	no	no	64	352.000000	0.698912	0.927894	1.253801	0.353553	yes	nan	nan	-	-	1.514814	12.118512	no	no	-	0	158416	bilinear
+t6-glyph-like	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	1x	1x	32x32	yes	no	8	288.000000	0.286736	0.363364	1.000000	1.000000	yes	nan	nan	-	-	1.335292	1.335292	yes	yes	no	9520	79625	none
+t6-glyph-like	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	2x	1x	64x64	no	no	8	288.000000	0.360156	0.641651	1.256057	0.707107	yes	nan	nan	-	-	1.039792	2.079583	yes	no	no	9520	149333	none
+t6-glyph-like	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	4x	1x	128x128	no	no	8	288.000000	0.412722	0.748406	1.439383	0.500000	yes	nan	nan	-	-	0.964241	3.856965	yes	no	no	9520	235208	none
+t6-glyph-like	magnify	prefiltered	frozen-atoms-gaussian	continuous-frozen	8x	1x	256x256	no	no	8	288.000000	0.446484	0.823425	1.557128	0.353553	yes	nan	nan	-	-	1.172064	9.376516	yes	no	no	9520	447459	none
+t6-glyph-like	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	1x	1x	32x32	yes	no	8	288.000000	0.286736	0.363364	1.000000	1.000000	yes	nan	nan	-	-	1.335292	1.335292	yes	yes	no	9520	55629292	none
+t6-glyph-like	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	2x	1x	64x64	no	no	8	288.000000	0.387877	0.561678	1.352735	0.707107	yes	nan	nan	-	-	1.292479	2.584959	yes	no	no	9520	227072375	none
+t6-glyph-like	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	4x	1x	128x128	no	no	8	288.000000	0.419718	0.802791	1.463781	0.500000	yes	nan	nan	-	-	0.845531	3.382122	yes	no	no	9520	656252292	none
+t6-glyph-like	magnify	prefiltered	refitted-atoms-gaussian	continuous-refit	8x	1x	256x256	no	no	8	288.000000	0.448235	0.820770	1.563235	0.353553	yes	nan	nan	-	-	1.163057	9.304458	yes	no	no	9520	2287168125	none

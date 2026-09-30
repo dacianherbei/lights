@@ -1,0 +1,926 @@
+[
+ {
+  "date": "2026-09-09",
+  "open": 102,
+  "total": 118,
+  "note": "the register is written: 118 entries harvested from 19 agents, 13 merged as duplicates, 4 corrected against the tree"
+ },
+ {
+  "date": "2026-09-09",
+  "open": 101,
+  "total": 118,
+  "note": "L-94 closed: report published, url wired into the prompt, first history row"
+ },
+ {
+  "date": "2026-09-09",
+  "open": 101,
+  "total": 119,
+  "note": "L-119 added and closed: the ladder tsv reported one probe's verdict for both; L-14/L-16 clustered as fixed-temp-paths"
+ },
+ {
+  "date": "2026-09-09",
+  "open": 100,
+  "total": 119,
+  "note": "L-65 closed by the aspect-3 commit; L-37 amended with the prefilter measurement"
+ },
+ {
+  "date": "2026-09-09",
+  "open": 104,
+  "total": 123,
+  "note": "L-120 ruling: lights is also a simple 3D game engine; L-121/122/123 raised, L-40/L-47/L-73 re-weighted into the three-d-game-engine cluster"
+ },
+ {
+  "date": "2026-09-09",
+  "open": 105,
+  "total": 125,
+  "note": "L-124 raised (one consolidated research document, owed) and L-125 closed (tree left, content right, draggable splitter \u2014 the report is now that)"
+ },
+ {
+  "date": "2026-09-14",
+  "open": 105,
+  "total": 126,
+  "note": "L-124 and L-125 closed: the research record is consolidated (7 experiments, 25 cross-experiment findings); L-126 raised \u2014 only 1 of 7 is reproducible"
+ },
+ {
+  "date": "2026-09-14",
+  "open": 99,
+  "total": 127,
+  "note": "the seven open instrument defects closed (L-10..L-16), four derived issues solved in place, L-127 raised; suite 44 targets / 409 passed / 0 failed"
+ },
+ {
+  "date": "2026-09-14",
+  "open": 75,
+  "total": 127,
+  "note": "the 29 remaining defects swept: 24 closed, 5 open (3 blocked on rulings, 1 deferred large, 1 needs a manifest re-run); suite 44 targets / 440 passed / 0 failed, both single-feature suites green"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 71,
+  "total": 127,
+  "note": "L-127 measured: 265 rows re-scored, 254 CAUGHT, 0 MISSED \u2014 the race inflated nothing; the 11 refusals were 5 stale anchors, 5 malformed test fields and 1 row that was not a mutation. Open defects 29 -> 1."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 70,
+  "total": 127,
+  "note": "L-20 closed: the raycast binner bins the exact silhouette conic of the support ellipsoid via the new shared src/extent.rs; tile pairs 109,188 -> 46,717 against splat's 46,704 (2.15x -> 1.0003x), candidates 27.9M -> 12.0M, kernel evaluations unchanged at 3,407,788. Open defects 1 -> 0."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 71,
+  "total": 128,
+  "note": "L-128 raised: there is no demo \u2014 the PM asks for a running visual demo whose panels are the features; four dangling L-128 citations repointed to L-118 in the same edit"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 70,
+  "total": 128,
+  "note": "L-128 closed: lights-demo + demo_page.py \u2014 14 panels, a 32-frame orbit that plays, and the crate's first frame-rate number (median 5.71 ms at 480x270 f32, 41 atoms, DEBUG). Page: https://claude.ai/code/artifact/640f8902-42c8-4414-a41f-0b5f80a81ff4"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 69,
+  "total": 128,
+  "note": "L-37 closed: the prefilter item was wrong three ways \u2014 0.3 is unreachable by any profile selector, energy_compensation has been true in prefiltered() since 2026-09-08, and there is no object-space term to decompose at all; P5_RESULTS C3's closing guess corrected with it, and the demo grew a prefilter group"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 68,
+  "total": 128,
+  "note": "L-38 closed: render() hands out premultiplied colour and coverage (Collect::PixelsAndCoverage), and composite_over lays a render onto a canvas it never saw \u2014 the identity holds for all three blend modes, not just Over"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 68,
+  "total": 129,
+  "note": "L-39 closed (the framebuffer is 93-99% of the renderer's resident memory at 1080p and the MiB column reported none of it) and L-129 raised (render() reallocates and zeroes 63.75 MiB per call; the warm-path API shape is a PM ruling)"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 67,
+  "total": 129,
+  "note": "L-40 closed: Quat gained mul/conjugate/inverse/rotate and Scene gained set/remove/clear through one shared ingest \u2014 the demo's orbit now spins the SCENE, not just the camera"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 66,
+  "total": 129,
+  "note": "L-41 closed: sub-rect rendering shipped as shape (a) \u2014 the window is a CAMERA (shifted principal point), exact for ray-cast and one ULP for splat, with the decision and the union-of-footprints rule written into conventions.md"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 65,
+  "total": 129,
+  "note": "L-42 closed: n2-soft-shadow enters the zoom ladder as an analytic sampler (erf of the rounded-rect distance, blur in SCENE units: 15/31/64 device pixels at 1x/2x/4x) \u2014 and the instrument lied twice before it measured the blur rather than the scene"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 64,
+  "total": 129,
+  "note": "L-129 closed: option A built \u2014 Renderer<T,K> publishes the warm loop (strategy + prepared scene + framebuffer held); render() unchanged and bit-identical to it. 87.97 ms cold against 71.63 ms warm at 1920x1080 f32 (1.23x); the demo orbit went 175 to 202 fps"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 65,
+  "total": 130,
+  "note": "L-130 created: L-43 SPLIT \u2014 the crate-wide psnr/ssim/mse guard is its own prerequisite entry, with the exact-raster metric that proves the narrowing is real"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 64,
+  "total": 130,
+  "note": "L-130 closed: the photometric guard is narrowed to the path-traced reference specifically, and the exact-raster metric it exists to permit landed with it \u2014 psnr/mse against an ExactReference that cannot be built from a bare image, demoed as four distortion panels"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 66,
+  "total": 132,
+  "note": "L-43 REWRITTEN as the research question it always was, and split: L-131 (the gradient instrument) and L-132 (the optimiser) carry the buildable half"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 65,
+  "total": 132,
+  "note": "L-44 closed: both P2 counterexamples are constructions now \u2014 the needle reproduces stronger than its sentence (1 atom meets at 13.6x the L2 of twelve that miss), and the glyph's 'worse than painting nothing' is recorded UNREPRODUCED"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 64,
+  "total": 132,
+  "note": "L-45 closed: MEASURED 0 prefix rises of 96 rungs at the published search effort against 3 of 16 at the reduced one \u2014 the aspect-2 caveat is a property of the reduced setting and is now narrowed rather than carried"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 63,
+  "total": 132,
+  "note": "L-46 closed as superseded: aspect 2 IS in the consolidated record (all 13 of its distinctive figures verified present); what was broken is that nothing pointed at the record, and the plan and both per-run files now do"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 63,
+  "total": 133,
+  "note": "L-47 closed: a scene is a tab-separated table \u2014 no new dependency, bit-exact through Rust's shortest round-tripping float form, read through the SAME ingest push uses, and it refuses a reordered or truncated file rather than guessing. L-133 raised for the lights-p5 half."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 63,
+  "total": 134,
+  "note": "L-48 closed: P2's two invocations are committed artefacts now, and auditing them moved three published figures \u2014 123.406101 reproduces bit-exactly, '232 of 320' named a binner replaced on 2026-09-14 (25.747070 today, 9.01x prune), and '20 of 24' is 22. L-134 raised for the p4 half."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 61,
+  "total": 134,
+  "note": "L-49 and L-54 closed together: the mutation manifest now leaves a record on disk \u2014 308 caught, 0 not, 3835.6 s on 12 workers, committed at docs/lights/mutations/results.tsv \u2014 and the five agreement/bound rows L-54 named are in it. mutate.py's MAX_MUTATIONS had already been crossed at 256 against 308 rows."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 60,
+  "total": 134,
+  "note": "L-50 closed: bit-identity now sweeps Precision::ALL on both methods, the raycast repeat-at-N-threads asymmetry is closed, and the sweep carries a vacuity guard that the two precisions DIFFER \u2014 seen red by collapsing dispatch's f32 arm to f64. mutate_par.py gained MUT_ONLY and MUT_MERGE so one row can be proven without a 3,835 s re-run."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 59,
+  "total": 134,
+  "note": "L-51 closed: lights-p3 is run by two tests now, and the shape test reads the binary's own --help for the table names instead of carrying a list beside it. p3 goes from 0 mutation rows to 2."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 58,
+  "total": 134,
+  "note": "L-52 closed: the agreement instrument's refusal of the normalised blend is pinned, and the flat-fill win's uncertified second opinion is measured \u2014 0.1412 worst channel against Over's 0.1239, a ratio of 1.1396. 'No second opinion' narrows to 'no certified bound'."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 57,
+  "total": 134,
+  "note": "L-53 closed: the two functions that decide which render method wins are out of the binary and into src/stats.rs, six tests and four mutations on them. Two conventions recorded rather than fixed \u2014 the n-1 denominator, and that CI95_Z is the normal quantile, 29% narrower than t at five samples."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 57,
+  "total": 135,
+  "note": "L-55 BUILT (the dispatch seam) and SPLIT: RenderRequest carries a per-atom shapes list, None is bit-identical to the old build_uniform path across all five betas and every built method, and two atoms provably carry different curves in one render. The fitter half is L-135, BLOCKED on a ruling. Two instrument defects fixed in place: examples/ is not built by --tests, and one mutation anchor matched two places."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 55,
+  "total": 135,
+  "note": "L-56 + L-58 closed: render() reaches all eight kernels, and the shared contract harness now walks every one of them"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 54,
+  "total": 135,
+  "note": "L-57 closed: the gabor prefilter attenuates the carrier, 31.98% over-bright at 0.40 cyc/px measured and cancelled to 0.11%"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 53,
+  "total": 135,
+  "note": "L-59 closed: a prepared scene carries an epoch, so binding one scene and rendering another is refused instead of silently returning the wrong image"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 52,
+  "total": 135,
+  "note": "L-60 closed: the settings fingerprint is wired into assert_contract as a catch-all, and it found background and scale_floor compared by nothing"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 51,
+  "total": 135,
+  "note": "L-61 closed: the splat path charges CandidatesTested, and the binning waste of a rotated needle is 2.654x against 2.476x axis-aligned"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 51,
+  "total": 136,
+  "note": "L-62 closed (+L-136 raised): the four tooling files carry prose, the pointer spelling is settled in favour of the code, and a test enforces both"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 136,
+  "note": "L-63 closed: already fixed under L-95, and tests/loop_prompt.rs now holds the class shut \u2014 it found the prompt never named the mutation record MUT_ONLY can wipe"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 136,
+  "note": "L-64 closed: the two contradicting figures were in the loop prompt, not the record \u2014 and the RAM disk was cleared, so the parallelism experiment is now unreproducible exactly as the record predicted"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 51,
+  "total": 138,
+  "note": "L-137 + L-138 raised: the loop is now measurable \u2014 scripts/claude_task_host.py wired in with a read-only task list, and the prompt carries what a context actually costs"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 51,
+  "total": 139,
+  "note": "L-138 MEASURED: session isolation is 2.64x MORE expensive than resuming \u2014 $1.209 against $0.458 over five tasks; a session start re-writes ~40k cache-creation tokens. L-139 raised."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 139,
+  "note": "L-139 closed: the driver records what every context costs \u2014 json output, a raw doc per context, a row per context, and the stop signal is an exit code proven by 14 cases plus four stub drives"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 139,
+  "note": "L-66 dropped, L-96 reopened, L-95 corrected: the parallelism worktree was never landed and is gone, so the seven tests L-66 owed mutations for exist nowhere; L-96's 2026-09-09 close was a landing plan recorded as a landing, and the record's 6-7x sweep figures describe code in no tree. Cluster lost-parallelism-worktree created."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 139,
+  "note": "L-105 closed: the worktree's rival mutate_par.py and the 11 GB of pools went with the RAM disk; five stale worktree registrations pruned; mutate_par.py has its own prose folder and a test now refuses two scripts sharing one, seen red and mutation-caught"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 140,
+  "note": "L-140 raised and closed: --next was handing out BLOCKED L-121; one predicate now serves the chip and the pick, the fix's first version skipped its own entry on a prose mention, and the selftest holds four blocked cases shut"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 141,
+  "note": "L-122 rewritten and L-141 split from it: the prescribed experiment named the wrong axis and a one-atom sphere cannot show a terminator; the ray caster already has a per-pixel normal at its closest-approach point, and L-141 carries the criterion written before the run"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 141,
+  "note": "L-141 measured and closed, L-122 blocked on a scope call: the ray caster's closest-approach gradient lights a sphere 3.54x lit over dark with no field on Atom, and it is the silhouette normal \u2014 a side light works, a headlight keeps 0.256 of flat; splat refuses a light; the PM must rule whether side-lit-only shading serves the game target"
+ },
+ {
+  "date": "2026-09-15",
+  "open": 48,
+  "total": 141,
+  "note": "L-131 closed: the finite-difference gradient exists, is proven, and its step size was MEASURED \u2014 eps=1e-6 from a ten-decade sweep that refused the module's own first choice of 1e-4; a third failure mode (support-edge straddle, non-monotone in eps) is now on the record, and the ladder's stuck point on t5-thin-stroke still descends by 1.004e-2 in 20 steps. The code had landed under an unrelated commit message and the register still called it absent."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 142,
+  "note": "L-142 RAISED (defect): the prefix contract does not hold \u2014 refine_tail re-tunes already-placed atoms, so atoms[..n] of a longer fit renders 14.8%-41.5% worse than the same fitter's n-atom answer, and five sites across harness/nterm/aspect2 read it as the n-atom answer. L-132 rewritten: its (b) assumed the property held and is withdrawn; its evidence grep had no -E and returned 0 against any tree."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 142,
+  "note": "L-142 piece (1) MEASURED, piece (2) BLOCKED on a PM ruling: across all six classes at the published ladder's sub-full rungs, 26 of 30 prefix reads are worse than the rung's own fit, mean +23.6%, worst +183.2% on t2-straight-edge at n=1 \u2014 and that is exactly where harness first_pass decides a class's published atom count. Four cells read better, so the sign is not uniform. The demo refits and is cleared."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 142,
+  "note": "L-132 BUILT and the close bar NOT met, which is the result: descent::fit (Adam over L-131's verified gradient, greedy's signature and its own budget site) loses to the ladder 0-6 across all six classes at equal atom count and 1.06x the renders. Two mechanisms: 18 renders per gradient against 1 per ladder trial, and on t5-thin-stroke no gain over a 40x range improves on the seed at all while |g| there is the largest of three classes. The rate sweep chooses nothing. What is owed is an ANALYTIC gradient, not another hyperparameter."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 143,
+  "note": "L-132 CLOSED and L-143 RAISED: the optimiser the entry asked for exists and the bar attached to it was a hypothesis the measurement refuted, so the entry is a result and not an unfinished task. The successor is an ANALYTIC gradient \u2014 the 18-renders-per-gradient price is the one term that changes the comparison's arithmetic rather than its tuning \u2014 and it carries the warning that it will NOT fix the thin stroke, because that failure is the alpha cutoff and not the derivative."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 144,
+  "note": "L-133 code half BUILT (artefacts still owed) and L-144 RAISED: the fit checkpoint format is src/fit/atoms_io.rs and the layering guard chose it \u2014 scene::io may not know what an Atom2d is, and the 3D projection cannot be fed to scaled_atoms, so the ladder could not be redrawn from it. Re-running the published p5 invocation to produce the artefacts found L-144: aspect 3's analytic-sdf column was measured on 2026-09-09 with the distance-lower-bound coverage bug that was fixed on 2026-09-14, and is stale by 8x to 12x on t3 and t6 while every atom-arm row is bit-identical."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 50,
+  "total": 145,
+  "note": "L-144 FIXED, L-145 RAISED: aspect 3's published analytic column was re-measured and 20 of 336 rows moved, all of them the analytic-sdf arm on the two multi-primitive classes. Every figure moved in the analytic arm's favour, so the atom arms had been judged against a handicapped opponent: the corner goes from 7x to 84x behind analytic at 8x and the glyph from 5x to 34x. One published finding is now WRONG -- 'all of the analytic arm's decay is the denominator' was manufactured by the bug, whose own error was a fixed-width seam artefact and therefore boundary-localised; it survives on t2 and t3 and is refuted on t6, which departs from the boundary reference by 11.9x at 0.25x. A second defect was found and fixed inside the entry: invocation::stamp walked the whole out-dir, so a stale table wore a fresh command that had not written it. L-145 records that the RAM disk is 100% full of 34 GB of orphaned mutation pools a context cannot delete."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 49,
+  "total": 145,
+  "note": "L-133 CLOSED: the sixteen frozen .fit checkpoints are committed beside the ladders -- both directions, against the entry's expectation of magnify only -- and tests/p5_artefacts.rs now walks every frozen base row of both tables, opens its checkpoint, and asserts the atom count and viewport agree and that the file set on disk is exactly the set the rows name. Seen RED by moving one checkpoint aside; one mutation CAUGHT. The free audit the entry asked for came back: 34 of 48 published PNGs are BYTE-IDENTICAL across a re-fit on a different day and a different build profile, and the 14 that moved are exactly L-144's analytic strips on t3 and t6. fit_renders is identical on all 280 rows while render_ns moved 0.10x-3.98x, median 0.85-0.90x, which is the scheduler and not the code."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 48,
+  "total": 145,
+  "note": "L-134 BUILT: aspect 2 has artefacts on disk for the first time -- docs/lights/p4/run-8 and run-64, two report.tsv plus 32 strips. All eight shared ceilings at a 64-atom budget reproduce EXACTLY the published list 11/15/13/10/61/50/64/31, which is the first aspect-2 figure ever reproduced from a committed binary and independently confirms the record's reach figures. But the entry's close bar had to be narrowed: lights-p4's table carries panel metadata and no error or byte column at all, so NO published rel-L2 and NO published byte figure is auditable from anything in this repository, and the thirteen numbers that came from the uncommitted N-term and probe harnesses stay unauditable. The record's claim that lights-p4 emits no TSV was also wrong. Found and fixed inside the entry: the png column held an absolute path, so a committed artefact would have named one machine."
+ },
+ {
+  "date": "2026-09-15",
+  "open": 47,
+  "total": 145,
+  "note": "L-136 BUILT (option 3): the example's argv rule and its per-image summary are now demo_out_dir, DemoImageLine::lines and demo_closing_line in scene::demo, tested directly by tests/demo_smoke.rs and locked by three mutations -- the default losing its named sub-directory, nanoseconds printed under a millisecond label, and the closing line hardcoding its count. The PROCESS is still unexercised and that is stated rather than papered over: nothing checks that main wires the pieces together or that the example exits zero. The entry's where was stale -- tests/golden_demo.rs was renamed to demo_smoke.rs in f3ca5dec under L-15."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 147,
+  "note": "L-143 SPLIT into L-146 and L-147, and L-146 BUILT. The cut is at the layer boundary: L-146 is the derivative BESIDE the evaluation -- one layer, one kernel, checkable with no whitening, no blend, no fitter and no scene -- and L-147 carries it through to a per-atom 9-vector AND measures the 18:1 price, because a derivative not measured against that price answers nothing. Kernel::d_eval_screen now exists with a REFUSING default of None; the gaussian pair answers and the other six say so out loud. 441 offsets agree with a central difference to 1e-8, seen red at 1.2006 on a flipped sign, with a vacuity guard on the derivative's own magnitude because a zero derivative would have agreed with a central difference of a constant. Three mutations caught, including one that changes the default from None to a guess. Nothing consumes it yet and the 18:1 is untouched."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 147,
+  "note": "L-43 REWRITTEN and BLOCKED: its stated experiment cannot be run at all. fit::metric::psnr takes an ExactReference whose only constructor is from_target over an analytic Target, refusing when the quadrature's undecided fraction exceeds EXACTNESS_LIMIT -- so there is no path in this crate from a standard image to a decibel figure, and Image-GS publishes on rasters. The prerequisites it named are also stale: L-131 and L-132 are closed and L-132's answer was that the descent fitter LOSES, so the live prerequisite is now L-147. Two things checked so the next context does not re-derive them: the demo's 12.99/16.05/20.99 dB baseline is already cleared of L-142's prefix confound, and the byte axis is the symmetric convention."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 148,
+  "note": "L-67 MEASURED: the monomorphisation budget is 96, not the published 8 -- the 8 was a correct measurement of lights-bench, the one shipping binary that instantiates a single kernel family. Blend is not an axis (it is K::Blend, associated), K is 8 not 1, Probe is 3 not 2, and the 80 offered as the future ceiling was already exceeded when it was written. New instrument scripts/monomorphisation_budget.py answers measured-vs-predicted and was broken four ways first. L-145 re-measured and raised in priority: the RAM disk is still 100% full, the rm guard was re-tested and does refuse, cargo's own release artefacts have been evicted by the pruner to make room for orphaned pools, and the loop's build-once step now fails outright. L-148 raised: this session has no artifact tool and cannot run run_tests.sh, so the close bar's publish and test steps are unreachable."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 149,
+  "note": "L-68 MEASURED and its own title refuted: the render loops are 2 lanes wide almost everywhere and 4 lanes wide essentially nowhere. splat 4-wide 14 / 2-wide 346 / scalar 3144 (4-wide share 0.4%), raycast 6 / 1112 / 7104 (0.1%). 1458 wide vector instructions exist and 96 of 99 bodies have one, so 'the inner loops are scalar' was true of the single symbol disassembled and nothing else -- the same one-artefact confound as L-67, in the paragraph directly above it in the same file. seam_costs.md reason 2 corrected rather than withdrawn. New instrument scripts/vector_mix.py reads emitted asm text because nm/objdump need an approval this session cannot get; it had an 18% inflation bug of its own, found by breaking it. L-149 raised for the restructuring experiment, which now has a baseline."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 150,
+  "note": "L-69 SPLIT; L-150 MEASURED and closed: the CPU-side pack at 1080p is 7.444 ms median in RELEASE (30.4 ms debug -- always quote the profile), which is 45% of a 16.67 ms frame budget spent before a byte reaches the GPU, and roughly 13x lights-bench's 0.58 ms clear column. No published timing in the register contains this term. Also structural: Image::pixels is Vec<[u8;3]> and every GPU format is 4 bytes, so the handoff needs an RGB-to-RGBA expansion over 2M pixels that the crate does not have -- L-69's 'a few lines of ColorImage copy' understates it. A shape-only assertion let a blue-channel mutation pass at full speed; the test now checks all three channels. L-69 keeps the GPU upload half, deferred for want of a session that can open a surface."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 150,
+  "note": "L-69 and L-70 both marked BLOCKED on a capability rather than a ruling: each needs an interactive display a claude -p context does not have. L-70 REWRITTEN first: its evidence count was stale (the damage grep returns 59 hits, not 5) but the conclusion is not -- excluding 'invalidat' leaves ZERO, so nothing computes a damage rect. Two refinements: notify_dirty is an EMPTY default overridden per widget, and a richer STAGED dirty (mark_layout/mark_position, separate layout and position fields) already exists at pipeline.rs:14-61, so optical tracks which STAGE is dirty and has never needed WHERE. L-150 re-weights it: a damage rect now needs three producers to pay, and the 7.4 ms pack is the largest of them."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 151,
+  "note": "L-71 BUILT: the ruling is recorded in src/kernel/mod_rs_comment/the_second_angle.md. A second orientation angle IS owed -- applying L-120's ruling that the 3-D game target is a requirement, not making a new one. UI target: not owed, screen-space atoms live in a plane. Game target: owed, because a carrier pointing out of the whitened xy plane is unreachable. The distinction that makes it: the atom's SHAPE is fully 3-D (LowerTri3, six terms) while its MODULATION DIRECTION is 2-D. Evidence re-verified: the z term is zero because d.z is zero, not because a term is dropped -- a specialisation, not a bug. The build is L-151, raised separately because widening CurveShape touches the fitter ladder, the contract harness and every serialised atom. One sentence flagged for PM veto: a 2.5-D game of screen-facing sprites would not need this."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 48,
+  "total": 152,
+  "note": "L-145 leak FIXED (pool removal + selftest), spill still blocks every build; L-151 REWRITTEN with the representation decision; L-152 RAISED: the close bar's test command is not executable from a driven context"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 48,
+  "total": 152,
+  "note": "L-145 half FIXED: builds fall back to the SSD by themselves, so a full ram disk is no longer a block; L-152 MEASURED, the permission ask shrinks to one allow-list line"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 47,
+  "total": 152,
+  "note": "L-151 BUILT: the carrier leaves the xy plane on the ray path, the screen path is bit-identical to the frozen digests, and the entry's own close-bar design was refuted"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 46,
+  "total": 152,
+  "note": "L-123 MEASURED: the first frame rate in this crate \u2014 splat 41.8 fps at 100k atoms at 1080p, ray-cast 5.4, and 76% of the dense frame is bind rather than render"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 45,
+  "total": 152,
+  "note": "L-149 MEASURED: loop inversion is 0.0% four-wide just like the loop it replaces, so the static-dispatch vectorisation clause cannot be filled this way; bit-exactness was never the trade"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 44,
+  "total": 152,
+  "note": "L-72 FIXED and REWRITTEN: the three catalogues are three predicates rather than three drifted copies, but the p5 help had gone stale against its own catalogue and is now generated from it"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 44,
+  "total": 152,
+  "note": "L-73 BLOCKED with its own instruction withdrawn: Primitive is the fit-target vocabulary and never reaches the renderer, so the prescribed fix would have added another fit target"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 43,
+  "total": 152,
+  "note": "L-74 BUILT: the census reproduces exactly a week on, but it named L-91/L-93 when the entry that wanted it is L-86, and a painter census does not choose between fitting a rect and drawing one"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 43,
+  "total": 152,
+  "note": "L-75 and L-118 BLOCKED in the field, not just in prose: both buried the declaration mid-paragraph where the ordering function cannot see it, so --next would have handed them to every context; the checker now refuses that shape"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 43,
+  "total": 152,
+  "note": "overnight run: 5 contexts, $241.28, 43 open of 152 \u2014 the gradient fitter lost to the coordinate ladder, the first frame rate was measured, and the prefix contract was found broken at five sites"
+ },
+ {
+  "date": "2026-09-16",
+  "open": 44,
+  "total": 153,
+  "note": "PM rulings on 13 blocked entries: primitive set is (iii) one-kind-per-scene with compositing, lights stays headless, optical is a full GUI library so lights takes text, surfel gets a stored normal. Blocked 16 -> 3. L-153 raised to earn (ii) with a measurement."
+ },
+ {
+  "date": "2026-09-16",
+  "open": 44,
+  "total": 153,
+  "note": "L-75 re-ruled (A) -> (B): lights takes NO font dependency; the system renderer rasterises glyphs and lights composites the coverage. The standing 'no font dependency' objection stands, Primitive gains nothing, and text collapses into L-73's raster pass. Cost named: text is no longer resolution-independent inside lights."
+ },
+ {
+  "date": "2026-09-28",
+  "open": 43,
+  "total": 153,
+  "note": "L-142 closed: prefix curves labelled at every reader under PM ruling (C), shortfall published beside them; run_tests.sh chooser path fixed (the L-145 fallback had never engaged)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 42,
+  "total": 153,
+  "note": "L-121 closed: DECISION per PM ruling 2026-09-16 (lights stays headless), now enforced by a layering guard on the manifest with a CAUGHT mutation; report page not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 42,
+  "total": 154,
+  "note": "L-122 closed: BUILT per PM ruling (B) - surfel primitive with a stored normal in its own composited pass; headlight keeps 1.000 vs the gradient normal's 0.256; material/emission split to L-154; report and demo pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 41,
+  "total": 154,
+  "note": "L-154 closed: BUILT surfel Material (emission added after shading, Blinn-Phong specular at the half vector, matte default leaves every render unchanged); 3 mutations CAUGHT; demo panel surfel-material; report and demo pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 41,
+  "total": 155,
+  "note": "L-155 closed: BUILT raster reference per PM ruling (a) on L-43 - ExactReference::from_raster(8-bit Image), quantisation floor 1.2816e-6 (58.9226 dB) refused below; 4 mutations CAUGHT; L-43 now unblocked on its prerequisite; report page not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 41,
+  "total": 156,
+  "note": "L-153 closed: MEASURED - depthless composite fails an interpenetrating scene in both orders (3,001/3,006 of 19,200 px over 1/255, worst 0.40), exact on single-kind pixels, exact from 3 sigma clearance; L-156 raised BLOCKED for the PM (heterogeneous scene vs depth-carrying composite vs clearance rule, recommends depth-carrying); 1 mutation CAUGHT; report and research pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 40,
+  "total": 156,
+  "note": "L-43 closed: MEASURED - greedy at image-gs's float16 bitrates on six 64x64 CLIC2020 crops scores 21.24 dB (0.122 bpp, 3 atoms) and 24.48 dB (0.366 bpp, 10 atoms) against image-gs's published 29.20/32.99 on its own set - ~8 dB behind, cross-dataset only: image-gs's images are auth-gated, its CLIC run is figure-only, and it needs CUDA; 2 mutations CAUGHT; report and research pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 39,
+  "total": 156,
+  "note": "L-75 closed: BUILT - RasterLayer is the raster pass (coverage glyph + ink, straight RGBA, opaque RGB), composited with composite_over over any render; 5 mutations CAUGHT; 67 targets 593 passed; demo panel raster-over-render added; report and demo pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 38,
+  "total": 156,
+  "note": "L-73 closed: FIXED - L-75's RasterLayer already makes read_png's RGB image drawable; the remaining gap, RGBA png files refused, closed by RasterLayer::read_png (RGB->opaque, RGBA->from_rgba8, grey/indexed refused); 3 mutations CAUGHT; 67 targets 596 passed; report page not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 37,
+  "total": 156,
+  "note": "L-76 closed: BUILT - lights::draw DrawList (ordered ops, premultiplied ink, optional clip, 7 shapes from the optical census) renders to a RasterLayer; optical's Rating walked through it off egui, which forced an even-odd Polygon and a one-shape Polyline; 8 mutations CAUGHT; 68 targets 608 passed; demo panel display-list-over-render added; report and demo pages not redeployed, no artifact tool in this session (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 36,
+  "total": 156,
+  "note": "L-77 closed: BUILT - Similarity2 (numerics, crate root) is a pan/zoom/rotate view; sdf_coverage_through and DrawList::render_through invert each sample instead of rewriting shapes, identity paths bit-identical; 7 new mutations + 5 re-anchored all CAUGHT; 68 targets 614 passed; demo panel display-list-zoomed; 12 pre-existing stale mutation anchors found, not filed (budget); report and demo pages not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 35,
+  "total": 156,
+  "note": "L-79 closed: FIXED - lights-demo timed the ray caster in its BruteForce contract config via RenderMethod::implemented() (tile_pairs 0 on all six ray-cast panels); RenderMethod::implemented_for_timing() now serves bench and demo; regression test seen red, 1 mutation CAUGHT; SegmentIntegral prune folded into L-117; 68 targets 615 passed; report and demo pages not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 34,
+  "total": 156,
+  "note": "L-78 closed: FIXED - preconditions.md named six live run_pair arms and omitted LightPresent from both lists; now two sections partitioning all 18 variants (9 live, 9 unreachable); regression test fires every live arm through run_pair, seen red on the six-arm text; 2 mutations CAUGHT; 68 targets 616 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 33,
+  "total": 156,
+  "note": "L-86 closed: REWRITTEN+BUILT - the route was settled by L-76's display list; what was still missing was the rounded rect (521 of 596 optical rect calls pass a nonzero rounding). Rect/RectOutline carry corner_radius, clamped to a pill as egui does; 3 tests seen red, 5 mutations CAUGHT; 68 targets 619 passed; demo card rounded, header clipped; report and demo pages not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 32,
+  "total": 156,
+  "note": "L-90 closed: BUILT - layering scans now read examples/ (the photometric ban named examples/render_demo.rs as never-excepted and never read it) and src/kernel/mod.rs for wildcards; every_scan_reads_the_files_it_names seen red twice; 10 real-file mutation rows, one per scan, all CAUGHT; 68 targets 620 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 31,
+  "total": 156,
+  "note": "L-96 closed: BUILT - sweep::map rebuilt, harness::run three phases (heads/cells parallel, timing serial), aspect2 class_sweep, --sweep on p2/p3/p4; 13 tests, 9 mutations CAUGHT; release re-measure 5.30x-6.29x p2, 5.60x-5.82x p4, byte-identical outputs, into RESEARCH.json; 69 targets 633 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 30,
+  "total": 156,
+  "note": "L-95 closed: BUILT - aspect 3 on sweep::map (prepare parallel over classes, one flat fit list, serial assembly), --sweep on lights-p5; render_ns now render-only with a header line; 5 tests + wall test, 6 mutations CAUGHT; release lights-p5 magnify 3.01x medians (2.82x-3.32x), outputs identical but render_ns, into RESEARCH.json; 70 targets 638 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 29,
+  "total": 156,
+  "note": "L-97 closed: BUILT (2) fused residual_energy, no difference image, bit-identical; (1) framebuffer reuse and (3) phase timers MEASURED and DROPPED at ~1.2% and ~0.7% of a render; release census 64x48: residual 3.6-4.0 -> 1.8-1.9 us of ~18 us per candidate; 3 tests, 3 mutations CAUGHT (dev 2: 6 workers overflow the 16 GiB RAM disk); into RESEARCH.json; 71 targets 641 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 28,
+  "total": 156,
+  "note": "L-98 closed: BUILT after REWRITE - why half stale (image.rs got its folder with L-38, composite_over exists); wrote framebuffer_layout.md (padded tile-major) and dispatch_rs_comment/collect.md (Pixels = 13 zero counters); anchored-prose test seen red, 2 mutations CAUGHT; 71 targets 642 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 27,
+  "total": 156,
+  "note": "L-99 closed: REWRITE + BUILT - 2 of 3 stale sentences already fixed by L-56 and L-67 (withdrawn in why); seam_costs.md hardware paragraph now quotes CLAUDE.md verbatim and sources 18 cores to sysctl, with a withdrawal paragraph; guard test seen red, 2 mutations CAUGHT; 71 targets 643 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 26,
+  "total": 156,
+  "note": "L-100 closed: FIXED - 8 dead public fit items deleted (target_index, background_of, quadrature_budget, ALL_TRANSFORMS, Scale::whole/unit/is_unit, scene_point); FitRequest::new(kernel, settings) at 22 call sites, not the 4 the why named; a mutation row that used Scale::unit() repointed and re-CAUGHT; guard seen red, new mutation CAUGHT; 71 targets 644 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 25,
+  "total": 156,
+  "note": "L-101 closed: REWRITE + BUILT - the plan copy was already fixed by L-37 (withdrawn in why); map row now says the gain is applied, carries a Withdrawn paragraph, and marks the three unacquired papers not on disk; guard seen red, 2 mutations CAUGHT; bug fixed in scope: the mutation pool lacked out-of-crate inputs and leaked MUT_ONLY to children, so 5 rows were CAUGHT vacuously - pool now copies OUTSIDE files and refuses rows red on the clean tree; 71 targets 645 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 24,
+  "total": 156,
+  "note": "L-102 closed: REWRITE + BUILT - RADIAL is declared by 8 impls not 6 (why corrected, old sentence kept as withdrawn); demoted to descriptive, not consumed; new kernel_radial_declaration_is_measured_for_every_family measures ring/sphere symmetry of eval*modulate for all 8 impls against the declaration, seen red with SuperGaussian flipped; 3 mutations CAUGHT; 71 targets 646 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 23,
+  "total": 156,
+  "note": "L-103 closed: REWRITE + FIX - gabor dups already fixed by L-33 (withdrawn); measured 19 absent + 1 repeated anchors among 475 rows, all still CAUGHT in the record; new anchor guard seen red (20), all re-anchored; in scope: delta_to_control test extended to the analytic-sdf row after an escape, manifest reader decodes u-escapes; 3 new mutations, 478/478 CAUGHT; 71 targets 648 passed; report page not redeployed, no artifact tool (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 22,
+  "total": 156,
+  "note": "L-145 closed: CLOSE + FIX - the 34-39 GB spill vanished when the ram disk was re-created at 16 GiB (2026-09-24), remove_pool verified by real sweeps leaving no pool; in scope, mutate_par's default pool now follows target_dir's 8 GiB floor (ram disk above, /tmp/mutpool below), test seen red, mutation CAUGHT ...., 479/479; 71 targets 649 passed; report regenerated to docs/lights/pages/burndown.html, not redeployed (L-148)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 21,
+  "total": 156,
+  "note": "L-148 closed: BUILT - burndown_host.py pages regenerates docs/lights/pages/{burndown,research}.html after every context and settle commits them; prompt close bar is regenerate-and-name; tests/loop_pages.rs 3 seen red; 3 mutations CAUGHT ....; 72 targets 652 passed; pages regenerated, not published (interactive session publishes)"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 20,
+  "total": 156,
+  "note": "L-152 closed: BUILT - close bar names run_tests.sh's four cargo constituents as the fallback when the script is refused; loop_prompt.rs asserts they equal the script's commands both ways, seen red; mutate_par copies the prompt into workers; mutation CAUGHT ....; run_tests.sh itself ran here: 72 targets 653 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 19,
+  "total": 156,
+  "note": "L-106 closed: CLOSED - plan item's experiments/ clause withdrawn (pattern lives in src/bin/lights_p2..p5); optical-data clause answered by DrawList (L-76/L-75/L-77); compression-paper-on-graph-scene candidate NOT run, left in the plan item; docs-only, no code; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 19,
+  "total": 156,
+  "note": "L-108 REWRITTEN + BUILT (open, now research): atom_bytes bills at the f32 VALUE_BYTES a coefficient pays (36 B native atom), SCALAR_BYTES deleted, aspect3 SYMMETRIC_VALUE_BYTES is the same constant; tests/nterm.rs pin seen red; 2 mutations CAUGHT ....; 72 targets 654 passed; plan's 'data already on disk' withdrawn - p4 artefacts carry no byte/error column, re-run owed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 18,
+  "total": 156,
+  "note": "L-108 closed: MEASURED - lights-p4 --nterm writes nterm.tsv + crossings.tsv; under one f32 currency (36 B/atom) CDF 9/7 is byte-cheaper on n1/n3/n4 by 1.04-3.13x on its pessimistic bracket, atoms cheaper on n2 and all T classes; 42/246/32/0 of 320; 2 mutations CAUGHT; 72 targets 655 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 17,
+  "total": 156,
+  "note": "L-107 closed: MEASURED - transport gate run (crafted 2.5D canvas, path-traced vs SSAO+drop shadow vs GTAO multibounce, CIEDE2000): dark canvas invisible (max 1.17); light canvas coloured contact bleed 9,807/46,048 px over JND; rung 2 kills patches - bleed halves in 2-4 px at card elevations; RESEARCH.json l107-transport-gate; no Rust; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 16,
+  "total": 156,
+  "note": "L-109 closed: BUILT - Rgb<T> is linear light and the caller owns the transfer (src/image_rs_comment/colour.md); opt-in IEC 61966-2-1 srgb_encode/srgb_decode + FloatImage forms; truncating quantiser kept (all 256 bytes round-trip at f64 and f32); a 0.5-coverage edge is 127 naive vs 187 owned, 60 levels; tests/colour.rs seen red; 2 mutations CAUGHT ....; 73 targets 658 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 15,
+  "total": 156,
+  "note": "L-110 closed: CLOSED - superseded by L-142 (prefix contract measured broken, every prefix row labelled via greedy::prefix under PM ruling C); why re-measured, line numbers drifted; nterm 13 passed + aspect3 refit test passed via built binaries; prose gains a pointer to the ruling; no Rust changed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 14,
+  "total": 156,
+  "note": "L-111 closed: BUILT - Target::description_bytes_at is the one analytic byte formula; analytic_bytes_symmetric calls it at f32; exact-equality test over Target::all() seen red under a forked header that the old inequality missed; 2 mutations CAUGHT ....; half (a) already landed by L-108; 73 targets 659 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 13,
+  "total": 156,
+  "note": "L-112 closed: CLOSED - superseded by L-130 (guard narrowed to an exception table keyed on an exact ground truth) and L-155 (raster door); why withdrawn, line numbers drifted; layering 15 passed via built binary; mutation row 440 CAUGHT ....; no code changed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 12,
+  "total": 156,
+  "note": "L-113 closed: FIXED - ruling (b) landed: war_map.toml lights is GUI/InProgress not Legacy/Archived, optical names eframe/egui not dear-imgui, CLAUDE.md :57/:194 match; tests/ui_stack_ruling.rs seen red; 3 mutations CAUGHT ....; mutate_par OUTSIDE carries war_map.toml; 74 targets 661 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 12,
+  "total": 156,
+  "note": "L-116 rewritten + blocked: splat already has a moment-matched pixel-box prefilter, raycast refuses rather than ignores (L-18), and P5 C3 already measured aliasing onset between 1x and 0.5x; remaining choice (A presentation-only / B exact area integral / C ray footprint) needs a PM ruling, recommend A now; no code changed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 11,
+  "total": 156,
+  "note": "L-114 closed: CLOSED - decision already enforced; six aspect3 tests pass (6/0 today), mutation rows 229-234 CAUGHT; line numbers drifted and re-measured; no code changed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 11,
+  "total": 156,
+  "note": "no note"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 10,
+  "total": 156,
+  "note": "L-115 closed: CLOSED - decision dissolved: KernelFamily half of (b) built by L-56/L-58, carrier-search half is L-135 (PM ruled B), record half of (a) already in RESEARCH.json and corrected today; FIXED stale p4 banner + report page that called the signed kernels unreachable/at frequency zero (measured false: all 10 fit at a nonzero carrier); tests/p4_signed_arms.rs seen red; 4 mutations CAUGHT ....; 75 targets 664 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 9,
+  "total": 156,
+  "note": "L-120 closed: FIXED - the two-target ruling was lost from the register header when BURNDOWN.toml was split (21713e54); split_register.py HEAD_HEADER restores it, tests/loop_prompt.rs guards all four places, seen red; mutation CAUGHT ....; 75 targets 665 passed; re-weighting verified (11 of 13 cluster members closed); pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 9,
+  "total": 156,
+  "note": "L-135 split in place: seam BUILT - ShapedAtom2d + render_shaped_atoms hand dispatch a real per-atom shapes list (bit-identical to render_atoms when shapes repeat the family), per-atom tolerance gate; tests/fit_shaped_atoms.rs seen red via mutations, rows 499-500 CAUGHT; host-bug solved here: long-running burndown_host rolled with a stale split_register and undid L-120's header, fresh_modules() reloads per context, row 501 CAUGHT, host needs one restart; 76 targets 669 passed; measurement (tuned curve vs tuned gaussian) stays open; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 9,
+  "total": 156,
+  "note": "L-117 BLOCKED: which unbuilt methods to drop is a scope cut, not a pruning result (none measured), and it crosses L-116's option (C) and the volume-density question; recommended (B) prune RayMarch+VoxelDda, ConeBeam waits on L-116; evidence re-measured 5/5/5, 338 lines, 0 docs; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 9,
+  "total": 157,
+  "note": "L-118 closed: BUILT ADR-019 - the SDF champion is a composited 2D pass returning a RasterLayer, not a RenderMethod; tests/sdf_pass_ruling.rs seen red, row 502 CAUGHT ....; lift queued as L-157; solved here: loop_pages checked closed head ids and went vacuous on a spent head (row 503 CAUGHT ....), and the head header lost L-120's two-target text to a stale host roll; 77 targets 672 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 8,
+  "total": 157,
+  "note": "L-157 closed: BUILT lights::primitive - Primitive/Part/FeatureId + PrimitiveSet and its SDF pass returning a RasterLayer in the default build, fit::analytic calls it; tests/primitive_pass.rs seen red, rows 504-506 CAUGHT; solved here: 8 mutation anchors moved, mutate_par's pool never carried docs/lights/p2|p4|p5 tsv (row 368 REFUSED in a fresh pool; tsv snapshot mode, selftest seen red), head header stripped again by host pid 18451 (pre-fresh_modules, needs restart); 78 targets 678 passed; demo panel sdf-pass-over-render; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 7,
+  "total": 157,
+  "note": "L-135 closed: BUILT + MEASURED greedy::fit_shaped tunes a per-atom beta (SHAPED_KNOBS = nine + LogBeta, one pursue body); beats the tuned gaussian 42 of 43 rungs, the best fixed family 23 of 43; rows 507-509 CAUGHT, rows 62/63/354 re-anchored; head header restored again (host 18451 needs restart); 79 targets 682 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 7,
+  "total": 157,
+  "note": "L-137 BLOCKED + REWRITTEN: ruling (a) rests on a false premise - claude-flow, ruv-swarm AND flow-nexus load from ~/.claude.json local scope (claude mcp get), user scope is empty, .mcp.json is gitignored and shadowed; editing it is a no-op. Question A1/A2/B to the PM, recommend B (--strict-mcp-config in the host). Register dry: all 7 open are blocked; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 5,
+  "total": 157,
+  "note": "L-116 closed: ruling (A) holds in the tree; the contract-dilation leg had no mutation, two added (rows 511-512) both CAUGHT; no source change; ConeBeam prune left to L-117; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 4,
+  "total": 157,
+  "note": "L-117 closed: BUILT the prune - RayMarch, VoxelDda, ConeBeam and SegmentIntegral gone, ResponseModel axis removed with them (one value cannot mismatch); guard layering::the_pruned_methods_and_the_response_axis_stay_pruned seen red; rows 512-513 CAUGHT, 502 re-anchored; row 250 had escaped since L-59 and its test now probes the old scene; head header restored; 79 targets 683 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 3,
+  "total": 157,
+  "note": "L-156 closed: BUILT option (B) - surfel pass hands out first-opaque depth (DepthImage), ray caster rejects t* beyond it via t_max; resting scene 3,001 px -> 0 against L-153's bar; splat refuses; 6 mutation rows + 73 re-run all CAUGHT; head header restored (host pid 23466 predates fresh_modules - PM must restart it); 79 targets 690 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 7,
+  "total": 162,
+  "note": "L-158 closed: FIXED - check() resolves the id a BLOCKED ON names and refuses when it is closed or absent; red on b5d6538c's register naming L-147 only, green today; L-69/L-70 silent; selftest 17 breaks, tests/register_blockers.rs, rows 521-522 CAUGHT; head header restored (host pid 18451 predates the fix, not 23466 - PM must restart it); 80 targets 692 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 9,
+  "total": 167,
+  "note": "L-147 closed: BUILT + MEASURED - analytic gradient (gaussian, Over) agrees with the central difference to 9.1e-10 of |g|, forward bit-identical to the renderer, 0.89-1.46 renders against 18 (debug); Adam at equal renders reproduces the CD table to nine digits (0-6) because it is sign descent - L-132 was never a verdict on gradients; exact-gradient line search beats the ladder on t4 and t6; 8 mutation rows + 12 re-run CAUGHT; head header restored; 81 targets 699 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 8,
+  "total": 167,
+  "note": "L-70 closed: MEASURED (a bound, not a session) - headless UnifiedMapV2, one collapse: the shared payload-less counter names 24.3%-77.9% of the canvas, the rects that changed 0.6%-7.2% (node rects only); sub-rect present on today's producer not worth building, (B) earned only with a payload; tests red on a stuck consumer; head header restored; 81 targets 699 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 8,
+  "total": 168,
+  "note": "L-159 closed: MEASURED - with a perfect fine representation, inflation matches box coverage down to 10 px em for monoline (breaks at 8 px, stroke 0.67 px) and for a hairline Didone holds >=96, marginal 48-64, BROKEN 10-32 px (0.054-0.081 over floor); break is where the thinnest feature < ~0.7 px; mechanism: gaussian of box variance is not a partition of unity, 0.2 px hairline ink 0.638-1.356x (predicted 1-/+0.361); calibration seen RED on a real variance-sign defect; L-168 filed blocked on L-161 for real fonts; 3 mutations CAUGHT; head header restored; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 7,
+  "total": 168,
+  "note": "L-163 closed: MEASURED - no f64-over-f32 crossover on the 1080p ladder: splat 0.985-1.019 from 100k to 10M atoms (4.56 GiB f64, fits; ends at a 2.2 s frame, not memory), ray-cast 1.095-1.174 to 300k and refused at 1M by its 4096 hit budget; 'ALU-bound' withdrawn - splat is 76-91% bind, a precision-independent key sort; L-164 unblocked (capacity only); lights-bench --atoms added, test red first, 2 mutations CAUGHT; 82 targets 705 passed; head header restored; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 7,
+  "total": 169,
+  "note": "L-165 closed: MEASURED + SPLIT - Sym3::eigen (Jacobi), Quat::from_rotation_matrix, Atom::mapped_affine built; 9,519 atoms under sheared affine maps (2,986 reflections) reproduce A Sigma A^T to 1.98e-15 and the pulled-back field to 2.6e-10; deformed path 95 vs static 71 kappa-eps against exact u.u, so deforming adds no error class; eigen 2.9e-15 f64 / 1.5e-6 f32; test red on transposed map; 4 mutations CAUGHT, a 5th escaped as unreachable (Givens det +1) and its branch deleted; cage split to L-169; head header restored; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 6,
+  "total": 169,
+  "note": "L-166 closed: MEASURED - moment_merge exact to 2.4e-15 but no cut that summarises anything is inside one code value (first merge 48.6-223 cv); bias has two signs - depth spread darkens (-0.03% to -74% coverage, AMD's darkening located), compositing alone brightens (+2% to +24%); evaluations rise 1.07-6.0x on bimodal scenes, time saved is per-atom (splat 0.28-0.89x, ray-cast 0.025-0.99x debug); 2D-merge repair pruned by the flat cloud; 4 mutations CAUGHT; head header restored (stale host pid 18451); pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 5,
+  "total": 169,
+  "note": "L-169 closed: MEASURED - Freudenthal tet cage built (src/scene/cage.rs, Mat3::inverse); seam exact to 9e-16 vs independent Kuhn interpolation, seen red under a first-tet rule; deformed fit keeps 0.96-1.12x the original fit's error, re-fit 4-12% lower (3.2x once, fitter confound: 11 vs 16 atoms) at 9,520-19,904 renders / 0.11-0.28 s vs 7.6-9.3 us for a 4x4 cage (release), 124 ns/atom at 100k; seam is the smaller term, within-atom warp curvature the larger (Jacobian 0.32/1.51 on the glyph); re-fit per update pruned; 4 mutations CAUGHT; head header restored a fourth time; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 4,
+  "total": 169,
+  "note": "L-160 closed: BUILT - docs/lights/TEXT_LAYERS.md rules lights owns font layer 4 only (pure-Rust layers 1-3 in optical; ttf-parser already in the lock); Tier 2 precedent corrected from fit-only atoms_io to core scene::io; Tier 0 needs a new core filled line+arc contour (Primitive is strokes, Polygon is even-odd straight); L-161 step 1 withdrawn; text_layers test seen red, mutation 548 CAUGHT; mutate_par snapshots the ruling; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-28",
+  "open": 5,
+  "total": 171,
+  "note": "L-161 closed: BUILT + SPLIT - src/outline.rs is Tier 0's filled line+arc contour with non-zero winding and a quadratic-to-arc converter whose em tolerance holds two-sided at 0.988-0.9999x over 48 quadratics; edge count grows as tolerance^-1/3 (3.17x at 1/4000 vs 1/100 em), withdrawing the why's ^-1/2; three bugs seen red and fixed (one-sided acceptance 18.98x, chord-degenerate disc, unchained vertex); 5 mutations CAUGHT; split into L-170 (partition) and L-171 (real font round trip), L-168 now blocked on L-171; head header restored a fifth time - cause is host pid 18451 predating the fix; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 5,
+  "total": 172,
+  "note": "L-170 closed: BUILT + SPLIT - PrimitiveSet holds a Tier 0 Region (outline::Filled); the non-zero field's magnitude was distance to every edge, a seam at interior crossings (0.0151 vs 0.0222 em, seen red), now distance to boundary pieces cut at every crossing - worst 1.9e-4 em over five inputs; 3 mutations CAUGHT; demo panel shows a +1 +1 -1 region; partition split to L-172, BLOCKED on a TEXT_LAYERS.md amendment; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 4,
+  "total": 172,
+  "note": "L-171 closed: BUILT - a real face (Ubuntu Light, UFL, 9 glyphs incl. 2 composites) through ttf-parser into Tier 0: 0 winding disagreements, exact coverage of the converted Region within 0.0075 of a scanline integral of the raw quadratics (bound 0.032) at 32 px/em; seen red at 0.491 because fit::target ignored PrimitiveSet::regions - fixed; cubic_to built (<=0.9989x tol two-sided); COLR on paper found Tier 0 is not closed under affine maps; 6 mutations CAUGHT (1 escaped first, hole closed); L-168 unblocked; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 4,
+  "total": 173,
+  "note": "L-168 closed: MEASURED - on nine real glyphs (Inter n o g, Abril Fatface n o e, Noto Sans JP \u6c38 \u66f8 \u9b31), 108 rows, L-159's 0.7 px rule is a BOUND only with the paper counted: on ink alone \u9b31 breaks at 24 px/em with its stroke at 0.798 px because its slot is 0.192 units (0.38 px) and its worst pixel sits there; as a predictor exact for 3 glyphs, 1-3 rungs conservative for 6; the break is a band; paper-side gate 0.97 after the ink's 0.7 read notches as gaps (seen red); 7 mutations CAUGHT; L-173 split for the appearance oracle; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 3,
+  "total": 173,
+  "note": "L-173 closed: MEASURED - the system rasteriser oracle. Calibrated on a vendored stem/hairline/ring/cross font: stems within 2.57 (CoreText glyph renderer), 1.68 (path filler), 2.55 (FreeType) 8-bit steps, bound 4. On L-168's nine glyphs at 8-32 px/em inflation is 13.8-40.1 steps from box, the macOS default (smoothing, dark on light) 31.4-201.8 and hintslight 21.9-234.9, further than inflation at 72 and 71 of 72 rungs and at 21 and 20 of the 21 broken ones; path filler 0.9-17.2, FreeType unhinted 4.2-24.3. Premise wrong in both halves: CoreText does not hint and its smoothing dilates at every size (0.6 px cap); FreeType 2.13.2 does not darken. CoreText's glyph renderer flattens curves and sums overlaps. 3 mutations CAUGHT; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 2,
+  "total": 173,
+  "note": "L-164 closed: CLOSED as a capacity feature only, nothing built, why REWRITTEN (six sentences withdrawn). The DGF mapping is record l164-dgf-atom-mapping, read from the paper: one field of five maps (mean), the rest is DGF sideband data; Atom.scale is a linear sigma (the log-scaled atom is the fitter's Atom2d); the block is a MomentTree run, not a tile. The renderer reads PreparedScene (108/216 B per atom) and never the 56/112 B Atom, so a 17.3-21.3 B atom block cuts the per-atom footprint 10-16% and moves no frame. 2 mutations CAUGHT (rows 572-573); run_tests.sh 90 targets, 741 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 21,
+  "total": 193,
+  "note": "L-174 closed: MEASURED, harness BUILT (unified_showcase --frame-bench, one child per scene, scale and rep under a private HOME, pass timestamps resolved after the fence). Every one of optical's eleven showcase frames costs 0.1654-0.9011 ms CPU and 0.1285-0.2482 ms GPU at 1x (1920x1080 pt), 0.1679-0.9792 / 0.3875-0.6685 at 2x; egui's CPU frame ignores the scale factor, the fence is a flat 1.54 ms of latency. Scenes named by rule: text-heavy tree, fill-heavy canvas (not few huge ops: 581 visible ops, 2.58 screens), op-heavy overview. Baseline docs/lights/benchmarks/l174, record l174-optical-egui-baseline. Fixed on the way: the showcase frame read the wall clock; mutate_par OUTSIDE lacked the new inputs. 4 mutations CAUGHT (578 of 578); L-176 now waits on L-175 alone; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 20,
+  "total": 193,
+  "note": "L-175 closed: MEASURED, instruments BUILT (optical --ops-out captures; lights::Capture, DrawOp::footprint, render_through_parallel over rayon row bands with serial as its one-band case, bit-identical; lights-ui-frame with fixed/touch/opsx/full arms). The frame is paid in pixels: 5.0-6.4 ns per visited pixel, 97.8-99.2% of every serial frame, against 1.4-6.2 ns per op. Eleven real optical frames cost the serial DrawList 11.0252-28.4196 ms at 1x and 44.1008-108.1929 ms at 2x (f32), outside 16.67 ms for 3 of 11 tabs at 1x and all 11 at 2x; parallel on 18 threads 1.3679-2.9135 ms at 1x and 4.4938-10.1802 ms at 2x, still 2.4-8.3x egui's whole CPU frame. Gate met: L-176 unblocked with the parallel list as its first lights arm; L-178 re-weighted (allocation plus first touch 18.7-42.4% of the parallel frame). Record l175-drawlist-ui-frame, artefacts docs/lights/benchmarks/l175. 8 mutations CAUGHT plus one re-anchored (586 of 586); run_tests.sh 94 targets, 756 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 22,
+  "total": 196,
+  "note": "L-176 closed: MEASURED + SPLIT. On L-175's identical op sets (11 tabs, 1x and 2x) tiny-skia draws 2.22-10.16x faster than lights' DrawList (parallel 1x framed 2.48-4.83x, 3.14-6.55x with lights' pack), from 4 B/px against 24 B/px, with no pack; lights keeps Criterion::registered at 1x where tiny-skia fails t6-glyph-like (hairline peak 0.6157 < 0.90) and bit-exact bands where tiny-skia's depart 25-191 levels. KILL CONDITION DOES NOT HOLD (not within noise). Instruments BUILT: examples/support/tiny_arm.rs + examples/renderer_arms.rs, tiny-skia as a dev-dependency; record l176-renderer-arms, artefacts docs/lights/benchmarks/l176. Created L-194 (epaint arm, optical), L-195 (GPU compute arm), L-196 (decision, BLOCKED on the PM: chrome through tiny-skia or lights). 13 mutations CAUGHT (599 of 599); run_tests.sh 95 targets, 766 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 14,
+  "total": 201,
+  "note": "L-187 closed: BUILT + REWRITTEN. docs/lights/PLATFORM_CONTRACT.md is the contract a host implementation meets, scoped to what L-197's interactive demo needs (a window with pixel size and scale factor, pointer and key events, a present path; no clock, clipboard, cursor, modifiers or input method); the frame handoff measured in bytes and strides (Image: 3 B/px, R G B, no alpha, stride 3 x width, row 0 toward CameraSpec::up, linear-coded, truncated; the float handoff has no byte layout because Vec3 has no repr) and pinned by tests/platform_contract.rs, which computes each value from the crate; lights cannot fill a host-owned buffer, so L-186's fill is a copy until L-190; the PM's deferral (one crate or three, demand-driven porting, shared part isolated from two implementations) and both withdrawn assumptions pinned. L-186 close bar amended (modifiers, cursor, clipboard out). Two HEAD defects left by ad3663a8 fixed on the way: comment lines in tests/loop_prompt.rs and a mutation row with a dead anchor and a renamed test; suite had been red at HEAD. 9 mutations CAUGHT (8 new, 1 re-anchored), 607 of 607; run_tests.sh 96 targets, 768 passed; pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 13,
+  "total": 201,
+  "note": "L-186 closed: BUILT. crates/lights-mac is the macOS host lights was forbidden to own: an AppKit window whose one declared view is also its delegate, a caller-owned pump returning HostEvents (pointer press, motion and release in pixels from the top left, key code and characters, resize with pixel size and scale, close as a request), and a CAMetalLayer present that expands the RGB Image into a shared MTLBuffer and blits it into the drawable. AppKit chosen over winit by writing both: winit 0.30 dropped every event raised outside its callback (0 of 3 pointer, 0 of 1 close) and would add 18 crates to save 103 lines. tests/host.rs, six tests over a spawned probe, red on an unbuilt stub; 10 mutation rows CAUGHT (record 617 of 617); mutate_par.py learned a package field (selftest case K); run_tests.sh now runs the host, 101 targets, 774 passed. Present at 1080p release 0.63-0.86 ms back to back, 2.22-2.28 ms after idle. L-197 unblocked. Pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 12,
+  "total": 201,
+  "note": "L-190 closed: BUILT after a REWRITE. The viewer's frame reached the screen through three passes after the render (resolve_float, to_clamped_u8, the host's expansion), 6.843-7.092 ms median at 1080p in release against a 2.1 ms render. Framebuffer::resolve_bgra8 resolves straight into the host's shared MTLBuffer through Host::present_filled in 2.574-2.649 ms (2.66-2.68x), byte-identical in every blend mode for both built methods, with no allocation. Free-running on the 120 Hz panel the fused frame keeps pace at 8.144-8.235 ms, where the three-pass frame took 9.056-9.524 ms. The display-list framing, the missing-expansion claim and the page-aligned proposal are withdrawn. l150's 7.444 ms re-runs at 4.643-4.658 ms, recorded as unreproducible. 12 mutation rows CAUGHT (629 of 629); run_tests.sh 101 targets, 780 passed. Pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 11,
+  "total": 201,
+  "note": "L-193 closed: BUILT after a REWRITE. The entry proposed a directory inside lights, crates/lights/src/mac/, six hours before L-186 gave the macOS host a crate of its own; the locational rule is now that platform code lives in crates/lights-mac and nowhere in lights. tests/layering.rs::platform_code_lives_in_the_host_crate_and_never_in_lights reads lights' 175 Rust files and its manifest and refuses Apple-framework and Objective-C code, architecture intrinsics, assembly, CPU feature gates, target cfgs, OS-only std modules, [target.] tables and framework-binding dependencies, and it proves it can see them by finding them in the host. Measured: lights holds none of it; its only OS-only lines are three sysctl/sw_vers hardware labels, now listed by file. Solved on the way: the L-121 list named metal and none of the host's five objc2 crates, so objc2-app-kit passed it. 4 mutation rows CAUGHT (633 of 633); run_tests.sh 101 targets, 781 passed. Pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 10,
+  "total": 201,
+  "note": "L-197 closed: BUILT - lights-gallery in crates/lights-mac, the first window a hand drives: orbit (drag to turn), splat against the ray caster (R; the oracle off until asked for), and the 900-surfel shell under a light the pointer places, with a selector, a caption per scene and cpu beside shown-after on screen. The open chrome question was decided on evidence: the host's AppKit draws the text, because lights has no text path, so L-183 and L-184 now wait on L-198, and L-198 (the audit) is unblocked. The demo's object, cameras and surfel shell moved, unchanged, into a new lights::scene::showcase; scene::demo was refused by the photometric guard. Release at 1920x1016: warm orbit cpu 4.910-5.063 ms, ray caster 21.609-22.290, surfel pass 2.939-3.091 ns per pixel and surfel (135 rows, 91-96 ms). 8 tests, 20 mutation rows CAUGHT (653 of 653); run_tests.sh 103 targets, 789 passed. Pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 9,
+  "total": 201,
+  "note": "L-198 closed: BUILT + REWRITTEN - the arm audit is docs/lights/RESEARCH.json `arms`, 31 rows (16 KEEP, 6 PRUNE, 9 RE-JUDGE), each naming the target its deciding evidence was taken against and whether that transfers to the 3D engine and the paradigm case, rendered with counted cost columns into RESEARCH.md and research.html. PRUNE on evidence that transfers: the density-signed Gabor and Gauss-Hermite kernels, the Haar and CDF 9/7 transforms, the DrawList path, the moment hierarchy (6,388 whole-file Rust lines). RE-JUDGE with the deciding experiment stated and not run: gaussian-normalised, super-gaussian, compact-bump (its support bound caps a 3D frame gain at 1.290x, on the 1.3x floor), gabor-colour, gauss-hermite-colour, per-tile-sort, the fit arm, Adam, the Tier 0 text path. Two PM questions carried on L-200: is a 3D fit coming, and does the engine draw its own text. tests/arm_audit.rs 6 tests seen red then green; 7 mutation rows CAUGHT (660 of 660); run_tests.sh 104 targets, 795 passed. L-199 unblocked, L-183 and L-184 re-pointed to the PM. Pages regenerated, not published"
+ },
+ {
+  "date": "2026-09-29",
+  "open": 8,
+  "total": 201,
+  "note": "L-199 closed: BUILT + REWRITTEN - the final research report is docs/lights/RESEARCH.json `report`, six sections and 28 claims citing 37 records and 24 arm rows, rendered at the front of RESEARCH.md and research.html, and every cited record was re-run on this tree first into a 59-row ledger: p2, p4, p5, l96, l166, l175 and l176 (everything L-200 prunes) reproduce every deterministic column and file, a1's published run was re-executed for the first time, and only timings move. Solved on the way: l67's instrument counted cross-crate copies in a release binary (fixed, 96 agrees); l174 and l175's capture no longer run since d9ea50fe deleted optical's frame bench, so both are pinned to 8e9a15ba and reproduce there. tests/final_report.rs 7 tests seen red then green; tests/monomorphisation_budget.rs 3 tests, 2 red on the unfixed script; 11 mutation rows CAUGHT (671 of 671); run_tests.sh 106 targets, 805 passed. L-200 now waits on the PM's two rulings only. Pages regenerated, not published"
+ }
+]

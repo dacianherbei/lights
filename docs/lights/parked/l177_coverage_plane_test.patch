@@ -1,0 +1,54 @@
+diff --git a/crates/lights/tests/image.rs b/crates/lights/tests/image.rs
+index 6d47b1cc..a96069cb 100644
+--- a/crates/lights/tests/image.rs
++++ b/crates/lights/tests/image.rs
+@@ -3,7 +3,7 @@ use lights::blend::{Additive, BlendMode, BlendSettings, Over};
+ use lights::camera::CameraSpec;
+ #[cfg(feature = "method-splat")]
+ use lights::dispatch::{Collect, Precision, RenderRequest, render};
+-use lights::image::{FloatImage, Framebuffer, Image, read_png, write_png, write_png_normalized};
++use lights::image::{FloatImage, Framebuffer, Image, RasterLayer, read_png, write_png, write_png_normalized};
+ #[cfg(feature = "method-splat")]
+ use lights::kernel::KernelFamily;
+ #[cfg(feature = "method-splat")]
+@@ -461,3 +461,40 @@ fn the_framebuffer_states_its_own_size_and_it_is_the_padded_tile_grid() {
+          the precision axis moves by construction"
+     );
+ }
++
++#[test]
++fn a_coverage_plane_holds_one_scalar_per_pixel_so_a_1080p_f32_layer_is_33_177_600_bytes() {
++    let (width, height) = (1920u32, 1080u32);
++    let pixels = (width as usize) * (height as usize);
++    let colour_plane = pixels * core::mem::size_of::<Rgb<f32>>();
++    let scalar_plane = pixels * core::mem::size_of::<f32>();
++    assert_eq!(
++        (colour_plane, scalar_plane),
++        (24_883_200, 8_294_400),
++        "Rgb<f32> is three packed f32s and a coverage value is one"
++    );
++
++    let mask = vec![128u8; pixels];
++    let ink = Rgb::new(0.9f32, 0.5, 0.25);
++    let build = || RasterLayer::<f32>::from_coverage8(width, height, &mask, ink).expect("a 1080p mask");
++    let mut layer = None;
++    let (layer_colour, _) = frames_of_size(colour_plane, || layer = Some(build()));
++    let (layer_scalar, _) = frames_of_size(scalar_plane, || drop(build()));
++    let layer = layer.expect("the layer was built");
++    let resident = core::mem::size_of_val(layer.premultiplied.pixels.as_slice())
++        + core::mem::size_of_val(layer.coverage.pixels.as_slice());
++
++    let framebuffer = Framebuffer::<f32, Over>::new(width, height, 16).expect("framebuffer");
++    let (pair_colour, _) = frames_of_size(colour_plane, || drop(framebuffer.resolve_premultiplied()));
++    let (pair_scalar, _) = frames_of_size(scalar_plane, || drop(framebuffer.resolve_premultiplied()));
++
++    assert_eq!(
++        (layer_colour, layer_scalar, resident, pair_colour, pair_scalar),
++        (1, 1, 33_177_600, 1, 1),
++        "read as: allocations of a {colour_plane}-byte colour plane and of a {scalar_plane}-byte \
++         coverage plane while RasterLayer::<f32>::from_coverage8 builds a 1080p layer, the bytes \
++         that layer holds, then the same two counts for Framebuffer::resolve_premultiplied, whose \
++         pair is the pair a RasterLayer holds (L-73). Two colour-sized planes and 49,766,400 bytes \
++         is coverage stored three channels wide, 8 of every 12 bytes saying nothing"
++    );
++}

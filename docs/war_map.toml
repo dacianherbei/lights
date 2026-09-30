@@ -1,0 +1,1036 @@
+# Fulgor IDE — Design Map
+# Complete project graph with all components, milestones, tasks, decisions, and edges.
+# This file is the data source for atrium's Design Map visualization.
+
+[meta]
+title = "Fulgor IDE — Design Map"
+generated_from = [
+    "Phase 2 deep enrichment of 242 git commits across fulgor + llvm_cross_language_bridge repos",
+    "127 markdown files analyzed from project knowledge base",
+]
+last_updated = "2026-03-23"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# COMPONENTS — all crates + project pillars
+# ═══════════════════════════════════════════════════════════════════════════════
+
+[[component]]
+id = "forge"
+title = "Forge — Compilation Engine"
+group = "Core"
+parent = "fulgor"
+status = "InProgress"
+description = "LLVM IR generation; cross-language type system (Rust, C, C++, Julia, COBOL); automatic bridge generation (81-162µs, 62x target); memory pools (3.5x-6.9x vs malloc); workflow compiler with auto dependency resolution"
+
+[[component]]
+id = "nexus"
+title = "Nexus — Execution Engine"
+group = "Core"
+parent = "fulgor"
+status = "InProgress"
+description = "14-state Pod engine (~90% Erlang parity); 3-tier orchestration (Inline/Isolated/Resilient); 6 interchangeable strategies; IPC via Unix sockets + bincode v2; FMEA-validated (47 failure modes)"
+
+[[component]]
+id = "metadata"
+title = "Metadata — Shared Types"
+group = "Core"
+parent = "fulgor"
+status = "InProgress"
+description = "Binary metadata format for forge→nexus interface; canonical type definitions; function signatures and parameter descriptions"
+
+[[component]]
+id = "atrium"
+title = "Atrium — Visualization & Coordination"
+group = "GUI"
+parent = "fulgor"
+status = "InProgress"
+description = "Design map with elliptical nodes; detail panel; calendar with git timeline; questions tracker; 7 validated experiments; M1-M3 complete; three-layer framework (Organization/Design/Runtime)"
+
+[[component]]
+id = "aegis"
+title = "Aegis — Backup & Monitoring Service"
+group = "Services"
+parent = "fulgor"
+status = "InProgress"
+description = "PTY wrapper for Claude Code; JSONL file watcher; web dashboard with SSE/WebSocket; session tracking; cross-session search; terminal replay (asciicast v2); Synology SPK packaging; TLS support"
+
+[[component]]
+id = "codex"
+title = "Codex — Story Builder"
+group = "Services"
+parent = "fulgor"
+status = "InProgress"
+description = "JSONL transcript processing; story sequence extraction; token usage tracking per model; cost estimation; incremental story building with progress state"
+
+[[component]]
+id = "lights"
+title = "Lights — Rendering Engine"
+group = "GUI"
+parent = "fulgor"
+status = "InProgress"
+description = "CPU-only anisotropic-atom renderer with interchangeable kernel, method and precision axes; the engine under optical (text, clipping and compositing, PM ruling L-113 option (b), 2026-09-16) and a simple 3D game engine (PM, 2026-09-09). Active burn-down register at crates/lights/head_open.toml + tail.toml"
+
+[[component]]
+id = "agora"
+title = "Agora — Marketplace & Monetization"
+group = "Vision"
+parent = "fulgor"
+status = "Planned"
+description = "Code marketplace (buy/sell nodes); blockchain licensing; revenue sharing; performance ratings. Founding concept from Sep 2025 architecture"
+
+[[component]]
+id = "optical"
+title = "Optical — UI Component Library"
+group = "GUI"
+parent = "fulgor"
+status = "InProgress"
+description = "Node-graph IDE UI library, today on eframe 0.31 (wgpu) + egui 0.31; becoming a full GUI library on the lights renderer, which supplies text, clipping and compositing (PM ruling L-113 option (b), 2026-09-16)"
+
+[[component]]
+id = "fulgor"
+title = "Fulgor IDE — Node-Based Visual Programming"
+group = "Product"
+status = "InProgress"
+description = "Revolutionary node-based IDE with zero-overhead cross-language execution via LLVM. Parent of all crates: forge (compilation), nexus (execution), atrium (visualization), aegis (monitoring), codex (stories), metadata (shared types), lights (rendering), optical (UI), agora (marketplace)"
+
+[[component]]
+id = "teaching"
+title = "Teaching Methodology"
+group = "Process"
+status = "InProgress"
+description = "Socratic method + Musashi Five Rings + gamification (hybrid mode); Elephant Parable (architect sees shape, Claude feels texture); research-first methodology (10-20x ROI); documentation ROI (17-34x measured)"
+
+[[component]]
+id = "portfolio"
+title = "Portfolio & Business Strategy"
+group = "Process"
+status = "InProgress"
+description = "STAR-method interview stories; HR one-page + engineer case studies; COBOL migration niche ($3-5B market); freelancing plan ($150-250/hr); AEO visibility; YouTube business analysis; learning-enforced AI collaboration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# MILESTONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# --- Nexus milestones ---
+[[component]]
+id = "nexos"
+title = "NexOS — Permissions Compiled In"
+group = "Vision"
+parent = "fulgor"
+status = "Planned"
+description = "Rust microkernel vision (docs/NEXOS_VISION.md): user code compiled on the fly with permissions baked in — the permission check is the compiler, the cache is the database, the map is the UI. Tier system = isolation spectrum; wires = capabilities; Linux compat as pods (ABI persona + LKL drivers); Cranelift/LLVM backend seam. Third act of the stack."
+
+[[component]]
+id = "living_service"
+title = "Living Service — Features On Request"
+group = "Vision"
+parent = "fulgor"
+status = "Planned"
+description = "Fourth act (docs/LIVING_SERVICE_VISION.md): always-on NexusService fleet + agent team watches story-item feature requests and delivers per-user compiled features into RUNNING apps via DeploymentPlan hot-swap. Human relocated to the reviewer seat (requester gates own feature); autonomy earned per risk tier; safe by construction via capability-bounded compilation."
+
+[[milestone]]
+id = "B.4-B.7"
+title = "B.4-B.7: Compositional Executor Experiments"
+group = "nexus"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "B.8"
+title = "B.8: ProcessExecution + Benchmarks"
+group = "nexus"
+status = "Done"
+depends_on = ["B.4-B.7"]
+
+[[milestone]]
+id = "B.10"
+title = "B.10: Full Local Strategy Interaction"
+group = "nexus"
+status = "InProgress"
+depends_on = ["B.8"]
+
+[[milestone]]
+id = "B.11"
+title = "B.11: Distributed Execution"
+group = "nexus"
+status = "InProgress"
+depends_on = ["B.10"]
+
+[[milestone]]
+id = "B.9"
+title = "B.9: Debugging Support"
+group = "nexus"
+status = "Planned"
+depends_on = ["B.11"]
+
+[[milestone]]
+id = "B.12"
+title = "B.12: Comprehensive Benchmarking"
+group = "nexus"
+status = "Planned"
+depends_on = ["B.9"]
+
+# --- Forge milestones ---
+[[milestone]]
+id = "bridge_gen"
+title = "Bridge Generator — 62x Performance"
+group = "forge"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "memory_pools"
+title = "Memory Pools — 3.5x-6.9x vs malloc"
+group = "forge"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "cross_lang"
+title = "Cross-Language Type System — 5 Languages"
+group = "forge"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "cobol_pilot"
+title = "COBOL Migration Pilot"
+group = "forge"
+status = "Planned"
+depends_on = ["bridge_gen", "cross_lang"]
+
+# --- Atrium milestones ---
+[[milestone]]
+id = "M1"
+title = "M1: Fast Startup + Design Map"
+group = "atrium"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "M2"
+title = "M2: Detail Panel + Decisions"
+group = "atrium"
+status = "Done"
+depends_on = ["M1"]
+
+[[milestone]]
+id = "M3"
+title = "M3: Calendar + Git Timeline"
+group = "atrium"
+status = "Done"
+depends_on = ["M2"]
+
+[[milestone]]
+id = "M4"
+title = "M4: Decision Context + Temporal Linking"
+group = "atrium"
+status = "InProgress"
+depends_on = ["M3"]
+
+[[milestone]]
+id = "M5"
+title = "M5: Layer Switching (L1 Org / L2 Design / L3 Runtime)"
+group = "atrium"
+status = "Planned"
+depends_on = ["M4"]
+
+[[milestone]]
+id = "MVP_GUI"
+title = "MVP GUI: Self-Hosting Visual Editor"
+group = "atrium"
+status = "Planned"
+depends_on = ["B.10", "M5"]
+
+# --- Aegis milestones ---
+[[milestone]]
+id = "aegis_v1"
+title = "Aegis v1: PTY Wrapper + Web Dashboard"
+group = "aegis"
+status = "Done"
+depends_on = []
+
+[[milestone]]
+id = "aegis_sync"
+title = "Aegis Sync: Incremental Pipeline"
+group = "aegis"
+status = "InProgress"
+depends_on = ["aegis_v1"]
+
+# --- Teaching milestones ---
+[[milestone]]
+id = "methodology_v2"
+title = "Teaching Methodology v2.0 — Elephant Parable"
+group = "teaching"
+status = "Done"
+depends_on = []
+
+# --- Experiment milestones ---
+[[milestone]]
+id = "E.11"
+title = "E.11: Runtime Adaptation Experiments"
+group = "nexus"
+status = "Planned"
+depends_on = ["B.11"]
+
+[[milestone]]
+id = "retrospective"
+title = "Retrospective Timeline — Frostpunk-Inspired Replay"
+group = "atrium"
+status = "Planned"
+depends_on = ["M5"]
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TASKS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# --- B.4-B.7 tasks (Done) ---
+[[task]]
+id = "B.4"
+title = "Strategy trait definitions"
+group = "B.4-B.7"
+status = "Done"
+description = "ExecutionStrategy; MemoryStrategy; InputStrategy; OutputStrategy — all object-safe traits"
+estimate = "1.5h"
+depends_on = []
+
+[[task]]
+id = "B.5"
+title = "Simple strategy implementations"
+group = "B.4-B.7"
+status = "Done"
+description = "ThreadedExecution; OwnedMemory; AsyncInput; AsyncOutput — 68 tests, 1465 lines"
+estimate = "1.5h"
+depends_on = ["B.4"]
+
+[[task]]
+id = "B.6"
+title = "Executor composition"
+group = "B.4-B.7"
+status = "Done"
+description = "Executor struct composing 4 strategies; shared memory heap; lifecycle management; Drop safety"
+estimate = "2h"
+depends_on = ["B.5"]
+
+[[task]]
+id = "B.7"
+title = "Strategy swapping"
+group = "B.4-B.7"
+status = "Done"
+description = "SwappableExecutor; cooperative message-based protocol; 6-state machine; timeout handling"
+estimate = "1.5h"
+depends_on = ["B.6"]
+
+# --- B.8 tasks (Done) ---
+[[task]]
+id = "B.8.1"
+title = "ProcessExecution strategy"
+group = "B.8"
+status = "Done"
+description = "Process-based execution with timeout + SIGKILL; 8+ integration tests for hung nodes"
+estimate = ""
+depends_on = []
+
+# --- B.10 tasks ---
+[[task]]
+id = "B.10.arch"
+title = "B.10 Week 1: Architecture + FMEA"
+group = "B.10"
+status = "Done"
+description = "Industry research (Java/CUDA/Akka/Erlang); 47 failure modes (FMEA); error handling architecture; trait-based orchestrator design; testing infrastructure (6 mock strategies, fault injector, resource monitor)"
+estimate = "7 days"
+depends_on = []
+
+[[task]]
+id = "B.10.inline"
+title = "InlineOrchestrator — Tier 0"
+group = "B.10"
+status = "Done"
+description = "Same-thread execution; <1% overhead; production-ready; wired to InlineStrategy"
+estimate = ""
+depends_on = ["B.10.arch"]
+
+[[task]]
+id = "B.10.isolated"
+title = "IsolatedOrchestrator — Tier 1"
+group = "B.10"
+status = "InProgress"
+description = "Thread-based isolation; cooperative shutdown (<24ms); message-passing; needs completion"
+estimate = "1-2 days"
+depends_on = ["B.10.inline"]
+
+[[task]]
+id = "B.10.resilient"
+title = "ResilientOrchestrator — Tier 2"
+group = "B.10"
+status = "InProgress"
+description = "Process isolation; checkpoint + Level 1 recovery; circuit breaker; supervisor tree; watchdog; MaxR/MaxT restarts; hot-swap"
+estimate = "1-2 days"
+depends_on = ["B.10.isolated"]
+
+[[task]]
+id = "B.10.R2"
+title = "End-to-end strategy coordination test"
+group = "B.10"
+status = "Planned"
+description = "All 6 strategy types working together in a single pod; hot-swap during execution"
+estimate = "0.5 day"
+depends_on = ["B.10.resilient"]
+
+[[task]]
+id = "B.10.R3"
+title = "Stress testing"
+group = "B.10"
+status = "Planned"
+description = "Multiple pods concurrently; strategy failure and recovery under load; memory pressure"
+estimate = "0.5 day"
+depends_on = ["B.10.R2"]
+
+# --- Bridge generator tasks (Done) ---
+[[task]]
+id = "bridge.exercises"
+title = "LLVM exercises 1-6"
+group = "bridge_gen"
+status = "Done"
+description = "Basic blocks; struct passing; multi-level calls; module linking; Rust→C calls; manual bridge code"
+estimate = "6 days"
+depends_on = []
+
+[[task]]
+id = "bridge.auto"
+title = "Automated bridge generation"
+group = "bridge_gen"
+status = "Done"
+description = "IR parser; signature mismatch detection; ConversionStrategy enum; caller patching; struct decomposition; recursive flattening"
+estimate = "5 days"
+depends_on = ["bridge.exercises"]
+
+[[task]]
+id = "bridge.perf"
+title = "Performance validation — 62x target"
+group = "bridge_gen"
+status = "Done"
+description = "Criterion benchmarks: simple 81µs; struct 146µs; nested 162µs; 100 samples; 95% CI; linear O(n) scaling"
+estimate = ""
+depends_on = ["bridge.auto"]
+
+# --- Atrium M1-M3 tasks (Done) ---
+[[task]]
+id = "M1.startup"
+title = "Fast startup bypass"
+group = "M1"
+status = "Done"
+description = "Skip old pipeline (no JSONL, no Sugiyama, no snarl) when war_map.toml exists; <1s vs 181s"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "M1.nodes"
+title = "Elliptical node renderer"
+group = "M1"
+status = "Done"
+description = "Custom egui::Painter; spline outlines; pin borders with vector icons; status icons; collapse/expand; hover highlights"
+estimate = ""
+depends_on = ["M1.startup"]
+
+[[task]]
+id = "M1.routing"
+title = "Wire routing — channel + regional"
+group = "M1"
+status = "Done"
+description = "L-shape through midpoint; hierarchical regional for 1000+ nodes (instant); incremental rerouting on drag"
+estimate = ""
+depends_on = ["M1.nodes"]
+
+[[task]]
+id = "M1.tools"
+title = "Minimap + magnifier + focus"
+group = "M1"
+status = "Done"
+description = "Minimap overlay with viewport rectangle; magnifier at zoom 1.0; focus zoom-to-selection"
+estimate = ""
+depends_on = ["M1.nodes"]
+
+[[task]]
+id = "M2.detail"
+title = "Detail tab — Eclipse-style"
+group = "M2"
+status = "Done"
+description = "Separate dockable tab; synced with design map selection; scrollable; collapsible descriptions (semicolon-split with ▶/◀)"
+estimate = ""
+depends_on = ["M1.tools"]
+
+[[task]]
+id = "M2.decisions"
+title = "Decisions wired"
+group = "M2"
+status = "Done"
+description = "WarMapDecision rendered with id, title, numbered options"
+estimate = ""
+depends_on = ["M2.detail"]
+
+[[task]]
+id = "M3.extract"
+title = "Experiment 8: Git timeline extraction"
+group = "M3"
+status = "Done"
+description = "242 events from fulgor + llvm_cross_language_bridge; component mapping; event classification; md section extraction"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "M3.calendar"
+title = "Calendar tab with month grid"
+group = "M3"
+status = "Done"
+description = "Reuses experiment calendar widget; date selection → grouped event list; Design/Detail sync buttons; component/category filters"
+estimate = ""
+depends_on = ["M3.extract"]
+
+[[task]]
+id = "M3.enrich"
+title = "Phase 2: Semantic enrichment"
+group = "M3"
+status = "Done"
+description = "All 242 commits analyzed via git diffs; 127 files read from knowledge base; 15 open questions discovered"
+estimate = ""
+depends_on = ["M3.calendar"]
+
+[[task]]
+id = "M3.questions"
+title = "Questions tab"
+group = "M3"
+status = "Done"
+description = "Open questions from open_questions.toml; filterable by design map component; expandable context"
+estimate = ""
+depends_on = ["M3.enrich"]
+
+# --- M4 tasks ---
+[[task]]
+id = "M4.ibis"
+title = "IBIS decision data model + detail panel"
+group = "M4"
+status = "Done"
+description = "WarMapDecision enriched with question/chosen/reason/status/date/affects; IBIS detail panel with status badges and chosen markers; decision diamonds on nodes; 9 ADRs populated"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "M4.search"
+title = "Node search with Ctrl+F and autocomplete"
+group = "M4"
+status = "Done"
+description = "Search dialog with autocomplete; zooms to found node with flash; magnifying glass toolbar button"
+estimate = ""
+depends_on = ["M4.ibis"]
+
+[[task]]
+id = "M4.select"
+title = "Multi-select + alignment toolbar"
+group = "M4"
+status = "InProgress"
+description = "Ctrl+click toggle; Shift+drag rubber band; Ctrl+A select all; alignment buttons (L/T/CH/CV/SH/SV); View menu toggle"
+estimate = "0.5 day"
+depends_on = ["M4.search"]
+
+[[task]]
+id = "M4.cmv"
+title = "Cross-view synchronization research"
+group = "M4"
+status = "Planned"
+description = "R-CMV: Roberts/Shneiderman/Weaver literature review; define sync modes for all view pairs; implement configurable sync mode dropdown; fix detail→calendar filtering"
+estimate = "1-2 days"
+depends_on = ["M4.select"]
+
+[[task]]
+id = "M4.toolbar"
+title = "Toolbar system with rows and View menu"
+group = "M4"
+status = "Planned"
+description = "Separate toolbar rows; View menu toggle for layout toolbar; rubber band toolbar holder"
+estimate = "0.5 day"
+depends_on = ["M4.select"]
+
+[[task]]
+id = "M4.widgets"
+title = "Widget isolation — extract from design_map.rs"
+group = "M4"
+status = "Planned"
+description = "Extract search dialog, minimap, detail panel into separate files; post-commit hook for widget size check"
+estimate = "0.5 day"
+depends_on = ["M4.toolbar"]
+
+# --- Aegis tasks ---
+[[task]]
+id = "aegis.pty"
+title = "PTY wrapper + real-time streaming"
+group = "aegis_v1"
+status = "Done"
+description = "Pseudo-terminal wrapping Claude Code; SSE dashboard; 2746 lines"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "aegis.platform"
+title = "JSONL watcher + session tracking + SPK"
+group = "aegis_v1"
+status = "Done"
+description = "File watcher; session tracking; project identity (git); cross-session search; terminal replay (asciicast v2); session tagging; hooks; xterm.js WebSocket; TLS; Synology SPK"
+estimate = ""
+depends_on = ["aegis.pty"]
+
+# --- B.11 tasks ---
+[[task]]
+id = "B.11.D1"
+title = "Transport abstraction trait"
+group = "B.11"
+status = "Done"
+description = "Transport trait; IpcChannel<T> generic"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "B.11.D2"
+title = "Nexus-to-Nexus protocol"
+group = "B.11"
+status = "Done"
+description = "NexusService with coordinator/worker roles"
+estimate = ""
+depends_on = ["B.11.D1"]
+
+[[task]]
+id = "B.11.D3"
+title = "Connection strategy"
+group = "B.11"
+status = "Done"
+description = "NetworkInput/NetworkOutput I/O strategies"
+estimate = ""
+depends_on = ["B.11.D2"]
+
+[[task]]
+id = "B.11.I1"
+title = "Transport trait implementation"
+group = "B.11"
+status = "Planned"
+description = "UnixSocketTransport adapter; TcpTransport; connection pool management"
+estimate = ""
+depends_on = ["B.11.D3"]
+
+[[task]]
+id = "B.11.I2"
+title = "Remote pod spawning"
+group = "B.11"
+status = "Planned"
+description = "NexusManagement → remote Nexus spawn request; remote TierBuilder; TCP channels; cross-boundary pod lifecycle"
+estimate = ""
+depends_on = ["B.11.I1"]
+
+[[task]]
+id = "B.11.I3"
+title = "Distributed workflow execution"
+group = "B.11"
+status = "Planned"
+description = "Graph partitioning; data marshaling; cross-machine I/O; network failure handling"
+estimate = ""
+depends_on = ["B.11.I2"]
+
+[[task]]
+id = "B.11.I4"
+title = "Integration testing"
+group = "B.11"
+status = "Planned"
+description = "Two Nexus instances on same machine; workflow split; failure injection"
+estimate = ""
+depends_on = ["B.11.I3"]
+
+# --- B.9 tasks ---
+[[task]]
+id = "B.9.1"
+title = "DebugOrchestrator"
+group = "B.9"
+status = "Planned"
+description = "Separate tier; full state tracking; cooperative pause via atomic flags (<1ns overhead); variable inspection API"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "B.9.2"
+title = "Breakpoint system"
+group = "B.9"
+status = "Planned"
+description = "Node and workflow breakpoints; conditional; works locally and remotely"
+estimate = ""
+depends_on = ["B.9.1"]
+
+[[task]]
+id = "B.9.3"
+title = "Execution tracing"
+group = "B.9"
+status = "Planned"
+description = "Record history; time-travel debugging; distributed tracing after B.11"
+estimate = ""
+depends_on = ["B.9.2"]
+
+[[task]]
+id = "B.9.4"
+title = "Built-in debugger protocol"
+group = "B.9"
+status = "Planned"
+description = "No GDB/LLDB dependency; integrated with nexus; remote debugging via B.11 transport"
+estimate = ""
+depends_on = ["B.9.3"]
+
+# --- B.12 tasks ---
+[[task]]
+id = "B.12.1"
+title = "Local execution benchmarks"
+group = "B.12"
+status = "Planned"
+description = "Criterion 0.5; 100 samples; 95% CI; 9 benchmark categories"
+estimate = ""
+depends_on = []
+
+[[task]]
+id = "B.12.2"
+title = "Cross-language call overhead"
+group = "B.12"
+status = "Planned"
+description = ""
+estimate = ""
+depends_on = ["B.12.1"]
+
+[[task]]
+id = "B.12.3"
+title = "Distributed execution overhead"
+group = "B.12"
+status = "Planned"
+description = ""
+estimate = ""
+depends_on = ["B.12.2"]
+
+[[task]]
+id = "B.12.4"
+title = "Memory usage profiling"
+group = "B.12"
+status = "Planned"
+description = ""
+estimate = ""
+depends_on = ["B.12.3"]
+
+[[task]]
+id = "B.12.5"
+title = "Comparison with industry tools"
+group = "B.12"
+status = "Planned"
+description = ""
+estimate = ""
+depends_on = ["B.12.4"]
+
+# --- E.11 tasks ---
+[[task]]
+id = "E.11.1"
+title = "AdaptationRequest/DeploymentPlan protocol"
+group = "E.11"
+status = "Planned"
+description = ""
+estimate = "1 day"
+depends_on = []
+
+[[task]]
+id = "E.11.6"
+title = "Logging as checkpoint provider"
+group = "E.11"
+status = "Planned"
+description = "Erlang-style recovery"
+estimate = "2-3 days"
+depends_on = ["E.11.1"]
+
+# --- MVP GUI tasks ---
+[[task]]
+id = "Phase_0"
+title = "Library validation"
+group = "MVP_GUI"
+status = "Planned"
+description = "dear-app window with docking; imnodes test; 60fps on target HW"
+estimate = "2-3 days"
+depends_on = []
+
+[[task]]
+id = "Phase_1"
+title = "Source parser + project model"
+group = "MVP_GUI"
+status = "Done"
+description = "syn crate parses fulgor Rust source → 125+ node definitions; source-level dependency graph"
+estimate = "3-4 days"
+depends_on = ["Phase_0"]
+
+[[task]]
+id = "Phase_5"
+title = "Polish + self-hosting demo"
+group = "MVP_GUI"
+status = "Planned"
+description = "Portfolio-ready: fulgor managing fulgor"
+estimate = "2-3 days"
+depends_on = ["Phase_1"]
+
+# --- COBOL pilot tasks ---
+[[task]]
+id = "cobol.parser"
+title = "COBOL parser integration"
+group = "cobol_pilot"
+status = "Planned"
+description = "tree-sitter-cobol or GNU Cobol; AST bridge; COPY statement handling; test on 10 real banking programs"
+estimate = "1 week"
+depends_on = []
+
+[[task]]
+id = "cobol.checkpoint"
+title = "Checkpoint comparison system"
+group = "cobol_pilot"
+status = "Planned"
+description = "Baseline comparative testing; penny-perfect decimal accuracy; mismatch reporting; ZONECHECK support"
+estimate = "1 week"
+depends_on = ["cobol.parser"]
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# DECISIONS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+[[decision]]
+id = "ADR-001"
+title = "Binary deployment via dlopen"
+group = "forge"
+question = "How should forge deliver compiled code to nexus for thread-safe execution?"
+options = ["JIT lifetime coordination", "Dynamic loading via dlopen", "Shared memory IPC"]
+chosen = "Dynamic loading via dlopen"
+reason = "Function pointers do NOT survive JIT disposal (SEGFAULT in R1); dlopen keeps code alive automatically; standard toolchain approach validated by R3 (480-byte object files)"
+status = "Accepted"
+date = "2025-10-24"
+affects = ["forge", "nexus", "metadata"]
+
+[[decision]]
+id = "ADR-002"
+title = "Compositional executor via strategy pattern"
+group = "nexus"
+question = "How should execution behavior be decomposed — fixed executor types or composable strategies?"
+options = ["Monolithic executor (ThreadExecutor, ProcessExecutor, RemoteExecutor)", "Strategy pattern with hot-swap", "Plugin-based architecture"]
+chosen = "Strategy pattern with hot-swap"
+reason = "Avoids combinatorial explosion (3x3x3=27 fixed types vs O(n) strategies); validated by NVIDIA HMM, CUDA Unified Memory, AMD HSA, Microsoft TPL Dataflow; enables runtime strategy swapping"
+status = "Accepted"
+date = "2025-10-24"
+affects = ["nexus", "B.4-B.7"]
+
+[[decision]]
+id = "ADR-003"
+title = "B.4-B.7 compositional architecture summary"
+group = "nexus"
+question = "Was the compositional executor architecture validated through experimentation?"
+options = ["Continue with design", "Redesign based on findings"]
+chosen = "Continue with design"
+reason = "4500 lines, ~100 tests in 6.5 hours; industry-validated against 5 production systems; runtime strategy swapping proven with cooperative message protocol"
+status = "Validated"
+date = "2025-10-25"
+affects = ["nexus", "B.4-B.7", "B.8"]
+
+[[decision]]
+id = "ADR-004"
+title = "Defer comprehensive benchmarking to B.12"
+group = "nexus"
+question = "When should comprehensive benchmarking be performed — now or after all features?"
+options = ["Benchmark now (incomplete picture)", "Defer to B.12 after all features"]
+chosen = "Defer to B.12 after all features"
+reason = "Benchmarking fragments gives incomplete picture; consistent with 'measure complete system, not fragments' philosophy; B.12 follows B.9 so all features are available"
+status = "Accepted"
+date = "2025-10-25"
+affects = ["nexus", "B.12"]
+
+[[decision]]
+id = "ADR-005"
+title = "Milestone ordering: B.10 → B.11 → B.9 → B.12"
+group = "nexus"
+question = "What sequence should remaining experiments follow after B.4-B.8?"
+options = ["Original: B.9 → B.10 → B.11 → B.12", "Reordered: B.10 → B.11 → B.9 → B.12"]
+chosen = "Reordered: B.10 → B.11 → B.9 → B.12"
+reason = "B.10 is foundational ('the rock on which everything else is built'); remote debugging requires remote executors (B.11 before B.9); debugging needs something to debug; benchmark complete system last"
+status = "Accepted"
+date = "2025-10-27"
+affects = ["nexus", "B.10", "B.11", "B.9", "B.12"]
+
+[[decision]]
+id = "DEC-debug"
+title = "Debugging is separate, not a mode of production"
+group = "nexus"
+question = "Should debugging be integrated into production orchestrators or be a separate tier?"
+options = ["Add debug flags to production orchestrators", "Separate DebugOrchestrator tier"]
+chosen = "Separate DebugOrchestrator tier"
+reason = "'Debugging not supposed to be resilient nor fast' — it has fundamentally different requirements; builds debugging INTO the execution engine instead of relying on external debugger (GDB/LLDB)"
+status = "Accepted"
+date = "2025-10-27"
+affects = ["nexus", "B.9"]
+
+[[decision]]
+id = "DEC-methodology"
+title = "Methodology v2.0 — Elephant Parable"
+group = "teaching"
+question = "What teaching methodology balances structured learning with engagement?"
+options = ["Gamification-primary", "TODO-driven with gamification background", "No gamification"]
+chosen = "TODO-driven with gamification background"
+reason = "Gamification-primary was abandoned as wrong for thoughtful work; Socratic method + Musashi Five Rings + background gamification; Elephant Parable (architect sees shape, Claude feels texture) captures the collaboration model"
+status = "Accepted"
+date = "2025-11-15"
+affects = ["teaching"]
+
+[[decision]]
+id = "DEC-structural-semantic"
+title = "Structural vs semantic problem classification"
+group = "forge"
+question = "Should bridge code be generated for all cross-language calls or only semantic mismatches?"
+options = ["Generate bridges for everything", "Only for semantic mismatches"]
+chosen = "Only for semantic mismatches"
+reason = "62x better performance because most calls don't need bridges — only generate when there's a genuine type system mismatch (e.g., struct layout, calling convention); structural matches pass through directly"
+status = "Accepted"
+date = "2025-10-24"
+affects = ["forge", "bridge_gen"]
+
+[[decision]]
+id = "DEC-atrium-redesign"
+title = "Three-layer visualization framework"
+group = "atrium"
+question = "How should atrium visualize the project — single graph or multi-layer framework?"
+options = ["Single graph view", "Three layers (Organization/Design/Runtime) with Isolation/Unified Effort duality"]
+chosen = "Three layers (Organization/Design/Runtime) with Isolation/Unified Effort duality"
+reason = "Validated by Conway's Law, Viable System Model, Team Topologies, adjoint functors; drops 181s Sugiyama startup to <3s; same infrastructure serves all three layers with different data sources"
+status = "Accepted"
+date = "2026-03-22"
+affects = ["atrium", "M1", "M2", "M3", "M4", "M5"]
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# EDGES — connections between components and milestones
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Component-level connections
+[[edge]]
+from = "forge"
+to = "nexus"
+steps = ["Binary deployment via dlopen (ADR-001)", "Type system shared via metadata"]
+
+[[edge]]
+from = "forge"
+to = "metadata"
+steps = ["Canonical type definitions", "Function signatures"]
+
+[[edge]]
+from = "nexus"
+to = "metadata"
+steps = ["Pod specifications", "Strategy configuration"]
+
+[[edge]]
+from = "atrium"
+to = "codex"
+steps = ["Story processing", "Transcript extraction"]
+
+[[edge]]
+from = "atrium"
+to = "aegis"
+steps = ["Sync client", "Session data"]
+
+[[edge]]
+from = "aegis"
+to = "codex"
+steps = ["JSONL processing", "Token tracking"]
+
+[[edge]]
+from = "teaching"
+to = "portfolio"
+steps = ["Methodology is the real contribution", "STAR stories from process"]
+
+[[edge]]
+from = "forge"
+to = "lights"
+steps = ["Memory pool system originated in lights renderer"]
+
+# Milestone-level connections
+[[edge]]
+from = "B.10"
+to = "MVP_GUI"
+steps = ["Complete all local strategies", "Validate 3 tiers end-to-end"]
+
+[[edge]]
+from = "MVP_GUI"
+to = "B.11"
+steps = ["Self-hosting IDE operational", "Design distributed protocol"]
+
+[[edge]]
+from = "B.11"
+to = "B.9"
+steps = ["Remote executors operational", "Debug support needs remote capability"]
+
+[[edge]]
+from = "B.9"
+to = "B.12"
+steps = ["Debugging infrastructure ready", "Benchmark complete system"]
+
+[[edge]]
+from = "bridge_gen"
+to = "cross_lang"
+steps = ["Bridge generator uses canonical type system"]
+
+[[edge]]
+from = "cross_lang"
+to = "cobol_pilot"
+steps = ["COBOL types (COMP-3 packed decimal) in canonical system"]
+
+[[edge]]
+from = "M1"
+to = "M2"
+steps = ["Design map renderer ready"]
+
+[[edge]]
+from = "M2"
+to = "M3"
+steps = ["Detail panel syncs with calendar"]
+
+[[edge]]
+from = "M3"
+to = "M4"
+steps = ["Calendar provides temporal context for decisions"]
+
+[[edge]]
+from = "M4"
+to = "M5"
+steps = ["Decision tracking informs layer switching"]
+
+[[edge]]
+from = "M5"
+to = "retrospective"
+steps = ["Layer switching enables temporal replay"]
+
+[[edge]]
+from = "methodology_v2"
+to = "portfolio"
+steps = ["Methodology validated → portfolio stories ready"]
+
+[[edge]]
+from = "B.10.R3"
+to = "B.10"
+steps = []
+
+[[edge]]
+from = "Phase_5"
+to = "MVP_GUI"
+steps = []
+
+[[edge]]
+from = "B.11.I4"
+to = "B.11"
+steps = []
+
+[[edge]]
+from = "B.9.4"
+to = "B.9"
+steps = []
+
+[[edge]]
+from = "B.12.5"
+to = "B.12"
+steps = []

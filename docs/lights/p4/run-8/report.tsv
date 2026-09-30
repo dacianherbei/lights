@@ -1,0 +1,25 @@
+#invocation	.scratch/l144/target/release/lights-p4 --out-dir <repo>/docs/lights/p4/run-8 --classes all --terms shared --max-atoms 8
+#terms	shared
+#max_atoms	8
+#tile	16
+#quadrature_depth	10
+#gap_px	3
+#reading	the comparison is structurally asymmetric: the transform columns get their exact optimum for free and the atom columns get greedy matching pursuit, which is a LOWER BOUND on atom quality
+#absent	the analytic column is absent on n1..n4 and is drawn as a magenta hatch; it was NOT replaced by an invented arm
+content	viewport_width	viewport_height	control	shared_ceiling	requested	zoom	columns	png
+t2-straight-edge	64	64	analytic-exact	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t2-straight-edge-n8.png
+t2-straight-edge	64	64	analytic-exact	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t2-straight-edge-n8-4x.png
+t3-right-angle-corner	64	64	analytic-exact	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t3-right-angle-corner-n8.png
+t3-right-angle-corner	64	64	analytic-exact	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t3-right-angle-corner-n8-4x.png
+t5-thin-stroke	64	64	analytic-exact	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t5-thin-stroke-n8.png
+t5-thin-stroke	64	64	analytic-exact	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t5-thin-stroke-n8-4x.png
+t6-glyph-like	32	32	analytic-exact	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t6-glyph-like-n8.png
+t6-glyph-like	32	32	analytic-exact	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-t6-glyph-like-n8-4x.png
+n1-colour-field	64	64	ABSENT	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n1-colour-field-n8.png
+n1-colour-field	64	64	ABSENT	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n1-colour-field-n8-4x.png
+n2-soft-shadow	64	64	ABSENT	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n2-soft-shadow-n8.png
+n2-soft-shadow	64	64	ABSENT	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n2-soft-shadow-n8-4x.png
+n3-band-limited-noise	64	64	ABSENT	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n3-band-limited-noise-n8.png
+n3-band-limited-noise	64	64	ABSENT	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n3-band-limited-noise-n8-4x.png
+n4-broadband-patch	64	64	ABSENT	8	8	1	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n4-broadband-patch-n8.png
+n4-broadband-patch	64	64	ABSENT	8	8	4	truth,control,atoms-gaussian,atoms-super-gaussian-b4,haar-subband-weighted,cdf97-subband-weighted	strip-n4-broadband-patch-n8-4x.png

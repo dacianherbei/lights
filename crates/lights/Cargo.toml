@@ -1,0 +1,70 @@
+[package]
+name = "lights"
+version = "0.1.0"
+edition = "2024"
+description = "Anisotropic atom rendering core — interchangeable kernel, image-formation method and precision axes; CPU only, headless"
+license = "MIT OR Apache-2.0"
+authors = ["Dacian Herbei"]
+repository = "https://github.com/dacianherbei/lights"
+keywords = ["renderer", "rasteriser", "gaussian", "graphics", "cpu"]
+categories = ["graphics", "rendering"]
+
+[lib]
+name = "lights"
+path = "src/lib.rs"
+
+[dependencies]
+rayon = "1"
+png = "0.17"
+thiserror = "2.0"
+
+[[bin]]
+name = "lights-bench"
+path = "src/bin/lights_bench.rs"
+
+[[bin]]
+name = "lights-agreement"
+path = "src/bin/lights_agreement.rs"
+
+[[bin]]
+name = "lights-demo"
+path = "src/bin/lights_demo.rs"
+
+[[bin]]
+name = "lights-ui-frame"
+path = "src/bin/lights_ui_frame.rs"
+
+[[example]]
+name = "renderer_arms"
+required-features = ["fit"]
+
+[[bin]]
+name = "lights-p2"
+path = "src/bin/lights_p2.rs"
+required-features = ["fit"]
+
+[[bin]]
+name = "lights-p3"
+path = "src/bin/lights_p3.rs"
+required-features = ["fit"]
+
+[[bin]]
+name = "lights-p4"
+path = "src/bin/lights_p4.rs"
+required-features = ["fit"]
+
+[[bin]]
+name = "lights-p5"
+path = "src/bin/lights_p5.rs"
+required-features = ["fit"]
+
+[dev-dependencies]
+tempfile = "3"
+ttf-parser = "0.25"
+tiny-skia = { version = "0.11", default-features = false, features = ["std", "simd"] }
+
+[features]
+default = ["method-splat", "method-raycast"]
+fit = ["method-splat"]
+method-splat = []
+method-raycast = []

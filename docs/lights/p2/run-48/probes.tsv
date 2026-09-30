@@ -1,0 +1,89 @@
+#invocation	/Volumes/RamBuild/cargo-target/debug/lights-p2 --out-dir docs/lights/p2/run-48 --max-atoms 48
+#hardware	macos 18 cores aarch64
+#build	DEBUG - every wall-clock number below is meaningless as an absolute
+#precision	f64
+#method	splat-raster
+#sort	global-sort
+#tile	16
+#threads	18
+#PIXEL_BOX_VARIANCE	0.08333333333333333
+#alpha_cutoff	0.00392156862745098
+#Z0	64
+#DZ	0.015625
+#quadrature_depth	10
+#undecided_area	0.5075197219848633
+#field	512x512 holding 40 copies
+#criterion.max_transition_px	1
+#criterion.min_contrast_frac	0.9
+#criterion.min_peak_frac	0.9
+#criterion.target_fwhm_px	1
+#criterion.max_fwhm_error_px	0.5
+#criterion.max_interior_ripple	0.00392156862745098
+#control_arm_valid	yes
+#viewport.t1-flat-fill	64x64
+#viewport.t2-straight-edge	64x64
+#viewport.t3-right-angle-corner	64x64
+#viewport.t4-curve	32x32
+#viewport.t5-thin-stroke	64x64
+#viewport.t6-glyph-like	32x32
+target	blend	profile	arm	atoms	feature	kind	samples	thin_bins	transition_10_90_px	sdf_90	sdf_10	contrast	target_contrast	peak	fwhm_px	plateau_low	plateau_high	apex_displacement_px	interior_ripple	judged	meets
+t1-flat-fill	-	-	analytic-exact	0	0	interior	1804	0	nan	nan	nan	0.000000	1.000000	0.000000	nan	1.000000	1.000000	0.000000	0.000000	yes	yes
+t1-flat-fill	-	-	analytic-sdf	0	0	interior	1804	0	nan	nan	nan	0.000000	1.000000	0.000000	nan	1.000000	1.000000	0.000000	0.000000	yes	yes
+t1-flat-fill	gaussian	prefiltered	atoms	2	0	interior	1804	0	2.703821	-179.026013	-176.322192	0.000068	1.000000	0.000068	38.094180	0.999832	0.999900	178.308988	0.000198	yes	yes
+t1-flat-fill	gaussian	contract	atoms	2	0	interior	1804	0	2.914478	-179.237167	-176.322689	0.000068	1.000000	0.000068	37.954506	0.999832	0.999900	178.494187	0.000201	yes	yes
+t1-flat-fill	gaussian-normalised	prefiltered	atoms	2	0	interior	1804	0	nan	nan	nan	0.000000	1.000000	0.000000	nan	1.000000	1.000000	198.418861	0.000000	yes	yes
+t1-flat-fill	gaussian-normalised	contract	atoms	2	0	interior	1804	0	nan	nan	nan	0.000000	1.000000	0.000000	nan	1.000000	1.000000	199.292893	0.000000	yes	yes
+t2-straight-edge	-	-	analytic-exact	0	0	edge	448	376	0.780616	-0.390308	0.390308	1.000000	1.000000	1.000000	23.686533	0.000000	1.000000	0.000000	0.000000	yes	yes
+t2-straight-edge	-	-	analytic-sdf	0	0	edge	448	376	0.800000	-0.400000	0.400000	1.000000	1.000000	1.000000	23.686533	0.000000	1.000000	0.000000	0.000000	yes	yes
+t2-straight-edge	gaussian	prefiltered	atoms	8	0	edge	448	376	0.965371	-0.431248	0.534123	0.945936	1.000000	0.985996	12.358078	0.008780	0.954716	0.000000	0.088732	yes	yes
+t2-straight-edge	gaussian	contract	atoms	10	0	edge	448	376	0.759558	-0.412796	0.346762	0.917082	1.000000	0.979244	8.564747	0.016623	0.933705	0.000000	0.118271	yes	yes
+t2-straight-edge	gaussian-normalised	prefiltered	atoms	8	0	edge	448	376	1.325440	-0.515820	0.809621	0.865045	1.000000	0.870928	23.427543	0.129072	0.994117	0.084936	0.000000	yes	no
+t2-straight-edge	gaussian-normalised	contract	atoms	12	0	edge	448	376	1.056262	-0.517038	0.539225	0.903853	1.000000	0.927893	23.637838	0.072107	0.975960	0.013140	0.000000	yes	no
+t3-right-angle-corner	-	-	analytic-exact	0	0	edge	112	104	0.783392	-0.394221	0.389170	1.000000	1.000000	1.000000	11.366025	0.000000	1.000000	0.000000	0.000000	yes	yes
+t3-right-angle-corner	-	-	analytic-exact	0	1	edge	112	104	0.783392	-0.389170	0.394221	1.000000	1.000000	1.000000	11.222432	0.000000	1.000000	0.000000	0.000000	yes	yes
+t3-right-angle-corner	-	-	analytic-exact	0	0	apex	40	29	0.620362	-0.396195	0.224167	1.000000	1.000000	1.000000	5.137394	0.000000	1.000000	0.000000	nan	no	no
+t3-right-angle-corner	-	-	analytic-sdf	0	0	edge	112	104	0.800000	-0.400000	0.400000	1.000000	1.000000	1.000000	11.366025	0.000000	1.000000	0.000000	0.000000	yes	yes
+t3-right-angle-corner	-	-	analytic-sdf	0	1	edge	112	104	0.800000	-0.400000	0.400000	1.000000	1.000000	1.000000	11.222432	0.000000	1.000000	0.000000	0.000000	yes	yes
+t3-right-angle-corner	-	-	analytic-sdf	0	0	apex	40	29	0.632457	-0.400000	0.232457	1.000000	1.000000	1.000000	5.124356	0.000000	1.000000	0.000000	nan	no	no
+t3-right-angle-corner	gaussian	prefiltered	atoms	25	0	edge	112	104	0.930642	-0.454199	0.476443	0.919853	1.000000	0.968973	7.607662	0.026119	0.945972	0.000000	0.070031	yes	yes
+t3-right-angle-corner	gaussian	prefiltered	atoms	25	1	edge	112	104	0.868481	-0.429216	0.439265	0.906889	1.000000	0.936608	7.952295	0.035820	0.942709	0.000000	0.085451	yes	yes
+t3-right-angle-corner	gaussian	prefiltered	atoms	25	0	apex	40	29	0.610230	-0.369995	0.240235	0.898905	1.000000	0.949233	1.663703	0.019925	0.918830	0.000000	nan	no	no
+t3-right-angle-corner	gaussian	contract	atoms	17	0	edge	112	104	0.937277	-0.456727	0.480549	0.925681	1.000000	0.976239	3.615406	0.019822	0.945503	0.000000	0.115514	yes	yes
+t3-right-angle-corner	gaussian	contract	atoms	17	1	edge	112	104	0.879030	-0.422369	0.456662	0.902982	1.000000	0.977172	1.821132	0.010047	0.913029	0.000000	0.113060	yes	yes
+t3-right-angle-corner	gaussian	contract	atoms	17	0	apex	40	29	1.017254	-0.765470	0.251784	0.959990	1.000000	0.982522	3.334802	0.013539	0.973529	0.000000	nan	no	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	atoms	48	0	edge	112	104	1.267476	-0.678761	0.588715	0.943084	1.000000	0.967606	11.286742	0.032394	0.975478	0.000000	0.003042	yes	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	atoms	48	1	edge	112	104	1.172052	-0.670287	0.501765	0.900208	1.000000	0.952870	11.100057	0.047130	0.947338	0.013140	0.101952	yes	no
+t3-right-angle-corner	gaussian-normalised	prefiltered	atoms	48	0	apex	40	29	0.970385	-0.707195	0.263189	0.933872	1.000000	0.955839	5.081620	0.023361	0.957233	0.000000	nan	no	no
+t3-right-angle-corner	gaussian-normalised	contract	atoms	48	0	edge	112	104	1.116252	-0.616779	0.499473	0.950633	1.000000	0.959449	11.286825	0.040551	0.991184	0.000000	0.000000	yes	no
+t3-right-angle-corner	gaussian-normalised	contract	atoms	48	1	edge	112	104	0.967482	-0.593825	0.373657	0.931981	1.000000	0.962526	11.146707	0.037474	0.969455	0.013140	0.008684	yes	yes
+t3-right-angle-corner	gaussian-normalised	contract	atoms	48	0	apex	40	29	0.911141	-0.665447	0.245694	0.956051	1.000000	0.977840	5.069824	0.022160	0.978211	0.000000	nan	no	no
+t4-curve	-	-	analytic-exact	0	0	edge	201	132	0.836519	-0.437988	0.398531	1.000000	1.000000	1.000000	5.663658	0.000000	1.000000	0.000000	nan	yes	yes
+t4-curve	-	-	analytic-sdf	0	0	edge	201	132	0.860512	-0.460512	0.400000	1.000000	1.000000	1.000000	5.711031	0.000000	1.000000	0.000000	nan	yes	yes
+t4-curve	gaussian	prefiltered	atoms	13	0	edge	201	132	1.260027	-0.794187	0.465840	0.988579	1.000000	0.993498	5.555588	0.006342	0.994921	0.074804	nan	yes	no
+t4-curve	gaussian	contract	atoms	14	0	edge	201	132	0.974040	-0.571956	0.402084	0.987380	1.000000	0.993248	5.646038	0.006737	0.994117	0.030418	nan	yes	yes
+t4-curve	gaussian-normalised	prefiltered	atoms	8	0	edge	201	132	1.554234	-0.638295	0.915939	0.991588	1.000000	0.991588	4.094332	0.008412	1.000000	0.136503	nan	yes	no
+t4-curve	gaussian-normalised	contract	atoms	12	0	edge	201	132	1.037861	-0.518482	0.519379	0.991765	1.000000	0.991765	5.532494	0.008235	1.000000	0.074804	nan	yes	no
+t5-thin-stroke	-	-	analytic-exact	0	0	stroke	316	122	0.697566	-0.294531	0.403034	0.917096	1.000000	0.917096	0.973721	0.000000	0.917096	0.000000	nan	yes	yes
+t5-thin-stroke	-	-	analytic-sdf	0	0	stroke	316	122	0.760770	-0.355866	0.404904	0.950962	1.000000	0.950962	0.950962	0.000000	0.950962	0.000000	nan	yes	yes
+t5-thin-stroke	gaussian	prefiltered	atoms	21	0	stroke	316	122	0.846366	-0.319708	0.526659	0.855848	1.000000	0.855848	1.035567	0.000000	0.855848	0.000000	nan	yes	no
+t5-thin-stroke	gaussian	contract	atoms	2	0	stroke	316	122	nan	nan	0.524101	0.930980	1.000000	0.930980	0.729292	0.000000	0.930980	0.000000	nan	yes	yes
+t5-thin-stroke	gaussian-normalised	prefiltered	atoms	12	0	stroke	316	122	0.823451	-0.327048	0.496404	0.743560	1.000000	0.743560	0.886866	0.000000	0.743560	0.000000	nan	yes	no
+t5-thin-stroke	gaussian-normalised	contract	atoms	11	0	stroke	316	122	0.797142	-0.329477	0.467665	0.716955	1.000000	0.716955	0.852686	0.000000	0.716955	0.000000	nan	yes	no
+t6-glyph-like	-	-	analytic-exact	0	0	stroke	65	46	0.704518	-0.326728	0.377790	0.922567	1.000000	0.922567	1.055119	0.000000	0.922567	0.000000	nan	yes	yes
+t6-glyph-like	-	-	analytic-exact	0	2	stroke	24	19	0.744209	-0.335791	0.408417	0.938632	1.000000	0.938632	0.868999	0.000000	0.938632	0.000000	nan	yes	yes
+t6-glyph-like	-	-	analytic-exact	0	0	apex	7	7	0.587526	-0.222412	0.365114	0.787900	1.000000	0.787900	0.902304	0.000000	0.787900	0.000000	nan	no	no
+t6-glyph-like	-	-	analytic-sdf	0	0	stroke	65	46	0.795224	-0.394627	0.400597	0.994030	1.000000	0.994030	0.994030	0.000000	0.994030	0.000000	nan	yes	yes
+t6-glyph-like	-	-	analytic-sdf	0	2	stroke	24	19	0.749410	-0.343086	0.406324	0.936762	1.000000	0.936762	0.936762	0.000000	0.936762	0.000000	nan	yes	yes
+t6-glyph-like	-	-	analytic-sdf	0	0	apex	7	7	0.688602	-0.273241	0.415362	0.859156	1.000000	0.859156	0.859156	0.000000	0.859156	0.000000	nan	no	no
+t6-glyph-like	gaussian	prefiltered	atoms	22	0	stroke	65	46	0.904926	-0.388930	0.515996	0.873986	1.000000	0.873986	1.123721	0.000000	0.873986	0.000000	nan	yes	no
+t6-glyph-like	gaussian	prefiltered	atoms	22	2	stroke	24	19	0.748223	-0.326065	0.422158	0.852624	1.000000	0.852624	1.008609	0.007313	0.859937	0.000000	nan	yes	no
+t6-glyph-like	gaussian	prefiltered	atoms	22	0	apex	7	7	0.542419	-0.135296	0.407123	0.618073	1.000000	0.618073	0.982400	0.074883	0.692955	0.000000	nan	no	no
+t6-glyph-like	gaussian	contract	atoms	15	0	stroke	65	46	0.833433	-0.378632	0.454801	0.929762	1.000000	0.929762	1.025012	0.000000	0.929762	0.000000	nan	yes	yes
+t6-glyph-like	gaussian	contract	atoms	15	2	stroke	24	19	0.698495	-0.277902	0.420593	0.832051	1.000000	0.832051	0.763131	0.023035	0.855086	0.000000	nan	yes	no
+t6-glyph-like	gaussian	contract	atoms	15	0	apex	7	7	0.574738	-0.230207	0.344531	0.634444	1.000000	0.634444	0.876445	0.117225	0.751670	0.000000	nan	no	no
+t6-glyph-like	gaussian-normalised	prefiltered	atoms	12	0	stroke	65	46	0.959890	-0.346518	0.613372	0.780760	1.000000	0.780760	1.138803	0.000000	0.780760	0.000000	nan	yes	no
+t6-glyph-like	gaussian-normalised	prefiltered	atoms	12	2	stroke	24	19	0.882698	-0.371112	0.511586	0.864497	1.000000	0.864497	0.957181	0.011445	0.875942	0.000000	nan	yes	no
+t6-glyph-like	gaussian-normalised	prefiltered	atoms	12	0	apex	7	7	0.399342	-0.208144	0.191198	0.280115	1.000000	0.280115	0.749755	0.267022	0.547137	0.000000	nan	no	no
+t6-glyph-like	gaussian-normalised	contract	atoms	12	0	stroke	65	46	0.850486	-0.395729	0.454758	0.935673	1.000000	0.935673	0.990035	0.000000	0.935673	0.000000	nan	yes	yes
+t6-glyph-like	gaussian-normalised	contract	atoms	12	2	stroke	24	19	0.797904	-0.385448	0.412456	0.783873	1.000000	0.783873	1.204882	0.032018	0.815891	0.000000	nan	yes	no
+t6-glyph-like	gaussian-normalised	contract	atoms	12	0	apex	7	7	0.342689	-0.108484	0.234205	0.352109	1.000000	0.352109	0.844034	0.291582	0.643691	0.000000	nan	no	no

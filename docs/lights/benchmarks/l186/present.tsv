@@ -1,0 +1,16 @@
+#invocation	cargo build -p lights-mac --release --offline --bin lights-mac-probe; then five times: $CARGO_TARGET_DIR/release/lights-mac-probe <dir>, keeping each report.tsv
+#date	2026-09-29
+#build	release, lights default features (splat contract method, f32), 18 rayon threads as SharedSettings::contract gives
+#hardware	Apple M5 Max, 18 cores (6 P + 12 E), 128 GB, macOS 26.5; built-in Retina panel 3456x2234 px, 1728x1117 pt, backingScaleFactor 2
+#tree	7b9ea23c plus the uncommitted L-186 change
+#frame	lights::spheres through lights::sphere_camera at the window's pixel size, resolved and packed with to_clamped_u8; the window set to 960x540 pt, which is 1920x1080 px at 2x
+#render_ms	one render_frame + resolve + to_clamped_u8, ONE sample per run
+#back_to_back	20 Host::present calls in a row; each is the RGB to BGRA expansion into the shared MTLBuffer, nextDrawable, one blit, presentDrawable, commit and waitUntilCompleted
+#spaced	20 Host::present calls, each after a 40 ms Host::pump, so a drawable is always free and the caches and clocks have idled
+#columns	run, host scale, screen scale, pixels, render_ms, then median/min/max/n for back_to_back and for spaced, in ms
+run	scale	screen_scale	pixels	render_ms	b2b_median	b2b_min	b2b_max	b2b_n	spaced_median	spaced_min	spaced_max	spaced_n
+1	2	2	1920x1080	15.386	0.744	0.712	3.239	20	2.262	1.349	2.528	20
+2	2	2	1920x1080	15.790	0.632	0.610	3.183	20	2.217	1.222	2.526	20
+3	2	2	1920x1080	19.846	0.857	0.816	4.373	20	2.252	1.563	2.441	20
+4	2	2	1920x1080	16.583	0.762	0.687	3.326	20	2.277	1.498	2.462	20
+5	2	2	1920x1080	18.011	0.863	0.824	4.915	20	2.264	1.528	2.514	20

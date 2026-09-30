@@ -1,0 +1,2726 @@
+[
+ {
+  "iso": "2026-09-28T03:08:57",
+  "context": 1,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "90e1e933-fc20-4a5c-b56b-be64b3b66c58",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1519.2,
+  "usage_source": "result",
+  "num_turns": 72,
+  "total_cost_usd": 3.7158544000000004,
+  "open_before": 44,
+  "open_after": 43,
+  "total_after": 153,
+  "head": [
+   "L-142"
+  ],
+  "moved": {
+   "closed": [
+    "L-142"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "4f3b9968 lights L-142 FIXED: every prefix curve says it is one, and the test chooser was never found"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 142,
+  "output_tokens": 43224,
+  "cache_creation_input_tokens": 148860,
+  "cache_read_input_tokens": 8299632
+ },
+ {
+  "iso": "2026-09-28T03:17:29",
+  "context": 2,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b1de1cca-b55d-4d45-947a-03a1b398ba4a",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 511.6,
+  "usage_source": "result",
+  "num_turns": 27,
+  "total_cost_usd": 1.4211872,
+  "open_before": 43,
+  "open_after": 42,
+  "total_after": 153,
+  "head": [
+   "L-121"
+  ],
+  "moved": {
+   "closed": [
+    "L-121"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "0903d6eb lights L-121 CLOSED as a DECISION: lights stays headless, and a guard now says so"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 54,
+  "output_tokens": 13963,
+  "cache_creation_input_tokens": 86326,
+  "cache_read_input_tokens": 2255516
+ },
+ {
+  "iso": "2026-09-28T03:34:57",
+  "context": 3,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "1363388a-8198-41a3-b937-0fe5760b207a",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1048.1,
+  "usage_source": "result",
+  "num_turns": 51,
+  "total_cost_usd": 3.1453630000000006,
+  "open_before": 42,
+  "open_after": 42,
+  "total_after": 154,
+  "head": [
+   "L-122"
+  ],
+  "moved": {
+   "closed": [
+    "L-122"
+   ],
+   "raised": [
+    "L-154"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "a50d8957 lights L-122 BUILT: a surfel stores its normal, and a headlight finally lights a face"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 94,
+  "output_tokens": 43908,
+  "cache_creation_input_tokens": 143553,
+  "cache_read_input_tokens": 5592015
+ },
+ {
+  "iso": "2026-09-28T03:49:30",
+  "context": 4,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "5a087e2d-e009-44fb-84d4-c5169bc03c31",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 872.8,
+  "usage_source": "result",
+  "num_turns": 33,
+  "total_cost_usd": 1.9322464,
+  "open_before": 42,
+  "open_after": 41,
+  "total_after": 154,
+  "head": [
+   "L-154"
+  ],
+  "moved": {
+   "closed": [
+    "L-154"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "850586ff lights L-154 BUILT: a surfel carries a material, so a lamp glows and metal shines"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 62,
+  "output_tokens": 23137,
+  "cache_creation_input_tokens": 107902,
+  "cache_read_input_tokens": 3030212
+ },
+ {
+  "iso": "2026-09-28T04:07:27",
+  "context": 5,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "1af796ed-f247-4e48-844f-724e325ccde8",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1076.4,
+  "usage_source": "result",
+  "num_turns": 34,
+  "total_cost_usd": 1.9600636000000002,
+  "open_before": 41,
+  "open_after": 41,
+  "total_after": 155,
+  "head": [
+   "L-43"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [
+    "L-155"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "79904e54 lights L-155 BUILT: a raster can be the reference, and a quantisation floor stands where the exactness guard did"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 68,
+  "output_tokens": 23913,
+  "cache_creation_input_tokens": 105116,
+  "cache_read_input_tokens": 3203018
+ },
+ {
+  "iso": "2026-09-28T04:23:04",
+  "context": 6,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "c6a9a877-0165-4c7b-ae92-320cb86cf33e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 936.7,
+  "usage_source": "result",
+  "num_turns": 42,
+  "total_cost_usd": 2.8708228000000005,
+  "open_before": 41,
+  "open_after": 41,
+  "total_after": 156,
+  "head": [
+   "L-153"
+  ],
+  "moved": {
+   "closed": [
+    "L-153"
+   ],
+   "raised": [
+    "L-156"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "91f21936 lights L-153 MEASURED: a depthless composite fails a resting object in both orders, and L-156 asks the PM which fix"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 84,
+  "output_tokens": 36166,
+  "cache_creation_input_tokens": 146176,
+  "cache_read_input_tokens": 4888794
+ },
+ {
+  "iso": "2026-09-28T04:43:37",
+  "context": 7,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "f047d4d5-9f22-46f6-bcd1-fa635b4a44cb",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1233.1,
+  "usage_source": "result",
+  "num_turns": 61,
+  "total_cost_usd": 3.2338411999999996,
+  "open_before": 41,
+  "open_after": 40,
+  "total_after": 156,
+  "head": [
+   "L-73"
+  ],
+  "moved": {
+   "closed": [
+    "L-43"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "5bfe310d lights L-43 MEASURED: greedy sits about 8 dB behind image-gs at equal bits per pixel, and only a cross-dataset figure can exist"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 110,
+  "output_tokens": 37867,
+  "cache_creation_input_tokens": 138910,
+  "cache_read_input_tokens": 6400251
+ },
+ {
+  "iso": "2026-09-28T04:59:58",
+  "context": 8,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "90a48db8-c466-4fbd-addb-b9ea97f1324d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 980.0,
+  "usage_source": "result",
+  "num_turns": 36,
+  "total_cost_usd": 2.1881155999999997,
+  "open_before": 40,
+  "open_after": 39,
+  "total_after": 156,
+  "head": [
+   "L-75"
+  ],
+  "moved": {
+   "closed": [
+    "L-75"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "148e8990 lights L-75 BUILT: a glyph arrives as coverage with an ink, and a raster is its own pass over any render"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 70,
+  "output_tokens": 25994,
+  "cache_creation_input_tokens": 117016,
+  "cache_read_input_tokens": 3659138
+ },
+ {
+  "iso": "2026-09-28T05:13:34",
+  "context": 9,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "d1ee2534-9a12-435d-a95d-b60f22a308f8",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 815.5,
+  "usage_source": "result",
+  "num_turns": 29,
+  "total_cost_usd": 1.6396064,
+  "open_before": 39,
+  "open_after": 38,
+  "total_after": 156,
+  "head": [
+   "L-76"
+  ],
+  "moved": {
+   "closed": [
+    "L-73"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "9bfc8ecc lights L-73 FIXED: a png on disk is a layer drawn over any render, and an RGBA icon file no longer refused"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 58,
+  "output_tokens": 18163,
+  "cache_creation_input_tokens": 95356,
+  "cache_read_input_tokens": 2566332
+ },
+ {
+  "iso": "2026-09-28T05:40:19",
+  "context": 10,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "4e143636-a624-442e-ad5a-d2d4a8b48fbc",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1605.4,
+  "usage_source": "result",
+  "num_turns": 46,
+  "total_cost_usd": 3.2454303999999996,
+  "open_before": 38,
+  "open_after": 37,
+  "total_after": 156,
+  "head": [
+   "L-77"
+  ],
+  "moved": {
+   "closed": [
+    "L-76"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "fa3b4777 lights L-76 BUILT: a display list draws optical's rating widget off egui, and walking it forced an even-odd polygon"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 88,
+  "output_tokens": 51235,
+  "cache_creation_input_tokens": 145407,
+  "cache_read_input_tokens": 5285612
+ },
+ {
+  "iso": "2026-09-28T06:22:15",
+  "context": 11,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "74aa7b9b-145e-479d-b4f0-351fa7d4066f",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2515.1,
+  "usage_source": "result",
+  "num_turns": 77,
+  "total_cost_usd": 4.085976,
+  "open_before": 37,
+  "open_after": 36,
+  "total_after": 156,
+  "head": [
+   "L-78"
+  ],
+  "moved": {
+   "closed": [
+    "L-77"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "8c04045f lights L-77 BUILT: a view is a similarity that moves the sample, not the shape, and it reaches the display list"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 148,
+  "output_tokens": 52037,
+  "cache_creation_input_tokens": 157321,
+  "cache_read_input_tokens": 8930380
+ },
+ {
+  "iso": "2026-09-28T06:35:20",
+  "context": 12,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "04c09a1f-0e90-4f59-81c9-3c8dd0cbc05e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 785.1,
+  "usage_source": "result",
+  "num_turns": 32,
+  "total_cost_usd": 1.6823849999999998,
+  "open_before": 36,
+  "open_after": 35,
+  "total_after": 156,
+  "head": [
+   "L-79"
+  ],
+  "moved": {
+   "closed": [
+    "L-79"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "5996ac85 lights L-79 FIXED: the demo timed the ray caster brute-force, and one list now serves every timing caller"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 64,
+  "output_tokens": 16447,
+  "cache_creation_input_tokens": 98096,
+  "cache_read_input_tokens": 2842105
+ },
+ {
+  "iso": "2026-09-28T06:45:34",
+  "context": 13,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "33d4d714-d254-4320-ae50-a2d4f459eb18",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 613.6,
+  "usage_source": "result",
+  "num_turns": 31,
+  "total_cost_usd": 1.7567509999999995,
+  "open_before": 35,
+  "open_after": 34,
+  "total_after": 156,
+  "head": [
+   "L-86"
+  ],
+  "moved": {
+   "closed": [
+    "L-78"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "b60c2e42 lights L-78 FIXED: run_pair can raise nine arms, not six or eight, and the doc now partitions all eighteen"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 62,
+  "output_tokens": 19607,
+  "cache_creation_input_tokens": 99696,
+  "cache_read_input_tokens": 2833975
+ },
+ {
+  "iso": "2026-09-28T07:03:47",
+  "context": 14,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "2575e7a7-7218-46fe-b334-ab957bc75cf4",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1092.9,
+  "usage_source": "result",
+  "num_turns": 42,
+  "total_cost_usd": 2.3364138,
+  "open_before": 34,
+  "open_after": 33,
+  "total_after": 156,
+  "head": [
+   "L-90"
+  ],
+  "moved": {
+   "closed": [
+    "L-86"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "bfc7281b lights L-86 BUILT: a rect carries a corner radius, because 521 of optical's 596 rect calls are rounded"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 80,
+  "output_tokens": 28847,
+  "cache_creation_input_tokens": 117728,
+  "cache_read_input_tokens": 4086649
+ },
+ {
+  "iso": "2026-09-28T07:18:55",
+  "context": 15,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "281a8ac5-343d-45bd-99c4-1126fa9dd3f6",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 908.1,
+  "usage_source": "result",
+  "num_turns": 27,
+  "total_cost_usd": 1.8002680000000002,
+  "open_before": 33,
+  "open_after": 32,
+  "total_after": 156,
+  "head": [
+   "L-95"
+  ],
+  "moved": {
+   "closed": [
+    "L-90"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e6e2483d lights L-90 BUILT: the layering scans read the example they ban and the kernel file they skipped, and each scan has a real-file mutation"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 54,
+  "output_tokens": 21668,
+  "cache_creation_input_tokens": 107322,
+  "cache_read_input_tokens": 2540580
+ },
+ {
+  "iso": "2026-09-28T07:46:14",
+  "context": 16,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "f8ba4fc3-c869-48fc-bfae-2cd3170ce36c",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1638.5,
+  "usage_source": "result",
+  "num_turns": 68,
+  "total_cost_usd": 4.558992200000001,
+  "open_before": 32,
+  "open_after": 31,
+  "total_after": 156,
+  "head": [
+   "L-96"
+  ],
+  "moved": {
+   "closed": [
+    "L-96"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "eb232f57 lights L-96 BUILT: the sweep is rebuilt, whole fits run on every core, and the outputs do not move by one byte"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 134,
+  "output_tokens": 59079,
+  "cache_creation_input_tokens": 181229,
+  "cache_read_input_tokens": 9635221
+ },
+ {
+  "iso": "2026-09-28T08:23:42",
+  "context": 17,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "1dc44212-1f52-4cbe-b91d-1e12a2613b7e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2247.4,
+  "usage_source": "result",
+  "num_turns": 55,
+  "total_cost_usd": 3.3911316000000005,
+  "open_before": 31,
+  "open_after": 30,
+  "total_after": 156,
+  "head": [
+   "L-97"
+  ],
+  "moved": {
+   "closed": [
+    "L-95"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "a60e5b8b lights L-95 BUILT: aspect 3 fits on every core, and lights-p5 takes --sweep"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 108,
+  "output_tokens": 41390,
+  "cache_creation_input_tokens": 155108,
+  "cache_read_input_tokens": 6610178
+ },
+ {
+  "iso": "2026-09-28T08:40:34",
+  "context": 18,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b110b57a-b639-4d46-be69-27acf4ca5cb0",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1011.9,
+  "usage_source": "result",
+  "num_turns": 55,
+  "total_cost_usd": 2.8889866000000017,
+  "open_before": 30,
+  "open_after": 29,
+  "total_after": 156,
+  "head": [
+   "L-98"
+  ],
+  "moved": {
+   "closed": [
+    "L-97"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "1f576bbc lights L-97 BUILT: the residual builds no difference image, and the other two savings measure at 1.2% and 0.7%"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 104,
+  "output_tokens": 35908,
+  "cache_creation_input_tokens": 131016,
+  "cache_read_input_tokens": 5611413
+ },
+ {
+  "iso": "2026-09-28T08:52:46",
+  "context": 19,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "d4a92a47-c14e-4eb6-b2f9-f9a68e818d83",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 732.1,
+  "usage_source": "result",
+  "num_turns": 24,
+  "total_cost_usd": 1.3538126,
+  "open_before": 29,
+  "open_after": 28,
+  "total_after": 156,
+  "head": [
+   "L-99"
+  ],
+  "moved": {
+   "closed": [
+    "L-98"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "c7860895 lights L-98 BUILT: the padded tile-major framebuffer and the zero counters of Collect::Pixels are written down, and the prose quotes live code"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 48,
+  "output_tokens": 13573,
+  "cache_creation_input_tokens": 85543,
+  "cache_read_input_tokens": 1989083
+ },
+ {
+  "iso": "2026-09-28T09:01:15",
+  "context": 20,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "89560c49-63a9-4af6-8c88-60b5551f5e0f",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 508.7,
+  "usage_source": "result",
+  "num_turns": 25,
+  "total_cost_usd": 1.2807116,
+  "open_before": 28,
+  "open_after": 27,
+  "total_after": 156,
+  "head": [
+   "L-100"
+  ],
+  "moved": {
+   "closed": [
+    "L-99"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e3fb994e lights L-99 REWRITTEN + BUILT: the hardware paragraph quotes CLAUDE.md as it reads today, and the other two stale sentences were already fixed"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 48,
+  "output_tokens": 12412,
+  "cache_creation_input_tokens": 81520,
+  "cache_read_input_tokens": 1900598
+ },
+ {
+  "iso": "2026-09-28T09:11:35",
+  "context": 21,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "c9819163-5172-4916-9538-f106ee9d0f8c",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 619.9,
+  "usage_source": "result",
+  "num_turns": 29,
+  "total_cost_usd": 1.4620302,
+  "open_before": 27,
+  "open_after": 26,
+  "total_after": 156,
+  "head": [
+   "L-101"
+  ],
+  "moved": {
+   "closed": [
+    "L-100"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e2311fc7 lights L-100 FIXED: eight dead public items leave the fit tree, and FitRequest no longer carries an index it never reads"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 56,
+  "output_tokens": 15136,
+  "cache_creation_input_tokens": 86631,
+  "cache_read_input_tokens": 2330191
+ },
+ {
+  "iso": "2026-09-28T09:29:04",
+  "context": 22,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "df3e2b5d-7ac9-4f80-b0b2-e64ae57fc48a",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1048.8,
+  "usage_source": "result",
+  "num_turns": 55,
+  "total_cost_usd": 2.7575854000000004,
+  "open_before": 26,
+  "open_after": 25,
+  "total_after": 156,
+  "head": [
+   "L-102"
+  ],
+  "moved": {
+   "closed": [
+    "L-101"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "9f3e8942 lights L-101 REWRITTEN + BUILT: the corpus map says the gain is applied, marks the three unacquired papers, and the mutation pool stops scoring red-before-mutation rows as caught"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 104,
+  "output_tokens": 34614,
+  "cache_creation_input_tokens": 122975,
+  "cache_read_input_tokens": 5405447
+ },
+ {
+  "iso": "2026-09-28T09:42:10",
+  "context": 23,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "bdb6a052-4151-4c3d-943a-265e931928fa",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 785.7,
+  "usage_source": "result",
+  "num_turns": 31,
+  "total_cost_usd": 1.581355,
+  "open_before": 25,
+  "open_after": 24,
+  "total_after": 156,
+  "head": [
+   "L-103"
+  ],
+  "moved": {
+   "closed": [
+    "L-102"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e41263d3 lights L-102 REWRITTEN + BUILT: RADIAL is measured against the evaluation for all eight kernel impls, and demoted to descriptive"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 60,
+  "output_tokens": 14581,
+  "cache_creation_input_tokens": 94965,
+  "cache_read_input_tokens": 2648875
+ },
+ {
+  "iso": "2026-09-28T10:25:19",
+  "context": 24,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "3248bab1-f1b6-4bf6-8f76-68629d8f5384",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2588.6,
+  "usage_source": "result",
+  "num_turns": 55,
+  "total_cost_usd": 2.8673358000000007,
+  "open_before": 24,
+  "open_after": 23,
+  "total_after": 156,
+  "head": [
+   "L-145"
+  ],
+  "moved": {
+   "closed": [
+    "L-103"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "725835ff lights L-103 REWRITTEN + FIXED: every mutation anchor applies exactly once, and a guard now says so"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 108,
+  "output_tokens": 35129,
+  "cache_creation_input_tokens": 126490,
+  "cache_read_input_tokens": 5762019
+ },
+ {
+  "iso": "2026-09-28T10:34:50",
+  "context": 25,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b4a831e1-213d-4d8b-8a38-bafba69c182d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 570.1,
+  "usage_source": "result",
+  "num_turns": 29,
+  "total_cost_usd": 1.6973878,
+  "open_before": 23,
+  "open_after": 22,
+  "total_after": 156,
+  "head": [
+   "L-148"
+  ],
+  "moved": {
+   "closed": [
+    "L-145"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "ab2c3455 lights L-145 CLOSED + FIXED: the spill left with the 16 GiB ram disk, and the mutation pool now falls back to the SSD by itself"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 56,
+  "output_tokens": 14093,
+  "cache_creation_input_tokens": 107050,
+  "cache_read_input_tokens": 2794519
+ },
+ {
+  "iso": "2026-09-28T10:44:45",
+  "context": 26,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "825c5d4b-af40-4b8c-868b-e66bc6f7a3ec",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 595.1,
+  "usage_source": "result",
+  "num_turns": 31,
+  "total_cost_usd": 1.6759768000000004,
+  "open_before": 22,
+  "open_after": 21,
+  "total_after": 156,
+  "head": [
+   "L-152"
+  ],
+  "moved": {
+   "closed": [
+    "L-148"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "4079da41 lights L-148 BUILT: the host regenerates the PM's pages to docs/lights/pages after every context, and the close bar is regenerate-and-name"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 58,
+  "output_tokens": 18762,
+  "cache_creation_input_tokens": 97250,
+  "cache_read_input_tokens": 2612524
+ },
+ {
+  "iso": "2026-09-28T10:54:28",
+  "context": 27,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "3a808d99-75be-4bf3-add4-c5906f80afc1",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 583.0,
+  "usage_source": "result",
+  "num_turns": 30,
+  "total_cost_usd": 1.5744786,
+  "open_before": 21,
+  "open_after": 20,
+  "total_after": 156,
+  "head": [
+   "L-106"
+  ],
+  "moved": {
+   "closed": [
+    "L-152"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "c9d0d167 lights L-152 BUILT: the close bar names run_tests.sh's constituents as its fallback, and a test holds the two equal"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 58,
+  "output_tokens": 17379,
+  "cache_creation_input_tokens": 90768,
+  "cache_read_input_tokens": 2502613
+ },
+ {
+  "iso": "2026-09-28T10:56:44",
+  "context": 28,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "a8bae4db-d113-423a-becf-01fa99962004",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 135.1,
+  "usage_source": "result",
+  "num_turns": 27,
+  "total_cost_usd": 1.4327388000000003,
+  "open_before": 20,
+  "open_after": 19,
+  "total_after": 156,
+  "head": [
+   "L-107"
+  ],
+  "moved": {
+   "closed": [
+    "L-106"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "82ffb2ee lights L-106 CLOSED: the plan's experiments/ clause is withdrawn, the optical-data clause was answered by DrawList, and the graph-scene compression test is named as never run"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 54,
+  "output_tokens": 12393,
+  "cache_creation_input_tokens": 89892,
+  "cache_read_input_tokens": 2327634
+ },
+ {
+  "iso": "2026-09-28T11:12:36",
+  "context": 29,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b3a2d861-29fb-4ea6-8c1a-c2dbb14b824e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 952.1,
+  "usage_source": "result",
+  "num_turns": 32,
+  "total_cost_usd": 1.9391068000000002,
+  "open_before": 19,
+  "open_after": 19,
+  "total_after": 156,
+  "head": [
+   "L-108"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-108"
+   ]
+  },
+  "commits": [
+   "0de27547 lights L-108 REWRITTEN + BUILT: an atom scalar and a coefficient value are billed in one f32 currency, and the plan's \"data already on disk\" is withdrawn"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 64,
+  "output_tokens": 18841,
+  "cache_creation_input_tokens": 114083,
+  "cache_read_input_tokens": 3246834
+ },
+ {
+  "iso": "2026-09-28T11:28:52",
+  "context": 30,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b35baa53-e7c7-451f-a431-44deb588db8e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 975.2,
+  "usage_source": "result",
+  "num_turns": 51,
+  "total_cost_usd": 2.9815066000000003,
+  "open_before": 19,
+  "open_after": 18,
+  "total_after": 156,
+  "head": [
+   "L-109"
+  ],
+  "moved": {
+   "closed": [
+    "L-108"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "4e6480f1 lights L-108 MEASURED: under one f32 currency a transform byte-win survives, for CDF 9/7 on n1, n3 and n4 only"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 98,
+  "output_tokens": 37754,
+  "cache_creation_input_tokens": 137833,
+  "cache_read_input_tokens": 5616853
+ },
+ {
+  "iso": "2026-09-28T11:47:42",
+  "context": 31,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b29739a4-bc72-4a66-a739-3bc1811e1477",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1130.2,
+  "usage_source": "result",
+  "num_turns": 51,
+  "total_cost_usd": 3.7723454000000007,
+  "open_before": 18,
+  "open_after": 17,
+  "total_after": 156,
+  "head": [
+   "L-110"
+  ],
+  "moved": {
+   "closed": [
+    "L-107"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "3d05668d lights L-107 MEASURED: the transport gate names a coloured contact bleed on a light canvas, and rung 2 kills the patch line because it is 2-4 px wide"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 96,
+  "output_tokens": 65792,
+  "cache_creation_input_tokens": 155400,
+  "cache_read_input_tokens": 6064607
+ },
+ {
+  "iso": "2026-09-28T12:01:29",
+  "context": 32,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "c3309367-3166-47e8-9ff0-a85f64a88a13",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 826.4,
+  "usage_source": "result",
+  "num_turns": 29,
+  "total_cost_usd": 1.6445724000000002,
+  "open_before": 17,
+  "open_after": 16,
+  "total_after": 156,
+  "head": [
+   "L-111"
+  ],
+  "moved": {
+   "closed": [
+    "L-109"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "93548ad2 lights L-109 BUILT: Rgb<T> is linear light and the caller owns the transfer; lights ships an opt-in sRGB pair, and a half-covered edge is 60 levels darker when the transfer is ignored"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 56,
+  "output_tokens": 19339,
+  "cache_creation_input_tokens": 95841,
+  "cache_read_input_tokens": 2454202
+ },
+ {
+  "iso": "2026-09-28T12:03:50",
+  "context": 33,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "05fea8af-805d-4e65-9399-0db31b341244",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 140.3,
+  "usage_source": "result",
+  "num_turns": 13,
+  "total_cost_usd": 0.9532642,
+  "open_before": 16,
+  "open_after": 15,
+  "total_after": 156,
+  "head": [
+   "L-112"
+  ],
+  "moved": {
+   "closed": [
+    "L-110"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "6aba2a1b lights L-110 CLOSED: superseded by L-142, which measured the prefix contract broken and labelled every prefix row at the slice"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 24,
+  "output_tokens": 6437,
+  "cache_creation_input_tokens": 80289,
+  "cache_read_input_tokens": 910581
+ },
+ {
+  "iso": "2026-09-28T12:18:50",
+  "context": 34,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "081ee636-91da-458f-bc55-f459741cfd35",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 895.8,
+  "usage_source": "result",
+  "num_turns": 27,
+  "total_cost_usd": 1.4382204,
+  "open_before": 15,
+  "open_after": 14,
+  "total_after": 156,
+  "head": [
+   "L-113"
+  ],
+  "moved": {
+   "closed": [
+    "L-111"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "cfd56b5f lights L-111 BUILT: the analytic description is billed by one formula at any scalar width, and the two byte columns are held equal rather than by an inequality"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 54,
+  "output_tokens": 13527,
+  "cache_creation_input_tokens": 88393,
+  "cache_read_input_tokens": 2301602
+ },
+ {
+  "iso": "2026-09-28T12:20:15",
+  "context": 35,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "f4154a31-435d-46c8-8411-3ebc04b1b11d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 84.6,
+  "usage_source": "result",
+  "num_turns": 12,
+  "total_cost_usd": 0.8714518,
+  "open_before": 14,
+  "open_after": 13,
+  "total_after": 156,
+  "head": [
+   "L-114"
+  ],
+  "moved": {
+   "closed": [
+    "L-112"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e3033cb6 lights L-112 CLOSED: superseded by L-130 and L-155, which narrowed the photometric guard to an exception table keyed on an exact ground truth"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 24,
+  "output_tokens": 5514,
+  "cache_creation_input_tokens": 73172,
+  "cache_read_input_tokens": 878499
+ },
+ {
+  "iso": "2026-09-28T12:30:28",
+  "context": 36,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "d614d799-6dec-41e7-977c-6a9be98fa73e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 613.5,
+  "usage_source": "result",
+  "num_turns": 26,
+  "total_cost_usd": 1.3525462,
+  "open_before": 13,
+  "open_after": 12,
+  "total_after": 156,
+  "head": [
+   "L-115"
+  ],
+  "moved": {
+   "closed": [
+    "L-113"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "1d735942 lights L-113 FIXED: ruling (b) lands - war_map.toml stops calling lights archived and optical names eframe/egui, not dear-imgui; CLAUDE.md matches"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 50,
+  "output_tokens": 13262,
+  "cache_creation_input_tokens": 85004,
+  "cache_read_input_tokens": 2035371
+ },
+ {
+  "iso": "2026-09-28T12:33:09",
+  "context": 37,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "0198ca70-033a-4a91-bbc0-f937685b9382",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 160.8,
+  "usage_source": "result",
+  "num_turns": 24,
+  "total_cost_usd": 1.4712448,
+  "open_before": 12,
+  "open_after": 12,
+  "total_after": 156,
+  "head": [
+   "L-116"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-116"
+   ]
+  },
+  "commits": [
+   "300dff6c lights L-116 REWRITTEN + BLOCKED: splat already carries a moment-matched pixel-box footprint, raycast refuses it, and P5 C3 already located aliasing onset between 1x and 0.5x"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 48,
+  "output_tokens": 14330,
+  "cache_creation_input_tokens": 96367,
+  "cache_read_input_tokens": 2067584
+ },
+ {
+  "iso": "2026-09-28T12:39:57",
+  "context": 38,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "fdce5630-2a41-46c4-8cf8-e93b565e8688",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 407.1,
+  "usage_source": "result",
+  "num_turns": 15,
+  "total_cost_usd": 0.9034116000000001,
+  "open_before": 12,
+  "open_after": 11,
+  "total_after": 156,
+  "head": [
+   "L-117"
+  ],
+  "moved": {
+   "closed": [
+    "L-114"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "fce96193 lights L-114 CLOSED: the decay-vs-boundary-reference decision is already enforced - six aspect3 tests pass and mutation rows 229-234 catch any attempt to normalise the decay or move the reference column"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 28,
+  "output_tokens": 6663,
+  "cache_creation_input_tokens": 70898,
+  "cache_read_input_tokens": 1014278
+ },
+ {
+  "iso": "2026-09-28T12:55:43",
+  "context": 39,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "74632dda-b3bd-4e46-b05f-a2be8a2918a0",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 946.2,
+  "usage_source": "result",
+  "num_turns": 45,
+  "total_cost_usd": 2.484723,
+  "open_before": 11,
+  "open_after": 10,
+  "total_after": 156,
+  "head": [
+   "L-118"
+  ],
+  "moved": {
+   "closed": [
+    "L-115"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "229e1a29 lights L-115 CLOSED: the signed-kernel decision is gone - KernelFamily reach was built by L-56/L-58, the carrier knob is L-135's (PM ruled B); fixed the p4 banner and report page, which still called the signed kernels unreachable"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 86,
+  "output_tokens": 29219,
+  "cache_creation_input_tokens": 124165,
+  "cache_read_input_tokens": 4533395
+ },
+ {
+  "iso": "2026-09-28T13:05:38",
+  "context": 40,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "f54fc756-a9e2-4583-8d62-7622c5c999ba",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 594.3,
+  "usage_source": "result",
+  "num_turns": 22,
+  "total_cost_usd": 1.4609793999999998,
+  "open_before": 10,
+  "open_after": 9,
+  "total_after": 156,
+  "head": [
+   "L-120"
+  ],
+  "moved": {
+   "closed": [
+    "L-120"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "14f71555 lights L-120 FIXED: the two-target ruling was lost from the register header when BURNDOWN.toml was split; split_register.py's HEAD_HEADER restores it and a test guards all four places a reader starts from"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 44,
+  "output_tokens": 14215,
+  "cache_creation_input_tokens": 97551,
+  "cache_read_input_tokens": 1980477
+ },
+ {
+  "iso": "2026-09-28T13:20:37",
+  "context": 41,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "6f432a37-5fad-4ed0-a93f-ebf6c6467c0d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 898.9,
+  "usage_source": "result",
+  "num_turns": 56,
+  "total_cost_usd": 3.0601438000000005,
+  "open_before": 9,
+  "open_after": 9,
+  "total_after": 156,
+  "head": [
+   "L-135"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "0d10b0e6 lights L-135 SPLIT + BUILT (first piece): ShapedAtom2d and render_shaped_atoms hand dispatch a real per-atom shapes list; a long-running host no longer rolls with a stale split_register"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 112,
+  "output_tokens": 33709,
+  "cache_creation_input_tokens": 137869,
+  "cache_read_input_tokens": 6412819
+ },
+ {
+  "iso": "2026-09-28T13:22:33",
+  "context": 42,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "b1a42c85-2cfd-4deb-84e8-5902da2309ea",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 115.4,
+  "usage_source": "result",
+  "num_turns": 14,
+  "total_cost_usd": 1.012512,
+  "open_before": 9,
+  "open_after": 9,
+  "total_after": 156,
+  "head": [
+   "L-137"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "58cf2352 lights L-117 BLOCKED: dropping the three unbuilt methods is a scope cut, not a pruning result - none was ever measured, and the prune crosses L-116's option (C) (ConeBeam's FootprintModel inside RayCast) and the volume-density question RayMarch alone carries"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 28,
+  "output_tokens": 8487,
+  "cache_creation_input_tokens": 78679,
+  "cache_read_input_tokens": 1066140
+ },
+ {
+  "iso": "2026-09-28T13:47:21",
+  "context": 43,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "6e73b714-b370-4518-aa61-6d591f060a2a",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1487.2,
+  "usage_source": "result",
+  "num_turns": 64,
+  "total_cost_usd": 3.218871799999999,
+  "open_before": 9,
+  "open_after": 9,
+  "total_after": 157,
+  "head": [
+   "L-118"
+  ],
+  "moved": {
+   "closed": [
+    "L-118"
+   ],
+   "raised": [
+    "L-157"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "4ed5d3e6 lights L-118 BUILT: ADR-019 - the analytic SDF champion is a composited 2D pass returning a RasterLayer, not a RenderMethod; the lift out of fit is queued as L-157"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 126,
+  "output_tokens": 35840,
+  "cache_creation_input_tokens": 134417,
+  "cache_read_input_tokens": 7131159
+ },
+ {
+  "iso": "2026-09-28T14:15:27",
+  "context": 44,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "9c69b86a-5ec8-4358-8e28-e92d9aac714f",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1686.0,
+  "usage_source": "result",
+  "num_turns": 69,
+  "total_cost_usd": 3.7546835999999995,
+  "open_before": 9,
+  "open_after": 8,
+  "total_after": 157,
+  "head": [
+   "L-157"
+  ],
+  "moved": {
+   "closed": [
+    "L-157"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "26370349 lights L-157 BUILT: lights::primitive - the primitive set and its SDF pass returning a RasterLayer now live in the default build (ADR-019); fit::analytic and Target::combined call the one body"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 136,
+  "output_tokens": 41696,
+  "cache_creation_input_tokens": 154491,
+  "cache_read_input_tokens": 8421458
+ },
+ {
+  "iso": "2026-09-28T14:43:44",
+  "context": 45,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "347e4e2d-2830-42d9-8f01-f6e251113c17",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1696.3,
+  "usage_source": "result",
+  "num_turns": 48,
+  "total_cost_usd": 3.1697678000000002,
+  "open_before": 8,
+  "open_after": 7,
+  "total_after": 157,
+  "head": [
+   "L-135"
+  ],
+  "moved": {
+   "closed": [
+    "L-135"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "e1fa105b lights L-135 BUILT + MEASURED: greedy::fit_shaped tunes a per-atom super-gaussian beta; it beats the tuned gaussian in 42 of 43 rungs and the best fixed-beta family in 23 of 43"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 96,
+  "output_tokens": 38349,
+  "cache_creation_input_tokens": 150641,
+  "cache_read_input_tokens": 5986379
+ },
+ {
+  "iso": "2026-09-28T14:45:22",
+  "context": 46,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "0352d232-affd-47d8-8e2b-505042456995",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 98.4,
+  "usage_source": "result",
+  "num_turns": 11,
+  "total_cost_usd": 0.9013458,
+  "open_before": 7,
+  "open_after": 7,
+  "total_after": 157,
+  "head": [
+   "L-137"
+  ],
+  "moved": {
+   "closed": [],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-137"
+   ]
+  },
+  "commits": [
+   "0ed8e6bc lights L-137 BLOCKED + REWRITTEN: the ruling to drop the MCP servers from .mcp.json rests on a false premise - all three servers load from ~/.claude.json's local scope, so the edit would be a no-op"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 22,
+  "output_tokens": 8668,
+  "cache_creation_input_tokens": 71503,
+  "cache_read_input_tokens": 779369
+ },
+ {
+  "iso": "2026-09-28T16:52:49",
+  "context": 47,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "972544cb-1932-4c88-809f-728e6e2af063",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1043.8,
+  "usage_source": "result",
+  "num_turns": 39,
+  "total_cost_usd": 1.8882954,
+  "open_before": 6,
+  "open_after": 5,
+  "total_after": 157,
+  "head": [
+   "L-116"
+  ],
+  "moved": {
+   "closed": [
+    "L-116"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "dd8f821d lights L-116 CLOSED: ruling (A) holds in the tree - the prefilter is splat-only, opt-in, outside the agreement contract, and the ray caster refuses it"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 76,
+  "output_tokens": 17239,
+  "cache_creation_input_tokens": 106142,
+  "cache_read_input_tokens": 3470377
+ },
+ {
+  "iso": "2026-09-28T17:48:58",
+  "context": 48,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "2a6a4062-9db8-435f-a7ad-e6de003e4705",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3368.2,
+  "usage_source": "result",
+  "num_turns": 68,
+  "total_cost_usd": 3.8595002,
+  "open_before": 5,
+  "open_after": 4,
+  "total_after": 157,
+  "head": [
+   "L-117"
+  ],
+  "moved": {
+   "closed": [
+    "L-117"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "8e419dfa lights L-117 BUILT: the prune - RayMarch, VoxelDda, ConeBeam and SegmentIntegral are gone, and the ResponseModel axis with them"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 134,
+  "output_tokens": 41269,
+  "cache_creation_input_tokens": 161780,
+  "cache_read_input_tokens": 8696721
+ },
+ {
+  "iso": "2026-09-28T18:55:50",
+  "context": 49,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "3d8488b5-9f56-4fc8-b954-b4088cc54e45",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 4012.0,
+  "usage_source": "result",
+  "num_turns": 94,
+  "total_cost_usd": 5.826266600000001,
+  "open_before": 4,
+  "open_after": 3,
+  "total_after": 157,
+  "head": [
+   "L-156"
+  ],
+  "moved": {
+   "closed": [
+    "L-156"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "b5d6538c lights L-156 BUILT: the depth-carrying composite - the surfel pass hands out its first-opaque depth and the ray caster rejects every atom hit beyond it"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 186,
+  "output_tokens": 65445,
+  "cache_creation_input_tokens": 202028,
+  "cache_read_input_tokens": 14501993
+ },
+ {
+  "iso": "2026-09-28T19:40:17",
+  "context": 50,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "343179a5-eb13-4d53-90bb-0c92b62ee60e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 856.6,
+  "usage_source": "result",
+  "num_turns": 36,
+  "total_cost_usd": 2.1332154,
+  "open_before": 8,
+  "open_after": 7,
+  "total_after": 162,
+  "head": [
+   "L-158"
+  ],
+  "moved": {
+   "closed": [
+    "L-158"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "5f642809 lights L-158 FIXED: a blocker is a fact, not a sentence - check() resolves the id a BLOCKED ON names and refuses when that entry has closed"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 70,
+  "output_tokens": 21951,
+  "cache_creation_input_tokens": 118514,
+  "cache_read_input_tokens": 3729017
+ },
+ {
+  "iso": "2026-09-28T20:20:42",
+  "context": 51,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "28469440-4ef3-4bfd-91f0-2e8d2fcdcf2e",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2425.2,
+  "usage_source": "result",
+  "num_turns": 80,
+  "total_cost_usd": 5.912426200000002,
+  "open_before": 7,
+  "open_after": 9,
+  "total_after": 167,
+  "head": [
+   "L-147"
+  ],
+  "moved": {
+   "closed": [
+    "L-147",
+    "L-69"
+   ],
+   "raised": [
+    "L-163",
+    "L-164",
+    "L-165",
+    "L-166",
+    "L-167"
+   ],
+   "reopened": [],
+   "edited": [
+    "L-70"
+   ]
+  },
+  "commits": [
+   "ff097bfb lights L-147 BUILT + MEASURED: the analytic gradient is exact and costs about one render, and Adam cannot tell it from the difference - L-132's 0-6 was a verdict on a sign-descent optimiser, not on gradients",
+   "6ad37b70 lights: two clusters \u2014 text as atoms, and what AMD's geometry research actually buys a CPU renderer"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 160,
+  "output_tokens": 76681,
+  "cache_creation_input_tokens": 213870,
+  "cache_read_input_tokens": 13336031
+ },
+ {
+  "iso": "2026-09-28T20:39:29",
+  "context": 52,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "ba8f90e8-c4f7-4e27-898d-cfd16c69ba05",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1126.7,
+  "usage_source": "result",
+  "num_turns": 68,
+  "total_cost_usd": 3.7298896,
+  "open_before": 9,
+  "open_after": 8,
+  "total_after": 167,
+  "head": [
+   "L-70"
+  ],
+  "moved": {
+   "closed": [
+    "L-70"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "58320911 lights L-70 MEASURED: optical's dirty counter is one number shared by every node, so it can only name the whole graph - 24-78% of the canvas against 0.6-7.2% that a collapse actually changes (a headless bound, not a session)"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 136,
+  "output_tokens": 39333,
+  "cache_creation_input_tokens": 156761,
+  "cache_read_input_tokens": 8442988
+ },
+ {
+  "iso": "2026-09-28T21:16:29",
+  "context": 53,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "f47e07b6-e9b6-48b1-a3b8-28b4c27a70bb",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2219.3,
+  "usage_source": "result",
+  "num_turns": 58,
+  "total_cost_usd": 4.813387600000001,
+  "open_before": 8,
+  "open_after": 8,
+  "total_after": 168,
+  "head": [
+   "L-159"
+  ],
+  "moved": {
+   "closed": [
+    "L-159"
+   ],
+   "raised": [
+    "L-168"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "8469a00d lights L-159 MEASURED: inflation alone holds down to where the thinnest feature is ~0.7 px - 10 px em for monoline, broken 10-32 px for a hairline Didone - because a gaussian of the box variance is not a partition of unity (0.2 px hairline ink 0.64-1.36x)"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 110,
+  "output_tokens": 78462,
+  "cache_creation_input_tokens": 194712,
+  "cache_read_input_tokens": 8430058
+ },
+ {
+  "iso": "2026-09-28T21:34:41",
+  "context": 54,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "58d3cce4-caca-45c8-846c-503ea033ddbb",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1092.3,
+  "usage_source": "result",
+  "num_turns": 53,
+  "total_cost_usd": 2.9073852000000007,
+  "open_before": 8,
+  "open_after": 7,
+  "total_after": 168,
+  "head": [
+   "L-163"
+  ],
+  "moved": {
+   "closed": [
+    "L-163"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-164"
+   ]
+  },
+  "commits": [
+   "6a281bbe lights L-163 MEASURED: no f64-over-f32 crossover from 100k to 10M atoms at 1080p - splat 0.985-1.019x, ray-cast 1.095-1.174x to 300k then refused at 1M by its hit budget - and 'ALU-bound' is withdrawn: splat's frame is 76-91% bind, a sort whose keys do not depend on precision"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 104,
+  "output_tokens": 32949,
+  "cache_creation_input_tokens": 136160,
+  "cache_read_input_tokens": 5793546
+ },
+ {
+  "iso": "2026-09-28T21:59:18",
+  "context": 55,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "4bcce5f0-fe6d-427d-bc37-7531ed32f524",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1476.7,
+  "usage_source": "result",
+  "num_turns": 66,
+  "total_cost_usd": 3.6928667999999996,
+  "open_before": 7,
+  "open_after": 7,
+  "total_after": 169,
+  "head": [
+   "L-165"
+  ],
+  "moved": {
+   "closed": [
+    "L-165"
+   ],
+   "raised": [
+    "L-169"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "92b7e52e lights L-165 MEASURED + SPLIT: an atom is closed under any affine map in its own parameters - 9,519 sheared maps (2,986 reflections) reproduce A Sigma A^T to 1.98e-15, and the deformed field misses exact u.u by 95 kappa-eps where the static atom already misses by 71"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 124,
+  "output_tokens": 49043,
+  "cache_creation_input_tokens": 149095,
+  "cache_read_input_tokens": 7593754
+ },
+ {
+  "iso": "2026-09-28T22:32:37",
+  "context": 56,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "a9c4d6b6-538b-413d-ab9e-437bdb674156",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1998.0,
+  "usage_source": "result",
+  "num_turns": 63,
+  "total_cost_usd": 4.272002599999999,
+  "open_before": 7,
+  "open_after": 6,
+  "total_after": 169,
+  "head": [
+   "L-166"
+  ],
+  "moved": {
+   "closed": [
+    "L-166"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "17a11cf8 lights L-166 MEASURED: a moment-matched summary is exact to 2.4e-15 and no cut that uses one is inside a code value - the first merge costs 48.6-223 cv, depth spread darkens (-74% coverage at tau 16, AMD's bias located) while compositing alone brightens (+24%), and kernel evaluations rise 1.07-6.0x on the bimodal scenes"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 122,
+  "output_tokens": 57030,
+  "cache_creation_input_tokens": 180575,
+  "cache_read_input_tokens": 8431573
+ },
+ {
+  "iso": "2026-09-28T23:12:57",
+  "context": 57,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "413c2ba0-5645-4b93-9d2a-bec4741eb5e2",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2419.6,
+  "usage_source": "result",
+  "num_turns": 66,
+  "total_cost_usd": 4.7355920000000005,
+  "open_before": 6,
+  "open_after": 5,
+  "total_after": 169,
+  "head": [
+   "L-169"
+  ],
+  "moved": {
+   "closed": [
+    "L-169"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "aac061ca lights L-169 MEASURED: a tetrahedral cage keeps a fit's quality at 7.6-9.3 us per update where a re-fit costs 9,520-19,904 renders (0.11-0.28 s, release) - re-fit per update is pruned, and the error left is the warp's curvature inside an atom, not the seam"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 130,
+  "output_tokens": 67236,
+  "cache_creation_input_tokens": 191681,
+  "cache_read_input_tokens": 9284520
+ },
+ {
+  "iso": "2026-09-28T23:32:35",
+  "context": 58,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "c5d00678-72ee-4d1f-977c-1cc86fe19d4d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1177.7,
+  "usage_source": "result",
+  "num_turns": 51,
+  "total_cost_usd": 2.8053304000000003,
+  "open_before": 5,
+  "open_after": 4,
+  "total_after": 169,
+  "head": [
+   "L-160"
+  ],
+  "moved": {
+   "closed": [
+    "L-160"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "f1ee3e89 lights L-160 BUILT: lights owns font layer 4 only and links no font library - the ruling is docs/lights/TEXT_LAYERS.md, and the tree overruled the entry twice: Tier 2's precedent is core scene::io, not fit-only atoms_io, and Tier 0 needs a new core filled line+arc contour because Primitive is strokes and Polygon is straight-edged even-odd"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 102,
+  "output_tokens": 35413,
+  "cache_creation_input_tokens": 124441,
+  "cache_read_input_tokens": 5505672
+ },
+ {
+  "iso": "2026-09-29T00:12:10",
+  "context": 59,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "3517128f-9fa1-4412-b0e6-526591a9b6a3",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2374.6,
+  "usage_source": "result",
+  "num_turns": 57,
+  "total_cost_usd": 4.151259799999998,
+  "open_before": 4,
+  "open_after": 5,
+  "total_after": 171,
+  "head": [
+   "L-161"
+  ],
+  "moved": {
+   "closed": [
+    "L-161"
+   ],
+   "raised": [
+    "L-170",
+    "L-171"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "7c886767 lights L-161 BUILT + SPLIT: Tier 0's filled line+arc contour and a quadratic-to-arc converter whose em tolerance holds two-sided (0.988-0.9999x over 48 quadratics) - and the edge count grows as tolerance^-1/3, not the ^-1/2 the entry assumed"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 108,
+  "output_tokens": 64122,
+  "cache_creation_input_tokens": 171032,
+  "cache_read_input_tokens": 7500659
+ },
+ {
+  "iso": "2026-09-29T00:44:47",
+  "context": 60,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "e830f2f0-0747-44b1-9dfa-f603065bf0f0",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1957.4,
+  "usage_source": "result",
+  "num_turns": 48,
+  "total_cost_usd": 3.079956400000002,
+  "open_before": 5,
+  "open_after": 5,
+  "total_after": 172,
+  "head": [
+   "L-170"
+  ],
+  "moved": {
+   "closed": [
+    "L-170"
+   ],
+   "raised": [
+    "L-172"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "f6a2699b lights L-170 BUILT + SPLIT: PrimitiveSet holds a Tier 0 glyph as a Region, and the non-zero field it rests on measured distance to EVERY edge - a seam at each crossing inside the ink (0.0151 em where the boundary was 0.0222) - now to boundary pieces cut at every crossing, worst 1.9e-4 em over five inputs"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 96,
+  "output_tokens": 42002,
+  "cache_creation_input_tokens": 138589,
+  "cache_read_input_tokens": 5654102
+ },
+ {
+  "iso": "2026-09-29T01:27:15",
+  "context": 61,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "session_id": "91e13675-c4c5-4141-ad20-d48f2df550c4",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2547.6,
+  "usage_source": "result",
+  "num_turns": 79,
+  "total_cost_usd": 5.016062799999999,
+  "open_before": 5,
+  "open_after": 4,
+  "total_after": 172,
+  "head": [
+   "L-171"
+  ],
+  "moved": {
+   "closed": [
+    "L-171"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-168"
+   ]
+  },
+  "commits": [
+   "8395fc40 lights L-171 BUILT: a real face (Ubuntu Light, 9 glyphs, 2 composites) through ttf-parser into Tier 0 - exact coverage of the converted Region within 0.0075 of a scanline integral of the raw quadratics (bound 0.032) at 32 px/em, seen red at 0.491 because fit::target ignored PrimitiveSet::regions; cubic_to built; COLR on paper shows Tier 0 is not closed under an affine map",
+   "13e8885a lights loop: --effort in the shell driver too \u2014 and BURNDOWN_MODEL meant two different things",
+   "65bd7470 lights host: --effort, passed through to the context and recorded beside its cost"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 156,
+  "output_tokens": 64835,
+  "cache_creation_input_tokens": 185193,
+  "cache_read_input_tokens": 11185974
+ },
+ {
+  "iso": "2026-09-29T06:28:02",
+  "context": 1,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "d731c7c4-62ff-4a14-88ba-393e44ac66a7",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 4520.8,
+  "usage_source": "result",
+  "num_turns": 143,
+  "total_cost_usd": 12.815759600000005,
+  "open_before": 4,
+  "open_after": 4,
+  "total_after": 173,
+  "head": [
+   "L-168"
+  ],
+  "moved": {
+   "closed": [
+    "L-168"
+   ],
+   "raised": [
+    "L-173"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "caa9beb3 lights L-168 MEASURED + SPLIT: L-159's 0.7 px rule on nine real glyphs is a bound only once the paper between strokes counts, and not a predictor"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 262,
+  "output_tokens": 182047,
+  "cache_creation_input_tokens": 366190,
+  "cache_read_input_tokens": 31221258
+ },
+ {
+  "iso": "2026-09-29T07:54:17",
+  "context": 2,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "deaeaa5e-ff89-4ebc-b400-e8767483db42",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 5174.5,
+  "usage_source": "result",
+  "num_turns": 166,
+  "total_cost_usd": 18.4479302,
+  "open_before": 4,
+  "open_after": 3,
+  "total_after": 173,
+  "head": [
+   "L-173"
+  ],
+  "moved": {
+   "closed": [
+    "L-173"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "2ff5d5aa lights L-173 MEASURED: the system rasteriser oracle - the macOS default and Linux hintslight depart from box coverage further than inflation does at every size a reader sees, and CoreText's glyph renderer is not a geometric reference"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 286,
+  "output_tokens": 282886,
+  "cache_creation_input_tokens": 483441,
+  "cache_read_input_tokens": 44607691
+ },
+ {
+  "iso": "2026-09-29T08:23:30",
+  "context": 3,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "bacafdec-9327-4fff-9d83-c8c6ac70f0cb",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 1752.5,
+  "usage_source": "result",
+  "num_turns": 88,
+  "total_cost_usd": 7.397601200000003,
+  "open_before": 3,
+  "open_after": 2,
+  "total_after": 173,
+  "head": [
+   "L-164"
+  ],
+  "moved": {
+   "closed": [
+    "L-164"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "9e5df944 lights L-164 CLOSED + REWRITTEN: DGF maps one atom field of five, and compressing the atom would shrink the one array the renderer never reads - a 17.3-21.3 B atom block cuts the per-atom footprint 10-16% and moves no frame"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 154,
+  "output_tokens": 115708,
+  "cache_creation_input_tokens": 264460,
+  "cache_read_input_tokens": 14349171
+ },
+ {
+  "iso": "2026-09-29T11:58:49",
+  "context": 4,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "e239aea1-7195-4f9d-bd19-062921afefe3",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3915.3,
+  "usage_source": "result",
+  "num_turns": 163,
+  "total_cost_usd": 16.348356599999995,
+  "open_before": 19,
+  "open_after": 21,
+  "total_after": 193,
+  "head": [
+   "L-174"
+  ],
+  "moved": {
+   "closed": [
+    "L-174"
+   ],
+   "raised": [
+    "L-191",
+    "L-192",
+    "L-193"
+   ],
+   "reopened": [],
+   "edited": [
+    "L-187"
+   ]
+  },
+  "commits": [
+   "9710fd9a lights L-174 MEASURED: optical's whole frame on egui is under a millisecond - eleven real showcase frames cost 0.17-0.98 ms CPU and 0.13-0.67 ms GPU pass at 1920x1080 pt, and egui's CPU frame ignores the scale factor"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 276,
+  "output_tokens": 240663,
+  "cache_creation_input_tokens": 440955,
+  "cache_read_input_tokens": 40031763
+ },
+ {
+  "iso": "2026-09-29T13:03:15",
+  "context": 5,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "74b36a42-f0f8-40ed-8585-73c7d6fdaa36",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3866.0,
+  "usage_source": "result",
+  "num_turns": 166,
+  "total_cost_usd": 18.371646199999994,
+  "open_before": 21,
+  "open_after": 20,
+  "total_after": 193,
+  "head": [
+   "L-175"
+  ],
+  "moved": {
+   "closed": [
+    "L-175"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-176"
+   ]
+  },
+  "commits": [
+   "4267404d lights L-175 MEASURED: the frame is paid in pixels - eleven real optical frames cost the serial DrawList 11.0-28.4 ms at 1x and 44.1-108.2 ms at 2x at 5.0-6.4 ns per bounding-box pixel, and 1.4-2.9 ms over rayon row bands on 18 threads"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 316,
+  "output_tokens": 259676,
+  "cache_creation_input_tokens": 473962,
+  "cache_read_input_tokens": 46925831
+ },
+ {
+  "iso": "2026-09-29T14:01:04",
+  "context": 6,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "302b3a26-c396-4a1c-9463-2d033ac3206d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3468.0,
+  "usage_source": "result",
+  "num_turns": 137,
+  "total_cost_usd": 16.949593600000004,
+  "open_before": 20,
+  "open_after": 22,
+  "total_after": 196,
+  "head": [
+   "L-176"
+  ],
+  "moved": {
+   "closed": [
+    "L-176"
+   ],
+   "raised": [
+    "L-194",
+    "L-195",
+    "L-196"
+   ],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "8e9a15ba lights L-176 MEASURED + SPLIT: on the identical op sets of eleven real optical frames tiny-skia draws 2.2-10.2x faster than lights' DrawList from a sixth of the frame memory with no pack - lights keeps the 1x quality gate and exact bands, and the kill condition does not hold"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 270,
+  "output_tokens": 233700,
+  "cache_creation_input_tokens": 479560,
+  "cache_read_input_tokens": 42190168
+ },
+ {
+  "iso": "2026-09-29T16:51:35",
+  "context": 1,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "0f34ea0c-1250-402e-a4fe-a1bff1fdd09d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2683.9,
+  "usage_source": "result",
+  "num_turns": 127,
+  "total_cost_usd": 10.2386704,
+  "open_before": 15,
+  "open_after": 14,
+  "total_after": 201,
+  "head": [
+   "L-187"
+  ],
+  "moved": {
+   "closed": [
+    "L-187"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "7b9ea23c lights L-187 BUILT + REWRITTEN: the platform contract is what the interactive demo needs, its frame handoff is pinned to the code in bytes and strides, and the suite was red at HEAD in two places"
+  ],
+  "reaped": [],
+  "stderr_tail": "Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.\n",
+  "input_tokens": 234,
+  "output_tokens": 147620,
+  "cache_creation_input_tokens": 299495,
+  "cache_read_input_tokens": 24446872
+ },
+ {
+  "iso": "2026-09-29T17:37:47",
+  "context": 2,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "bf34f4cc-8004-4760-8f3a-ec7160e0589d",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2772.1,
+  "usage_source": "result",
+  "num_turns": 108,
+  "total_cost_usd": 12.143755200000003,
+  "open_before": 14,
+  "open_after": 13,
+  "total_after": 201,
+  "head": [
+   "L-186"
+  ],
+  "moved": {
+   "closed": [
+    "L-186"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-197"
+   ]
+  },
+  "commits": [
+   "25f4bdaf lights L-186 BUILT: crates/lights-mac is the macOS host - an AppKit window, a caller-owned pump of pointer, key, resize and close events in pixels, and a CAMetalLayer present proven byte-exact against the lights frame; AppKit chosen over winit by writing both"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 210,
+  "output_tokens": 202383,
+  "cache_creation_input_tokens": 364145,
+  "cache_read_input_tokens": 25910476
+ },
+ {
+  "iso": "2026-09-29T18:36:41",
+  "context": 3,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "54797aa4-609f-436e-93b1-94af0bcc9248",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3452.9,
+  "usage_source": "result",
+  "num_turns": 136,
+  "total_cost_usd": 13.4449116,
+  "open_before": 13,
+  "open_after": 12,
+  "total_after": 201,
+  "head": [
+   "L-190"
+  ],
+  "moved": {
+   "closed": [
+    "L-190"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "013e80ba lights L-190 BUILT + REWRITTEN: lights resolves straight into the host's BGRA8 buffer - one pass where the viewer's frame took three, 2.574-2.649 ms against 6.843-7.092 ms at 1080p, byte-identical, and the 120 Hz panel's pace is now kept"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 256,
+  "output_tokens": 196564,
+  "cache_creation_input_tokens": 386947,
+  "cache_read_input_tokens": 32085158
+ },
+ {
+  "iso": "2026-09-29T19:11:53",
+  "context": 4,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "1d3e07ce-8a3f-4960-8fbb-7c1d44a5ca9c",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 2111.9,
+  "usage_source": "result",
+  "num_turns": 110,
+  "total_cost_usd": 9.874984800000002,
+  "open_before": 12,
+  "open_after": 11,
+  "total_after": 201,
+  "head": [
+   "L-193"
+  ],
+  "moved": {
+   "closed": [
+    "L-193"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "acf7ece4 lights L-193 BUILT + REWRITTEN: platform code lives in the host crate and nowhere in lights - a guard over lights' 175 Rust files and its manifest refuses Apple-framework, Objective-C, intrinsic, target-cfg and OS-only std code, proves it can see them in crates/lights-mac, lists the three sysctl/sw_vers hardware labels by file, and closes the L-121 list's objc2 gap"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 208,
+  "output_tokens": 150227,
+  "cache_creation_input_tokens": 301436,
+  "cache_read_input_tokens": 22290624
+ },
+ {
+  "iso": "2026-09-29T20:47:16",
+  "context": 5,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "3349c815-70e3-4ad7-beda-91d0cc3b971a",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 5721.9,
+  "usage_source": "result",
+  "num_turns": 175,
+  "total_cost_usd": 19.082974800000013,
+  "open_before": 11,
+  "open_after": 10,
+  "total_after": 201,
+  "head": [
+   "L-197"
+  ],
+  "moved": {
+   "closed": [
+    "L-197"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-198"
+   ]
+  },
+  "commits": [
+   "6fddbd4f lights L-197 BUILT + REWRITTEN: lights-gallery in crates/lights-mac is the first window a hand drives - orbit, splat against the ray caster, and the 900-surfel shell under a movable light, with a selector, a caption per scene and the frame time on screen; the host's AppKit draws the text because lights has none, and the demo's scenes moved into a new scene::showcase after the photometric guard refused scene::demo"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 324,
+  "output_tokens": 272340,
+  "cache_creation_input_tokens": 470716,
+  "cache_read_input_tokens": 49345754
+ },
+ {
+  "iso": "2026-09-29T21:42:13",
+  "context": 6,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "d880bedb-1ada-4bca-942d-265544546a10",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3263.7,
+  "usage_source": "result",
+  "num_turns": 147,
+  "total_cost_usd": 17.065047999999994,
+  "open_before": 10,
+  "open_after": 9,
+  "total_after": 201,
+  "head": [
+   "L-198"
+  ],
+  "moved": {
+   "closed": [
+    "L-198"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": [
+    "L-199"
+   ]
+  },
+  "commits": [
+   "daedf929 lights L-198 BUILT + REWRITTEN: the arm audit - every arm gets one verdict in RESEARCH.json `arms`, with the target its deciding evidence was taken against and whether that evidence transfers to the 3D engine; 6 PRUNE on evidence that holds there, 9 RE-JUDGE with the deciding experiment stated and not run, 16 KEEP, and a test that fails if the code grows an arm the table does not judge"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 274,
+  "output_tokens": 245006,
+  "cache_creation_input_tokens": 474706,
+  "cache_read_input_tokens": 41830920
+ },
+ {
+  "iso": "2026-09-29T22:45:50",
+  "context": 7,
+  "budget": 1,
+  "model": "claude-opus-5-5",
+  "effort": "max",
+  "session_id": "3020b92d-45a7-433f-97d2-c42dbfd2abc9",
+  "outcome": "BUDGET SPENT",
+  "exit_code": 0,
+  "wall_seconds": 3816.2,
+  "usage_source": "result",
+  "num_turns": 136,
+  "total_cost_usd": 16.2006226,
+  "open_before": 9,
+  "open_after": 8,
+  "total_after": 201,
+  "head": [
+   "L-199"
+  ],
+  "moved": {
+   "closed": [
+    "L-199"
+   ],
+   "raised": [],
+   "reopened": [],
+   "edited": []
+  },
+  "commits": [
+   "15bd8c1f lights L-199 BUILT + REWRITTEN: the final research report is RESEARCH.json `report` - what lights set out to prove, what it measured, what that says about the paradigm, the comparison stated plainly (tiny-skia 2.22-10.16x faster from a sixth of the memory, because 97.8-99.2% of the frame is pixel traffic), what stands and what goes - with every one of its 37 cited records re-run on this tree first; l67's budget instrument fixed on the way, and l174 and l175's capture pinned to 8e9a15ba after d9ea50fe deleted optical's frame bench"
+  ],
+  "reaped": [],
+  "stderr_tail": "",
+  "input_tokens": 254,
+  "output_tokens": 252393,
+  "cache_creation_input_tokens": 444798,
+  "cache_read_input_tokens": 37966813
+ }
+]

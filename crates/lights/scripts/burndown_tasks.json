@@ -1,0 +1,31 @@
+{
+  "_comment_file": "crates/lights/scripts/burndown_tasks_json_comment/why_these_tasks.md",
+  "_safety": "EVERY TASK HERE IS READ-ONLY ON PURPOSE. `verify` runs the same sequence twice, so a task that writes makes phase 2 start from a repository phase 1 already changed, and the comparison measures the edit rather than the session boundary. Do not add a task that edits, commits or redeploys. To benchmark the real write-heavy loop, use a disposable git worktree and a separate file.",
+  "tasks": [
+    {
+      "id": "read-standing",
+      "prompt": "Run `python3 crates/lights/scripts/burndown.py --check` and `--next` and report, in at most five lines: the open/total counts, and the id, kind and size of the entry --next selected. Do not modify any files. Do not run cargo.",
+      "timeout_seconds": 600
+    },
+    {
+      "id": "read-clusters",
+      "prompt": "Run `python3 crates/lights/scripts/burndown.py --clusters` and report which clusters still have two or more LIVE members, with their ids. Do not modify any files. Do not run cargo.",
+      "timeout_seconds": 600
+    },
+    {
+      "id": "read-research-standing",
+      "prompt": "Run `python3 crates/lights/scripts/research.py --check` and report the experiment count, how many are reproducible, and the number of cross-experiment findings. Then name the experiments whose recorded command cannot be pasted into a shell. Do not modify any files. Do not run cargo.",
+      "timeout_seconds": 600
+    },
+    {
+      "id": "read-mutation-record",
+      "prompt": "Without running the mutation driver, read docs/lights/mutations/results.tsv and report how many rows it holds, how many are scored CAUGHT through all four gates, and the ids of any row that is not. Do not modify any files. Do not run cargo.",
+      "timeout_seconds": 600
+    },
+    {
+      "id": "read-entry-in-hand",
+      "prompt": "Take the entry that `python3 crates/lights/scripts/burndown.py --next` prints, read only the files its `where` field names, and report whether its `why` still matches the tree today — quoting one line of evidence either way. Do not modify any files. Do not run cargo.",
+      "timeout_seconds": 900
+    }
+  ]
+}
